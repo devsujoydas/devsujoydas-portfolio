@@ -4,7 +4,7 @@ import Footer from "../../components/Footer/Footer"
 
 const RootPage = () => {
     return (
-        <div>
+        <div className="bg-gray-700">
             <Header />
             <Outlet />
             <Footer />
