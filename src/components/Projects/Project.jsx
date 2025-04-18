@@ -1,18 +1,18 @@
 import React from 'react'
 
+import { TbWorld } from "react-icons/tb";
 const Project = ({ project }) => {
+ 
     return (
         <div>
-            <div
-                className="bg-[#18181B] rounded-2xl overflow-hidden border border-purple-800 p-6 shadow-lg flex flex-col"
-            >
+            <div className="bg-[#18181B] rounded-2xl overflow-hidden border border-purple-800 p-6 shadow-lg flex flex-col" >
 
-
-                <img
-                    src='https://i.imgur.com/1aEY3Cs.jpeg'
-                    alt={project.name}
-                    className="rounded-xl object-cover w-[565px]  h-64 mb-6"
-                />
+                <div>
+                    <img src='https://i.imgur.com/1aEY3Cs.jpeg'
+                        alt={project.name}
+                        className="rounded-xl object-cover w-full  h-64 mb-6"
+                    />
+                </div>
 
                 <h3 className="text-2xl font-bold mb-2">{project.name}</h3>
                 <p className="text-zinc-300 mb-4">{project.description}</p>
@@ -28,10 +28,13 @@ const Project = ({ project }) => {
                     ))}
                 </div>
                 <hr className="text-gray-700 mt-5" />
-                <div className="mt-auto pt-4 flex flex-wrap gap-3">
+                <div className="mt-auto pt-4 grid grid-cols-3 gap-3">
 
-                    <a className="bg-purple-700 hover:bg-purple-800 px-4 py-2 rounded-md text-sm font-semibold" >
-                        <TbWorld /> Website
+                    <a href={project.links[0].href} className="bg-gray-600 flex items-center justify-center gap-2 px-4 py-2 rounded-md text-sm font-semibold" >
+                        <TbWorld className='text-2xl ' /> {project.links[0].label}
+                    </a>
+                    <a href={project.links[1].href} className="bg-gray-600 flex items-center justify-center gap-2 px-4 py-2 rounded-md text-sm font-semibold" >
+                        <TbWorld className='text-2xl ' /> {project.links[1].label}
                     </a>
 
                 </div>
