@@ -6,7 +6,7 @@ import { FiGithub } from "react-icons/fi";
 
 export default function Contact() {
     return (
-        <div className="min-h-screen  text-white p-4 md:p-20">
+        <div className="min-h-screen font-montserrat text-white p-4 md:p-20">
 
             <h1 className='text-secondary font-semibold text-center'>CONTACT</h1>
             <h1 className='text-7xl font-bold mt-5 text-primary text-center'>Contact With Me
