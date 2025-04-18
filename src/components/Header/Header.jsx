@@ -2,7 +2,7 @@ import React from 'react'
 
 const Header = () => {
   return (
-    <header className="sticky top-0 border font-montserrat bg-[#212428]">
+    <header className="fixed w-full z-10 top-0 border font-montserrat bg-[#212428]">
       <div className="text-[#B4BECC] max-w-7xl mx-auto flex justify-between items-center  py-7">
 
         <div className="relative overflow-hidden">
@@ -17,11 +17,11 @@ const Header = () => {
 
             <nav id="" className="">
               <ul className="flex justify-center items-center  gap-10 text-lg">
-                <li className=""><a className="" href="">Home</a></li>
-                <li className=""><a className="" href="">Services</a></li>
-                <li className=""><a className="" href="">Portfolio</a></li>
+                <li className=""><a className="" href="#hero">Home</a></li>
+                <li className=""><a className="" href="#service">Services</a></li>
+                <li className=""><a className="" href="#projects">Projects</a></li>
                 <li className=""><a className="" href="">Resume</a></li>
-                <li className=""><a className="" href="">Contact</a></li>
+                <li className=""><a className="" href="#contact">Contact</a></li>
               </ul>
             </nav>
 

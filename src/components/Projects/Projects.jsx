@@ -85,7 +85,7 @@ export default function Projects() {
 
 
     return (
-        <section className=" text-white py-16 px-4 font-montserrat">
+        <section id="projects" className=" text-white py-40 px-4 font-montserrat">
             <h1 className='text-secondary font-semibold text-center'>Visit my portfolio and keep your feedback</h1>
             <h1 className='text-7xl font-bold mt-5 text-primary text-center'>My Portfolio
             </h1>

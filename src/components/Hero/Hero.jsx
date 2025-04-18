@@ -5,7 +5,7 @@ import { FiYoutube } from "react-icons/fi";
 import { FiGithub } from "react-icons/fi";
 const Hero = () => {
     return (
-        <div className='text-white max-w-7xl  font-montserrat  mx-auto pt-20 grid grid-cols-2'>
+        <div id='hero' className='text-white max-w-7xl  font-montserrat  mx-auto pt-40 grid grid-cols-2'>
             <div className='col-span-1 space-y-20 flex justify-center flex-col'>
                 <div className='space-y-5'>
                     <p className='text-primary'>Welcome to my digital space.</p>
@@ -26,7 +26,7 @@ const Hero = () => {
             </div>
 
             <div className='col-span-1  flex justify-center items-center '>
-                <img className='w-3/4 ' src="/public/hero-img.png" alt="" />
+                <img className='w-5/6 ' src="/public/hero-img.png" alt="" />
             </div>
         </div>
     )

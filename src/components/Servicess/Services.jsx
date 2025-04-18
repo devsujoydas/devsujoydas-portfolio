@@ -5,7 +5,7 @@ import { FaCode } from "react-icons/fa6";
 import { LiaDesktopSolid } from "react-icons/lia";
 const Services = () => {
   return (
-    <div className='text-primary max-w-7xl mx-auto font-montserrat my-20'>
+    <div id="service" className='text-primary max-w-7xl mx-auto font-montserrat py-45'>
 
       <h1 className='text-secondary font-semibold'>FEATURES</h1>
       <h1 className='text-7xl text-primary font-bold mt-5'>Services</h1>

@@ -4,7 +4,7 @@ import { TbWorld } from "react-icons/tb";
 const Project = ({ project }) => {
  
     return (
-        <div>
+        <div className='hover:scale-105 transition-transform'>
             <div className="bg-[#18181B] rounded-2xl overflow-hidden border border-purple-800 p-6 shadow-lg flex flex-col" >
 
                 <div>
