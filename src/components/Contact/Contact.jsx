@@ -1,23 +1,21 @@
-import React from "react";
-import { FiFacebook } from "react-icons/fi";
-import { IoLogoInstagram } from "react-icons/io5";
-import { FiYoutube } from "react-icons/fi";
-import { FiGithub } from "react-icons/fi";
+
+import ContactBanner from '/SkillsImgs/ContactBanner.png'
+import FindWithMe from "../FindWithMe/FindWithMe";
 
 export default function Contact() {
     return (
-        <div id="contact" className="min-h-screen font-montserrat text-white p-4 md:pt-40">
+        <div id="contact" className="min-h-screen font-montserrat text-white p-4 md:py-40 py-20">
 
             <h1 className='text-secondary font-semibold text-center'>CONTACT</h1>
-            <h1 className='text-7xl font-bold mt-5 text-primary text-center'>Contact With Me
+            <h1 className='md:text-7xl text-4xl font-bold mt-5 text-primary text-center'>Contact With Me
             </h1>
 
-            <div className="max-w-7xl mx-auto grid md:grid-cols-5 gap-13 mt-10">
+            <div className="max-w-7xl mx-auto grid md:grid-cols-5 md:gap-13 gap-5 mt-10">
 
                 {/* Left Side */}
-                <div className="col-span-2  rounded-2xl shadow-2xl border border-gray-700 p-8 space-y-6">
+                <div className="md:col-span-2  rounded-2xl shadow-2xl border border-gray-700 md:p-8 p-4 space-y-6">
                     <img
-                        src="/public/ContactBanner.png"
+                        src={ContactBanner}
                         alt="Handshake"
                         className="w-full h-64 object-cover rounded-xl"
                     />
@@ -32,19 +30,14 @@ export default function Contact() {
                             <p>Email: sdsujoy920243@gmail.com</p>
                         </div>
                     </div>
-                    <div className='space-y-5'>
-                        <h1 className='text-primary'>FIND WITH ME</h1>
-                        <div className='flex items-center gap-5 '>
-                            <a href='/' className='social-icons'> <FiFacebook /> </a>
-                            <a href='/' className='social-icons'> <IoLogoInstagram /> </a>
-                            <a href='/' className='social-icons'> <FiYoutube /> </a>
-                            <a href='/' className='social-icons'> <FiGithub /> </a>
-                        </div>
-                    </div>
+
+                    {/* Find With Me Social Icons */}
+                    <FindWithMe />
                 </div>
 
                 {/* Right Side - Contact Form */}
-                <form className="col-span-3 border border-gray-700 space-y-4 bg-[#212428] p-6 rounded-2xl shadow-xl">
+                <form className="md:col-span-3 border border-gray-700 space-y-4 bg-[#212428] p-6 rounded-2xl shadow-xl">
+                    
                     <div className="grid md:grid-cols-2 gap-4">
                         <div>
                             <label htmlFor="name">Your Name</label>
@@ -64,45 +57,44 @@ export default function Contact() {
                                 className="bg-[#191B1E] mt-4 text-white p-4 rounded-md w-full"
                             />
                         </div>
-
                     </div>
 
                     <div>
                         <label htmlFor="email">Your Email</label>
                         <input
-                        id="email"
+                            id="email"
                             type="email"
                             placeholder="Email"
                             className="bg-[#191B1E] mt-4 text-white p-4 rounded-md w-full"
                         />
                     </div>
 
-
                     <div>
                         <label htmlFor="subject">Subject</label>
                         <input
-                        id="subject"
+                            id="subject"
                             type="text"
                             placeholder="Subject"
                             className="bg-[#191B1E] mt-4 text-white p-4 rounded-md w-full"
                         />
                     </div>
 
-
                     <div>
                         <label htmlFor="message">Your Message</label>
                         <textarea
-                        id="message"
+                            id="message"
                             placeholder="Your Message"
                             className="bg-[#191B1E] mt-4 text-white p-4 rounded-md w-full h-32"
                         ></textarea>
                     </div>
+
                     <button
                         type="submit"
                         className="w-full text-secondary font-semibold py-4 rounded-lg bg-gray-800"
                     >
                         SEND MESSAGE →
                     </button>
+
                 </form>
             </div>
         </div>

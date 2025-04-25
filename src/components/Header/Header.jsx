@@ -1,34 +1,69 @@
-import React from 'react'
+
+import { LuMenu } from "react-icons/lu";
+import { IoClose } from "react-icons/io5";
+import { useState } from "react";
+import Nav from "./Nav";
+import FindWithMe from "../FindWithMe/FindWithMe";
 
 const Header = () => {
+  const [humbarger, setHumbarger] = useState(1)
+
   return (
-    <header className="fixed w-full z-10 top-0 border font-montserrat bg-[#212428]">
-      <div className="text-[#B4BECC] max-w-7xl mx-auto flex justify-between items-center  py-7">
+    <header className="fixed w-full z-10 top-0 shadow shadow-[#2e2c2c] font-montserrat bg-[#212428]">
 
-        <div className="relative overflow-hidden">
-          <a href="/" className='flex items-center justify-center gap-2'>
-            <img className='rounded-full w-15' src="https://avatars.githubusercontent.com/u/157239662?v=4" alt="" />
-            <h1 className='text-xl '>Sujoy Das</h1>
-          </a>
-        </div>
+      <div className="text-[#B4BECC] max-w-7xl mx-auto flex flex-col md:flex-row gap-10 justify-between md:items-center  md:py-7 py-3">
 
-        <div className="">
-          <div className="">
+        {/* Nav Logo & Humbarger Menu Close  */}
+        <div className="flex justify-between items-center  md:px-0 px-5">
+          <div className="relative overflow-hidden">
+            <a href="/" className='flex items-center justify-center gap-2'>
+              <img className='rounded-full w-15' src="https://avatars.githubusercontent.com/u/157239662?v=4" alt="" />
+              <h1 className='text-xl '>Sujoy Das</h1>
+            </a>
+          </div>
 
-            <nav id="" className="">
-              <ul className="flex justify-center items-center  gap-10 text-lg">
-                <li className=""><a className="" href="#hero">Home</a></li>
-                <li className=""><a className="" href="#service">Services</a></li>
-                <li className=""><a className="" href="#projects">Projects</a></li>
-                <li className=""><a className="" href="">Resume</a></li>
-                <li className=""><a className="" href="#contact">Contact</a></li>
-              </ul>
-            </nav>
-
+          <div onClick={() => setHumbarger(!humbarger)} className="md:hidden block text-5xl text-secondary shadow-2xl">
+            <LuMenu />
           </div>
         </div>
+
+        {/* nav for large device */}
+        <div className="hidden md:block">
+          <Nav />
+        </div>
+
+        {/* nav for small device */}
+        <div className={humbarger ? 'md:hidden fixed z-20 top-0 -left-121 w-full h-screen grid grid-cols-5 opacity-0 duration-700 transition-all' : 'md:hidden opacity-100 fixed z-20 top-0 left-0 w-full h-screen grid grid-cols-5 duration-700 transition-all'} >
+          <div className=" col-span-4 px-8 bg-[#15171a] space-y-10">
+            <div className="flex justify-between items-center py-5 ">
+              <div className="relative overflow-hidden">
+                <a href="/" className='flex items-center justify-center gap-2'>
+                  <img className='rounded-full w-15' src="https://avatars.githubusercontent.com/u/157239662?v=4" alt="" />
+                  <h1 className='text-xl '>Sujoy Das</h1>
+                </a>
+              </div>
+              <div onClick={() => setHumbarger(!humbarger)} className="md:hidden block text-4xl">
+                <IoClose className="text-secondary shadow-2xl shadow-gray-200 bg-[#2e333a] rounded-full p-1" />
+              </div>
+            </div>
+            <div>
+              <p className="leading-7 font-poppins text-lg text-primary ">Explore the web development portfolio and blog of Mahmoud Nabhan. Discover projects, skills, and insights into modern web technologies.</p>
+            </div>
+            <hr className="text-gray-700 my-5" />
+            <div onClick={() => setHumbarger(!humbarger)} className="flex flex-col gap-5">
+              <Nav />
+            </div>
+            <hr className="text-gray-700 my-5" />
+            
+            <FindWithMe/>
+
+          </div>
+          <div onClick={() => setHumbarger(!humbarger)} className=" col-span-1 bg-[#000000b6]"></div>
+        </div>
+
       </div>
-    </header>
+
+    </header >
   )
 }
 

@@ -1,33 +1,80 @@
-import React from 'react'
-import { FiFacebook } from "react-icons/fi";
-import { IoLogoInstagram } from "react-icons/io5";
-import { FiYoutube } from "react-icons/fi";
-import { FiGithub } from "react-icons/fi";
+
+import React from "react";
+import Typed from 'typed.js';
+
+import { IoMdDownload } from "react-icons/io";
+import { GoArrowUpRight } from "react-icons/go";
+
+import heroImg from '/SkillsImgs/hero-img.png'
+import './Hero.css'
+import FindWithMe from "../FindWithMe/FindWithMe";
+
 const Hero = () => {
+    const el = React.useRef(null);
+
+    React.useEffect(() => {
+        const typed = new Typed(el.current, {
+            strings: [
+                'Software Developer.',
+                'Web Developer.',
+                'Frontend Developer.',
+                'Ai Content Creator.',
+            ],
+            typeSpeed: 40,
+            loop: true,
+        });
+
+        return () => {
+            typed.destroy();
+        };
+    }, []);
+
     return (
-        <div id='hero' className='text-white max-w-7xl  font-montserrat  mx-auto pt-40 grid grid-cols-2'>
-            <div className='col-span-1 space-y-20 flex justify-center flex-col'>
-                <div className='space-y-5'>
+        <div id='home' className='text-white max-w-7xl font-montserrat  md:mx-auto lg:px-0 px-5 md:pt-40 pt-28 pb-10 gap-5 flex md:flex-row flex-col-reverse'>
+            
+            {/* Hero Text  */}
+            <div className='md:space-y-12 lg:w-full space-y-4 flex justify-center flex-col'>
+
+                {/* about info  */}
+                <div className='md:space-y-5 space-y-2'>
                     <p className='text-primary'>Welcome to my digital space.</p>
-                    <h1 className='text-7xl font-bold'>Hi, I’m <span className='text-secondary'>Sujoy Das</span></h1>
-                    <h1 className='text-5xl font-bold'>a Software Developer.</h1>
-                    <p className='text-gray-300 font-poppins leading-7'>Through my experience in web and mobile development, I've gained proficiency in full-stack development, delivering projects from concept to deployment with a strong emphasis on performance and scalability.</p>
+                    <h1 className='text-4xl md:text-7xl font-bold'>Hi, I’m <span className='text-secondary'>Sujoy Das</span></h1>
+                    <h1 className='text-3xl md:text-5xl font-bold'>a <span ref={el}></span></h1>
+                    <p className='text-gray-300 font-poppins md:leading-6 leading-5 md:text-md text-xs'>Passionate Frontend Developer with hands-on experience in building responsive and interactive web applications using React.js, Tailwind CSS, and Firebase. Currently expanding skills in backend development with Node.js, Express.js, MongoDB, and EJS to become a proficient Full-Stack Developer. Committed to delivering seamless and scalable user experiences.</p>
                 </div>
-                <div className='space-y-5'>
-                    <h1 className='text-primary'>FIND WITH ME</h1>
-                    <div className='flex items-center gap-5 '>
-                        <a href='/' className='social-icons'> <FiFacebook /> </a>
-                        <a href='/' className='social-icons'> <IoLogoInstagram /> </a>
-                        <a href='/' className='social-icons'> <FiYoutube /> </a>
-                        <a href='/' className='social-icons'> <FiGithub /> </a>
-                    </div>
-                    
+
+
+                {/* hire and resume btn  */}
+                <div className="md:text-xl flex items-center gap-5">
+                    <a href="#contact" className="button active:scale-95 duration-500 transition-all ">
+                        <span className="button__icon-wrapper">
+                            <GoArrowUpRight className="button__icon-svg" />
+                            <GoArrowUpRight className="button__icon-svg button__icon-svg--copy" />
+                        </span>
+                        Hire Me
+                    </a>
+                    <a href="https://drive.google.com/file/d/1Hy_ctwokX4Sp3vbOP-5jLKWC9HVIyZIj/view?usp=sharing"
+                        target="_blank"
+                        className="button active:scale-95 duration-500 transition-all ">
+                        <span className="button__icon-wrapper">
+                            <IoMdDownload className="button__icon-svg" />
+                            <IoMdDownload className="button__icon-svg button__icon-svg--copy" />
+                        </span>
+                        Resume
+                    </a>
                 </div>
+
+
+                {/* Social Icons  */}
+                <FindWithMe />
             </div>
 
-            <div className='col-span-1  flex justify-center items-center '>
-                <img className='w-5/6 ' src="/public/hero-img.png" alt="" />
+            {/* Hero Image Section */}
+            <div className='relative  flex justify-center items-center '>
+                <div className="box-shadow rounded-3xl absolute bottom-0 h-9/12 w-5/6 -z-10"></div>
+                <img className='md:w-5/6 w-4/6' src={heroImg} alt="" />
             </div>
+
         </div>
     )
 }
