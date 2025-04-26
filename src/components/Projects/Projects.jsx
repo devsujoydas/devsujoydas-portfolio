@@ -19,7 +19,7 @@ export default function Projects() {
       "tech": ["React", "Tailwind CSS", "Typed.js", "SwiperJS"],
       "image": `${porfolio}`,
       "links": [
-        { "label": "Website", "href": "https://devsujoydas.netlify.app" },
+        { "label": "Website", "href": "https://devsujoydas.vercel.app" },
         { "label": "Source Code", "href": "https://github.com/devsujoydas/devsujoydas-portfolio" }
       ]
     },
@@ -39,7 +39,7 @@ export default function Projects() {
       "tech": ["React", "Tailwind CSS", "Firebase", "SwiperJS"],
       "image": `${elexyelectronic}`,
       "links": [
-        { "label": "Website", "href": "https://elexyelectronic.netlify.app" },
+        { "label": "Website", "href": "https://elexyelectronics.vercel.app" },
         { "label": "Source Code", "href": "https://github.com/devsujoydas/elexy-electronics." }
       ]
     },
@@ -49,7 +49,7 @@ export default function Projects() {
       "tech": ["React", "Tailwind CSS", "Firebase", "SwiperJS"],
       "image": `${tourtotuscany}`,
       "links": [
-        { "label": "Website", "href": "https://tourtotuscany.vercel.app/" },
+        { "label": "Website", "href": "https://tourtotuscany.vercel.app" },
         { "label": "Source Code", "href": "https://github.com/devsujoydas/tour-to-tuscany" }
       ]
     },
@@ -60,7 +60,7 @@ export default function Projects() {
       "tech": ["React", "Tailwind CSS", "Firebase", "SwiperJS"],
       "image": `${gadgetmartbd}`,
       "links": [
-        { "label": "Website", "href": "https://gadgetmartbd.netlify.app" },
+        { "label": "Website", "href": "https://gadgetmartbd.vercel.app" },
         { "label": "Source Code", "href": "https://github.com/devsujoydas/gadget-mart-bd" }
       ]
     },
@@ -70,7 +70,7 @@ export default function Projects() {
       "tech": ["React", "Tailwind CSS", "SwiperJS"],
       "image": `${nestmartbd}`,
       "links": [
-        { "label": "Website", "href": "https://nestmartbd.netlify.app" },
+        { "label": "Website", "href": "https://nestmartbd.vercel.app" },
         { "label": "Source Code", "href": "https://github.com/devsujoydas/nest-mart-bd" }
       ]
     },
@@ -80,17 +80,17 @@ export default function Projects() {
       "tech": ["Html", "Tailwind CSS", "JavaScript"],
       "image": `${chairstore}`,
       "links": [
-        { "label": "Website", "href": "https://furnichairstore.netlify.app" },
+        { "label": "Website", "href": "https://furnichairstore.vercel.app" },
         { "label": "Source Code", "href": "https://github.com/devsujoydas/chair-store" }
       ]
     },
-    {
+    { 
       "name": "React-Career-Hub",
       "description": "Job and career guidance platform helping users explore opportunities and career resources effectively.",
       "tech": ["React", "Tailwind CSS", "Firebase"],
       "image": `${careerrhub}`,
       "links": [
-        { "label": "Website", "href": "https://careerrhub.netlify.app" },
+        { "label": "Website", "href": "https://reactcareerhub.vercel.app" },
         { "label": "Source Code", "href": "https://github.com/devsujoydas/react-career-hub" }
       ]
     },
@@ -100,7 +100,7 @@ export default function Projects() {
       "tech": ["HTML", "CSS", "JavaScript"],
       "image": `${tictactoe}`,
       "links": [
-        { "label": "Website", "href": "https://tic-tac-toe36.netlify.app" },
+        { "label": "Website", "href": "https://tictactoe36.vercel.app" },
         { "label": "Source Code", "href": "https://github.com/devsujoydas/tic-tac-toe" }
       ]
     },
@@ -110,7 +110,7 @@ export default function Projects() {
       "tech": ["React", "Tailwind CSS"],
       "image": `${recipes}`,
       "links": [
-        { "label": "Website", "href": "https://recipecaloris.netlify.app" },
+        { "label": "Website", "href": "https://recipecaloris.vercel.app" },
         { "label": "Source Code", "href": "https://github.com/devsujoydas/recipe-calories" }
       ]
     }
