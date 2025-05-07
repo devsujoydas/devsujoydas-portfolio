@@ -10,10 +10,10 @@ export default function Contact() {
             <h1 className='md:text-7xl text-4xl font-bold mt-5 text-primary text-center'>Contact With Me
             </h1>
 
-            <div className="max-w-7xl mx-auto grid md:grid-cols-5 md:gap-13 gap-5 mt-10">
+            <div className="max-w-7xl mx-auto grid md:grid-cols-5 md:gap-8 gap-5 mt-10">
 
                 {/* Left Side */}
-                <div className="md:col-span-2  rounded-2xl shadow-2xl border border-gray-700 md:p-8 p-4 space-y-6">
+                <div className="md:col-span-2  rounded-2xl shadow-2xl border border-gray-700 md:p-8 p-4 space-y-5">
                     <img
                         src={ContactBanner}
                         alt="Handshake"
@@ -25,9 +25,9 @@ export default function Contact() {
                         <p className="mt-4 text-zinc-300">
                             I'm always open to networking and discussing potential collaborations. Connect with me through this form or find me on:
                         </p>
-                        <div className="mt-4 space-y-2 text-zinc-300">
-                            <p>Phone: +880 1303-436299</p>
-                            <p>Email: sdsujoy920243@gmail.com</p>
+                        <div className="mt-4 space-y-2 text-zinc-300 ">
+                            <a className='block ' href="tel:+8801303436299" target='_blank'>Phone:  <span className='hover:text-[#FF014F] transition-all duration-500'>+880 1303-436299</span></a>
+                            <a className='block ' href='mailto:devsujoydas@gmail.com' target='_blank'>Email: <span className='hover:text-[#FF014F] transition-all duration-500'>devsujoydas@gmail.com</span> </a>
                         </div>
                     </div>
 
@@ -36,8 +36,8 @@ export default function Contact() {
                 </div>
 
                 {/* Right Side - Contact Form */}
-                <form className="md:col-span-3 border border-gray-700 space-y-4 bg-[#212428] p-6 rounded-2xl shadow-xl">
-                    
+                <form className="md:col-span-3 flex flex-col justify-between border border-gray-700 space-y-4 bg-[#212428] p-6 rounded-2xl shadow-xl">
+
                     <div className="grid md:grid-cols-2 gap-4">
                         <div>
                             <label htmlFor="name">Your Name</label>
@@ -90,7 +90,7 @@ export default function Contact() {
 
                     <button
                         type="submit"
-                        className="w-full text-secondary font-semibold py-4 rounded-lg bg-gray-800"
+                        className="w-full text-[#FF014F] active:scale-95 font-semibold py-4 cursor-pointer hover:bg-[#FF014F] hover:text-gray-800 rounded-lg bg-gray-800 transition-all duration-500"
                     >
                         SEND MESSAGE →
                     </button>

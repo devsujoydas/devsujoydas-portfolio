@@ -1,16 +1,16 @@
-import porfolio from "../../../public/SkillsImgs/devsujoydas-thubnail.png"
-import residential from "../../../public/SkillsImgs/residential-thubnail.png"
-import tourtotuscany from "../../../public/SkillsImgs/tourtotuscany-thubnail.png"
-import elexyelectronic from "../../../public/SkillsImgs/elexyelectronic-thubnail.png"
-import gadgetmartbd from "../../../public/SkillsImgs/gadgetmartbd-thubnail.png"
-import nestmartbd from "../../../public/SkillsImgs/nestmartbd-thubnail.png"
-import careerrhub from "../../../public/SkillsImgs/careerhub-thubnail.png"
-import chairstore from "../../../public/SkillsImgs/chairstore-thubnail.png"
-import tictactoe from "../../../public/SkillsImgs/Tictactoe-thumbnail.png"
-import recipes from "../../../public/SkillsImgs/recipescaloris-thubnail.png"
+import porfolio from "/SkillsImgs/devsujoydas-thubnail.png"
+import residential from "/SkillsImgs/residential-thubnail.png"
+import tourtotuscany from "/SkillsImgs/tourtotuscany-thubnail.png"
+import elexyelectronic from "/SkillsImgs/elexyelectronic-thubnail.png"
+import gadgetmartbd from "/SkillsImgs/gadgetmartbd-thubnail.png"
+import nestmartbd from "/SkillsImgs/nestmartbd-thubnail.png"
+import careerrhub from "/SkillsImgs/careerhub-thubnail.png"
+import chairstore from "/SkillsImgs/chairstore-thubnail.png"
+import tictactoe from "/SkillsImgs/Tictactoe-thumbnail.png"
+import recipes from "/SkillsImgs/recipescaloris-thubnail.png"
 
-import xenonmedia from '../../../public/SkillsImgs/xenonmedia-thumbnail.png'; 
-import devmovieshub from '../../../public/SkillsImgs/devmovieshub-thumbnail.png'; 
+import xenonmedia from '/SkillsImgs/xenonmedia-thumbnail.png';
+import devmovieshub from '/SkillsImgs/devmovieshub-thumbnail.png';
 
 import Project from "./Project";
 export default function Projects() {
@@ -36,6 +36,16 @@ export default function Projects() {
         { "label": "Source Code", "href": "https://github.com/devsujoydas/residential-real-estate" }
       ]
     },
+    {
+      "name": "Dev Movies Hub",
+      "description": "A stylish movie hub to browse and explore trending, upcoming, and popular movies with details.",
+      "tech": ["React", "Tailwind CSS", "Ant-Design"],
+      "image": `${devmovieshub}`,
+      "links": [
+        { "label": "Website", "href": "https://devmovieshub.vercel.app/" },
+        { "label": "Source Code", "href": "https://github.com/devsujoydas/devmovieshub" }
+      ]
+    },
 
     {
       "name": "Xenon Media - Mini Social App",
@@ -45,16 +55,6 @@ export default function Projects() {
       "links": [
         { "label": "Website", "href": "https://xenonmedia.vercel.app/" },
         { "label": "Source Code", "href": "https://github.com/devsujoydas/mini-social-app" }
-      ]
-    },
-    {
-      "name": "Dev Movies Hub",
-      "description": "A stylish movie hub to browse and explore trending, upcoming, and popular movies with details.",
-      "tech": ["React", "Tailwind CSS", "Ant-Design"],
-      "image": `${devmovieshub}`,
-      "links": [
-        { "label": "Website", "href": "https://devmovieshub.vercel.app/" },
-        { "label": "Source Code", "href": "https://github.com/devsujoydas/devmovieshub" }
       ]
     },
     {
@@ -145,7 +145,7 @@ export default function Projects() {
 
   return (
     <section id="projects" className=" text-white md:py-40 py-20 px-4 font-montserrat">
-      <h1 className='text-secondary font-semibold text-center'>Visit my project and keep your feedback</h1>
+      <h1 className='text-secondary font-semibold text-center md:text-md text-sm'>Visit my project and keep your feedback</h1>
       <h1 className='text-4xl md:text-7xl font-bold mt-5 text-primary text-center'>My Project
       </h1>
       <div className="max-w-7xl mx-auto mt-10">
