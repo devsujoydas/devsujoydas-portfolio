@@ -11,37 +11,37 @@ const FindWithMe = () => {
             <div className='space-y-5'>
                 <h1 className='text-primary'>FIND WITH ME</h1>
                 <div className='flex flex-wrap items-center gap-5 '>
-                    <a href='https://facebook.com/devsujoydas' className='Btn'>
+                    <a target="_blank" href='https://facebook.com/devsujoydas' className='Btn'>
                         <span className="svgContainer active:scale-95 transition-all">
                             <FiFacebook className="text-2xl " />
                         </span>
                         <span className="BG"></span>
                     </a>
-                    <a href='https://github.com/devsujoydas' className='Btn'>
+                    <a target="_blank" href='https://github.com/devsujoydas' className='Btn'>
                         <span className="svgContainer active:scale-95 transition-all">
                             <FiGithub className="text-2xl " />
                         </span>
                         <span className="BG"></span>
                     </a>
-                    <a href='https://www.linkedin.com/in/devsujoydas' className='Btn'>
+                    <a target="_blank" href='https://www.linkedin.com/in/devsujoydas' className='Btn'>
                         <span className="svgContainer active:scale-95 transition-all">
                             <FaLinkedinIn className="text-2xl " />
                         </span>
                         <span className="BG"></span>
                     </a>
-                    <a href='http://wa.me/+8801303436299' className='Btn'>
+                    <a target="_blank" href='http://wa.me/+8801303436299' className='Btn'>
                         <span className="svgContainer active:scale-95 transition-all">
                             <BsWhatsapp className="text-2xl " />
                         </span>
                         <span className="BG"></span>
                     </a>
-                    <a href='https://www.instagram.com/devsujoydas' className='Btn'>
+                    <a target="_blank" href='https://www.instagram.com/devsujoydas' className='Btn'>
                         <span className="svgContainer active:scale-95 transition-all">
                             <IoLogoInstagram className="text-2xl " />
                         </span>
                         <span className="BG"></span>
                     </a>
-                    <a href='https://www.youtube.com/@devsujoydas' className='Btn'>
+                    <a target="_blank" href='https://www.youtube.com/@devsujoydas' className='Btn'>
                         <span className="svgContainer active:scale-95 transition-all">
                             <FiYoutube className="text-2xl " />
                         </span>

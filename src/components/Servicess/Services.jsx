@@ -1,8 +1,5 @@
 
-
-import { GrAndroid } from "react-icons/gr";
 import { FaCode } from "react-icons/fa6";
-import { LiaDesktopSolid } from "react-icons/lia";
 const Services = () => {
   const servicelist = [
     {
@@ -47,7 +44,7 @@ const Services = () => {
 
       <div className="grid md:grid-cols-3 md:gap-10 mt-10">
         {servicelist.map((service, idx) => (
-          <div key={idx} className="p-12 rounded-3xl space-y-4 shadow-2xl shadow-[#000000] hover:shadow-[#201d1d] hover:-translate-y-3 duration-500 transition-all ">
+          <div key={idx} className="p-12 rounded-3xl space-y-4 shadow-2xl shadow-[#000000] hover:shadow-[#201d1d] active:shadow-[#201d1d] hover:-translate-y-3 active:-translate-y-3 duration-500 transition-all ">
             <FaCode className="text-4xl md:text-5xl" />
             <h1 className="text-xl md:text-2xl font-semibold ">{service.name}</h1>
             <p>{service.description}</p>
