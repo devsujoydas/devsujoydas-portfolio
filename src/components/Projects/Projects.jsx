@@ -9,6 +9,9 @@ import chairstore from "../../../public/SkillsImgs/chairstore-thubnail.png"
 import tictactoe from "../../../public/SkillsImgs/Tictactoe-thumbnail.png"
 import recipes from "../../../public/SkillsImgs/recipescaloris-thubnail.png"
 
+import xenonmedia from '../../../public/SkillsImgs/xenonmedia-thumbnail.png'; 
+import devmovieshub from '../../../public/SkillsImgs/devmovieshub-thumbnail.png'; 
+
 import Project from "./Project";
 export default function Projects() {
   const projects = [
@@ -33,6 +36,27 @@ export default function Projects() {
         { "label": "Source Code", "href": "https://github.com/devsujoydas/residential-real-estate" }
       ]
     },
+
+    {
+      "name": "Xenon Media - Mini Social App",
+      "description": "A mini social media platform to post, like, and interact—built with modern React tools.",
+      "tech": ["React", "Tailwind CSS",],
+      "image": `${xenonmedia}`,
+      "links": [
+        { "label": "Website", "href": "https://xenonmedia.vercel.app/" },
+        { "label": "Source Code", "href": "https://github.com/devsujoydas/mini-social-app" }
+      ]
+    },
+    {
+      "name": "Dev Movies Hub",
+      "description": "A stylish movie hub to browse and explore trending, upcoming, and popular movies with details.",
+      "tech": ["React", "Tailwind CSS", "Ant-Design"],
+      "image": `${devmovieshub}`,
+      "links": [
+        { "label": "Website", "href": "https://devmovieshub.vercel.app/" },
+        { "label": "Source Code", "href": "https://github.com/devsujoydas/devmovieshub" }
+      ]
+    },
     {
       "name": "Elexy Electronics",
       "description": "Electronics e-commerce site offering a wide range of gadgets with smooth shopping experience.",
@@ -53,7 +77,7 @@ export default function Projects() {
         { "label": "Source Code", "href": "https://github.com/devsujoydas/tour-to-tuscany" }
       ]
     },
-    
+
     {
       "name": "GADGET MART BD",
       "description": "Electronics e-commerce site offering a wide range of gadgets with smooth shopping experience.",
@@ -84,7 +108,7 @@ export default function Projects() {
         { "label": "Source Code", "href": "https://github.com/devsujoydas/chair-store" }
       ]
     },
-    { 
+    {
       "name": "React-Career-Hub",
       "description": "Job and career guidance platform helping users explore opportunities and career resources effectively.",
       "tech": ["React", "Tailwind CSS", "Firebase"],
