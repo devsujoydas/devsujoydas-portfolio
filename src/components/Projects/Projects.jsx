@@ -53,7 +53,7 @@ export default function Projects() {
       "tech": ["React", "Tailwind CSS",],
       "image": `${xenonmedia}`,
       "links": [
-        { "label": "Website", "href": "https://xenonmedia.vercel.app/" },
+        { "label": "Website", "href": "https://xenonmedia.netlify.app/" },
         { "label": "Source Code", "href": "https://github.com/devsujoydas/mini-social-app" }
       ]
     },

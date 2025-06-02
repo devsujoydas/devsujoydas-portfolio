@@ -38,8 +38,8 @@ const Hero = () => {
                 {/* about info  */}
                 <div className='md:space-y-5 space-y-2'>
                     <p className='text-primary'>Welcome to my digital space.</p>
-                    <h1 className='text-4xl md:text-7xl font-bold'>Hi, I’m <span className='text-secondary'>Sujoy Das</span></h1>
-                    <h1 className='text-3xl md:text-5xl font-bold'>a <span ref={el}></span></h1>
+                    <h1 className='text-3xl md:text-7xl font-bold'>Hi, I’m <span className='text-secondary'>Sujoy Das</span></h1>
+                    <h1 className='text-2xl md:text-5xl font-bold'>a <span ref={el}></span></h1>
                     <p className='text-gray-300 font-poppins md:leading-6 leading-5 md:text-md text-xs'>Passionate Frontend Developer with hands-on experience in building responsive and interactive web applications using React.js, Tailwind CSS, and Firebase. Currently expanding skills in backend development with Node.js, Express.js, MongoDB, and EJS to become a proficient Full-Stack Developer. Committed to delivering seamless and scalable user experiences.</p>
                 </div>
 
