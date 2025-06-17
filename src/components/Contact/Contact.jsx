@@ -1,5 +1,5 @@
 
-import ContactBanner from '/SkillsImgs/ContactBanner.png'
+import ContactBanner from '/images/ContactBanner.png'
 import FindWithMe from "../FindWithMe/FindWithMe";
 
 export default function Contact() {

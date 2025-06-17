@@ -1,4 +1,4 @@
-import loaderimg from "/SkillsImgs/Infinity Loader.gif"
+import loaderimg from "/images/Infinity Loader.gif"
 import { useEffect, useState } from 'react';
 const Loader = () => {
 

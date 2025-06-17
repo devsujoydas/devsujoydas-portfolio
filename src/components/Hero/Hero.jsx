@@ -5,7 +5,7 @@ import Typed from 'typed.js';
 import { IoMdDownload } from "react-icons/io";
 import { GoArrowUpRight } from "react-icons/go";
 
-import heroImg from '/SkillsImgs/hero-img.png'
+import heroImg from '/images/hero-img.png'
 import './Hero.css'
 import FindWithMe from "../FindWithMe/FindWithMe";
 

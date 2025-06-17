@@ -8,14 +8,14 @@ const Home = () => {
   return (
     <div>
       <Hero />
-      <hr className="max-w-7xl mx-auto text-gray-600"/>
+      <hr className="max-w-7xl mx-auto text-gray-600" />
       <Services />
-      <hr className="max-w-7xl mx-auto text-gray-600"/>
-      <Projects/>
-      <hr className="max-w-7xl mx-auto text-gray-600"/>
-      <Skills/>
-      <hr className="max-w-7xl mx-auto text-gray-600"/>
-      <Contact/>
+      <hr className="max-w-7xl mx-auto text-gray-600" />
+      <Projects />
+      <hr className="max-w-7xl mx-auto text-gray-600" />
+      <Skills />
+      <hr className="max-w-7xl mx-auto text-gray-600" />
+      <Contact />
     </div>
   )
 }

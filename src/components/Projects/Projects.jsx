@@ -1,16 +1,16 @@
-import porfolio from "/SkillsImgs/devsujoydas-thubnail.png"
-import residential from "/SkillsImgs/residential-thubnail.png"
-import tourtotuscany from "/SkillsImgs/tourtotuscany-thubnail.png"
-import elexyelectronic from "/SkillsImgs/elexyelectronic-thubnail.png"
-import gadgetmartbd from "/SkillsImgs/gadgetmartbd-thubnail.png"
-import nestmartbd from "/SkillsImgs/nestmartbd-thubnail.png"
-import careerrhub from "/SkillsImgs/careerhub-thubnail.png"
-import chairstore from "/SkillsImgs/chairstore-thubnail.png"
-import tictactoe from "/SkillsImgs/Tictactoe-thumbnail.png"
-import recipes from "/SkillsImgs/recipescaloris-thubnail.png"
+import porfolio from "/images/devsujoydas-thubnail.png"
+import residential from "/images/residential-thubnail.png"
+import tourtotuscany from "/images/tourtotuscany-thubnail.png"
+import elexyelectronic from "/images/elexyelectronic-thubnail.png"
+import gadgetmartbd from "/images/gadgetmartbd-thubnail.png"
+import nestmartbd from "/images/nestmartbd-thubnail.png"
+import careerrhub from "/images/careerhub-thubnail.png"
+import chairstore from "/images/chairstore-thubnail.png"
+import tictactoe from "/images/Tictactoe-thumbnail.png"
+import recipes from "/images/recipescaloris-thubnail.png"
 
-import xenonmedia from '/SkillsImgs/xenonmedia-thumbnail.png';
-import devmovieshub from '/SkillsImgs/devmovieshub-thumbnail.png';
+import xenonmedia from '/images/xenonmedia-thumbnail.png';
+import devmovieshub from '/images/devmovieshub-thumbnail.png';
 
 import Project from "./Project";
 export default function Projects() {
@@ -26,26 +26,6 @@ export default function Projects() {
         { "label": "Source Code", "href": "https://github.com/devsujoydas/devsujoydas-portfolio" }
       ]
     },
-    {
-      "name": "Residential Real Estate",
-      "description": "Real estate platform to discover, list, and explore apartments, townhouses, and vacation rentals.",
-      "tech": ["React", "Tailwind CSS", "Firebase", "SwiperJS"],
-      "image": `${residential}`,
-      "links": [
-        { "label": "Website", "href": "https://residentialrealestate.vercel.app" },
-        { "label": "Source Code", "href": "https://github.com/devsujoydas/residential-real-estate" }
-      ]
-    },
-    {
-      "name": "Dev Movies Hub",
-      "description": "A stylish movie hub to browse and explore trending, upcoming, and popular movies with details.",
-      "tech": ["React", "Tailwind CSS", "Ant-Design"],
-      "image": `${devmovieshub}`,
-      "links": [
-        { "label": "Website", "href": "https://devmovieshub.vercel.app/" },
-        { "label": "Source Code", "href": "https://github.com/devsujoydas/devmovieshub" }
-      ]
-    },
 
     {
       "name": "Xenon Media - Mini Social App",
@@ -58,13 +38,23 @@ export default function Projects() {
       ]
     },
     {
-      "name": "Elexy Electronics",
-      "description": "Electronics e-commerce site offering a wide range of gadgets with smooth shopping experience.",
+      "name": "Residential Real Estate",
+      "description": "Real estate platform to discover, list, and explore apartments, townhouses, and vacation rentals.",
       "tech": ["React", "Tailwind CSS", "Firebase", "SwiperJS"],
-      "image": `${elexyelectronic}`,
+      "image": `${residential}`,
       "links": [
-        { "label": "Website", "href": "https://elexyelectronics.vercel.app" },
-        { "label": "Source Code", "href": "https://github.com/devsujoydas/elexy-electronics." }
+        { "label": "Website", "href": "https://residentialrealestate.vercel.app" },
+        { "label": "Source Code", "href": "https://github.com/devsujoydas/residential-real-estate" }
+      ]
+    },
+    {
+      "name": "Job Portal BD  ",
+      "description": "Job and career guidance platform helping users explore opportunities and career resources effectively.",
+      "tech": ["React", "Tailwind CSS", "Firebase"],
+      "image": `${careerrhub}`,
+      "links": [
+        { "label": "Website", "href": "https://reactcareerhub.vercel.app" },
+        { "label": "Source Code", "href": "https://github.com/devsujoydas/react-career-hub" }
       ]
     },
     {
@@ -99,6 +89,16 @@ export default function Projects() {
       ]
     },
     {
+      "name": "Elexy Electronics",
+      "description": "Electronics e-commerce site offering a wide range of gadgets with smooth shopping experience.",
+      "tech": ["React", "Tailwind CSS", "Firebase", "SwiperJS"],
+      "image": `${elexyelectronic}`,
+      "links": [
+        { "label": "Website", "href": "https://elexyelectronics.vercel.app" },
+        { "label": "Source Code", "href": "https://github.com/devsujoydas/elexy-electronics." }
+      ]
+    },
+    {
       "name": "Furni Chair Store",
       "description": "Modern furniture store offering stylish, affordable options for home and office decoration.",
       "tech": ["Html", "Tailwind CSS", "JavaScript"],
@@ -108,16 +108,7 @@ export default function Projects() {
         { "label": "Source Code", "href": "https://github.com/devsujoydas/chair-store" }
       ]
     },
-    {
-      "name": "React-Career-Hub",
-      "description": "Job and career guidance platform helping users explore opportunities and career resources effectively.",
-      "tech": ["React", "Tailwind CSS", "Firebase"],
-      "image": `${careerrhub}`,
-      "links": [
-        { "label": "Website", "href": "https://reactcareerhub.vercel.app" },
-        { "label": "Source Code", "href": "https://github.com/devsujoydas/react-career-hub" }
-      ]
-    },
+
     {
       "name": "Tic Tac Toe",
       "description": "Fun browser-based Tic Tac Toe game offering classic two-player interactive strategy experience.",
