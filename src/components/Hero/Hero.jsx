@@ -53,7 +53,7 @@ const Hero = () => {
                         </span>
                         Hire Me
                     </a>
-                    <a href="https://drive.google.com/file/d/1TDh6gKFSzCbbbR77LdnNGhW0ccs9Q8WH/view?usp=sharing"
+                    <a href="https://drive.google.com/file/d/1tRiK-GdxwROqLvnL6kyDaafJIyZfPJI5/view?usp=sharing"
                         target="_blank"
                         className="button active:scale-95 duration-500 transition-all ">
                         <span className="button__icon-wrapper">
