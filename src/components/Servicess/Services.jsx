@@ -41,7 +41,7 @@ const Services = () => {
       <h1 className='text-secondary font-semibold'>FEATURES</h1>
       <h1 className='text-4xl md:text-7xl text-primary font-bold mt-5'>Services</h1>
 
-      <div className="grid md:grid-cols-3 md:gap-10 mt-10">
+      <div className="grid md:grid-cols-2 lg:grid-cols-3  gap-5 lg:gap-10 mt-10">
         {servicelist.map((service, idx) => (
           <div key={idx} className="md:p-12 p-9 rounded-3xl space-y-4 shadow-2xl shadow-[#000000] hover:shadow-[#201d1d] active:shadow-[#201d1d] hover:-translate-y-3 active:-translate-y-3 duration-500 transition-all ">
             <FaCode className="text-4xl md:text-5xl" />

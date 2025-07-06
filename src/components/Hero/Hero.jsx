@@ -23,14 +23,13 @@ const Hero = () => {
             typeSpeed: 40,
             loop: true,
         });
-
         return () => {
             typed.destroy();
         };
     }, []);
 
     return (
-        <div id='home' className='text-white max-w-7xl font-montserrat  md:mx-auto lg:px-0 px-5 md:pt-40 pt-28 pb-10 gap-5 flex md:flex-row flex-col-reverse'>
+        <div id='home' className='text-white max-w-7xl font-montserrat  md:mx-auto lg:px-0 px-5 md:pt-40 pt-28 pb-10 gap-5 flex lg:flex-row flex-col-reverse'>
             
             {/* Hero Text  */}
             <div className='md:space-y-12 lg:w-full space-y-4 flex justify-center flex-col'>

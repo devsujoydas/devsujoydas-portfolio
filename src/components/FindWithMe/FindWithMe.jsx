@@ -10,7 +10,7 @@ const FindWithMe = () => {
         <div>
             <div className='space-y-5'>
                 <h1 className='text-primary'>FIND WITH ME</h1>
-                <div className='flex flex-wrap items-center gap-5 '>
+                <div className='flex flex-wrap items-center gap-3 '>
                     <a target="_blank" href='https://facebook.com/devsujoydas' className='Btn'>
                         <span className="svgContainer active:scale-95 transition-all">
                             <FiFacebook className="text-2xl " />

@@ -3,20 +3,14 @@ import residential from "/images/residential-thubnail.png"
 import tourtotuscany from "/images/tourtotuscany-thubnail.png"
 import elexyelectronic from "/images/elexyelectronic-thubnail.png"
 import gadgetmartbd from "/images/gadgetmartbd-thubnail.png"
-import nestmartbd from "/images/nestmartbd-thubnail.png"
 import careerrhub from "/images/careerhub-thubnail.png"
 import chairstore from "/images/chairstore-thubnail.png"
-import tictactoe from "/images/Tictactoe-thumbnail.png"
-import recipes from "/images/recipescaloris-thubnail.png"
-
-import xenonmedia from '/images/xenonmedia-thumbnail.png';
-import devmovieshub from '/images/devmovieshub-thumbnail.png';
 
 import Project from "./Project";
 export default function Projects() {
   const projects = [
-
     {
+      "id": "devsujoydas",
       "name": "Sujoy Das Portfolio",
       "description": "A modern portfolio showcasing Sujoy Das's projects, skills, achievements, and web development expertise.",
       "tech": ["React", "Tailwind CSS", "Typed.js", "SwiperJS"],
@@ -24,20 +18,88 @@ export default function Projects() {
       "links": [
         { "label": "Website", "href": "https://devsujoydas.vercel.app" },
         { "label": "Source Code", "href": "https://github.com/devsujoydas/devsujoydas-portfolio" }
-      ]
+      ],
+      "projectDetails": {
+        "purpose": "Personal branding & showcase portfolio",
+        "features": [
+          "Animated typing text (Typed.js)",
+          "Responsive page sections for About, Skills, Projects, Contact",
+          "Carousel of projects via SwiperJS",
+          "Dark/light mode toggle (if implemented)"
+        ],
+        "UX_highlights": [
+          "Smooth scroll navigation",
+          "Mobile-friendly responsive design",
+          "Fast load via Tailwind utility-first CSS"
+        ],
+        "suggested_improvements": [
+          "Add contact form with email integration",
+          "Optimize SEO metadata, Open Graph tags",
+          "Include performance scores (Lighthouse audit)"
+        ]
+      }
     },
-
     {
+      "id": "xenonmedia",
       "name": "Xenon Media - Mini Social App",
       "description": "A mini social media platform to post, like, and interact—built with modern React tools.",
-      "tech": ["React", "Tailwind CSS",],
-      "image": `${xenonmedia}`,
+      "tech": ["React", "Tailwind CSS", "Firebase", "SwiperJS", "NodeJS", "ExpressJS", "MongoDB"],
+      "image": "https://i.ibb.co/pj4TWNgF/xenonmedia-netlify-app.png",
       "links": [
         { "label": "Website", "href": "https://xenonmedia.netlify.app/" },
         { "label": "Source Code", "href": "https://github.com/devsujoydas/mini-social-app" }
-      ]
+      ],
+      "projectDetails": {
+        "purpose": "Social engagement platform – post and interact",
+        "features": [
+          "User auth via Firebase",
+          "Create/read/update/delete posts",
+          "Like and comment functionality",
+          "Interactive SwiperJS feed sections"
+        ],
+        "backend": [
+          "NodeJS/Express REST API",
+          "MongoDB for post storage",
+          "Firebase for authentication"
+        ],
+        "suggested_improvements": [
+          "Add user profiles and avatars",
+          "Implement real-time notifications",
+          "Optimize image uploads with compression"
+        ]
+      }
     },
     {
+      "id": "nestmartbd",
+      "name": "Nest Mart BD",
+      "description": "User-friendly online store offering various products to enhance daily life and convenience.",
+      "tech": ["React", "Tailwind CSS", "Firebase", "SwiperJS", "NodeJS", "ExpressJS", "MongoDB"],
+      "image": "https://i.ibb.co/sJjZrNzk/nestmartbd-vercel-app.png",
+      "links": [
+        { "label": "Website", "href": "https://nestmartbd.vercel.app" },
+        { "label": "Source Code", "href": "https://github.com/devsujoydas/nest-mart-bd" }
+      ],
+      "projectDetails": {
+        "purpose": "E‑commerce storefront for Bangladesh market",
+        "features": [
+          "Product listing with categories and images",
+          "Shopping cart managed with React state",
+          "Checkout with Firebase user handling",
+          "Responsive carousel using SwiperJS"
+        ],
+        "backend": [
+          "Express server for handling orders",
+          "MongoDB for product & order data"
+        ],
+        "suggested_improvements": [
+          "Integrate payment gateway (e.g., PayPal, Stripe)",
+          "Add search and filter UI for products",
+          "Implement order history and admin panel"
+        ]
+      }
+    },
+    {
+      "id": "residentialrealestate",
       "name": "Residential Real Estate",
       "description": "Real estate platform to discover, list, and explore apartments, townhouses, and vacation rentals.",
       "tech": ["React", "Tailwind CSS", "Firebase", "SwiperJS"],
@@ -45,19 +107,47 @@ export default function Projects() {
       "links": [
         { "label": "Website", "href": "https://residentialrealestate.vercel.app" },
         { "label": "Source Code", "href": "https://github.com/devsujoydas/residential-real-estate" }
-      ]
+      ],
+      "projectDetails": {
+        "purpose": "Property listing & search for rentals/sales",
+        "features": [
+          "Property cards with images & details",
+          "SwiperJS gallery on property pages",
+          "Firebase auth for saved properties"
+        ],
+        "suggested_improvements": [
+          "Add map integration (Google Maps API)",
+          "Allow owner submissions or inquiries",
+          "Advanced filters: price, location, size"
+        ]
+      }
     },
     {
-      "name": "Job Portal BD  ",
+      "id": "reactcareerhub",
+      "name": "Job Portal BD",
       "description": "Job and career guidance platform helping users explore opportunities and career resources effectively.",
       "tech": ["React", "Tailwind CSS", "Firebase"],
       "image": `${careerrhub}`,
       "links": [
         { "label": "Website", "href": "https://reactcareerhub.vercel.app" },
         { "label": "Source Code", "href": "https://github.com/devsujoydas/react-career-hub" }
-      ]
+      ],
+      "projectDetails": {
+        "purpose": "Career discovery and job listings",
+        "features": [
+          "Searchable job listings",
+          "Firebase auth for user sign-in",
+          "Career resources or blog section"
+        ],
+        "suggested_improvements": [
+          "Allow CV upload and apply function",
+          "Admin dashboard for job posting",
+          "Email alerts for new matching jobs"
+        ]
+      }
     },
     {
+      "id": "tourtotuscany",
       "name": "Tour To Tuscany",
       "description": "Travel site for Tuscany, offering guides, experiences, and easy tour package bookings online.",
       "tech": ["React", "Tailwind CSS", "Firebase", "SwiperJS"],
@@ -65,10 +155,24 @@ export default function Projects() {
       "links": [
         { "label": "Website", "href": "https://tourtotuscany.vercel.app" },
         { "label": "Source Code", "href": "https://github.com/devsujoydas/tour-to-tuscany" }
-      ]
+      ],
+      "projectDetails": {
+        "purpose": "Showcase Tuscany tours & attractions",
+        "features": [
+          "Tour listing cards with images",
+          "Detailed tour pages",
+          "SwiperJS hero banners",
+          "Firebase email inquiries"
+        ],
+        "suggested_improvements": [
+          "Booking/payment integration",
+          "User reviews & ratings",
+          "Multi-language support (e.g. Italian/English)"
+        ]
+      }
     },
-
     {
+      "id": "gadgetmartbd",
       "name": "GADGET MART BD",
       "description": "Electronics e-commerce site offering a wide range of gadgets with smooth shopping experience.",
       "tech": ["React", "Tailwind CSS", "Firebase", "SwiperJS"],
@@ -76,19 +180,23 @@ export default function Projects() {
       "links": [
         { "label": "Website", "href": "https://gadgetmartbd.vercel.app" },
         { "label": "Source Code", "href": "https://github.com/devsujoydas/gadget-mart-bd" }
-      ]
+      ],
+      "projectDetails": {
+        "purpose": "Online gadget store demo",
+        "features": [
+          "Product gallery and detail pages",
+          "SwiperJS image sliders",
+          "Firebase auth for wishlists"
+        ],
+        "suggested_improvements": [
+          "Shopping cart & checkout flow",
+          "Payment and delivery options",
+          "Inventory & admin dashboard"
+        ]
+      }
     },
     {
-      "name": "Nest Mart BD",
-      "description": "User-friendly online store offering various products to enhance daily life and convenience.",
-      "tech": ["React", "Tailwind CSS", "SwiperJS"],
-      "image": `${nestmartbd}`,
-      "links": [
-        { "label": "Website", "href": "https://nestmartbd.vercel.app" },
-        { "label": "Source Code", "href": "https://github.com/devsujoydas/nest-mart-bd" }
-      ]
-    },
-    {
+      "id": "elexyelectronics",
       "name": "Elexy Electronics",
       "description": "Electronics e-commerce site offering a wide range of gadgets with smooth shopping experience.",
       "tech": ["React", "Tailwind CSS", "Firebase", "SwiperJS"],
@@ -96,9 +204,23 @@ export default function Projects() {
       "links": [
         { "label": "Website", "href": "https://elexyelectronics.vercel.app" },
         { "label": "Source Code", "href": "https://github.com/devsujoydas/elexy-electronics." }
-      ]
+      ],
+      "projectDetails": {
+        "purpose": "E‑commerce template for electronics",
+        "features": [
+          "Responsive product listings",
+          "SwiperJS product carousels",
+          "User login via Firebase"
+        ],
+        "suggested_improvements": [
+          "Checkout/payment flow",
+          "Product search filters",
+          "Admin product management panel"
+        ]
+      }
     },
     {
+      "id": "furnichairstore",
       "name": "Furni Chair Store",
       "description": "Modern furniture store offering stylish, affordable options for home and office decoration.",
       "tech": ["Html", "Tailwind CSS", "JavaScript"],
@@ -106,30 +228,23 @@ export default function Projects() {
       "links": [
         { "label": "Website", "href": "https://furnichairstore.vercel.app" },
         { "label": "Source Code", "href": "https://github.com/devsujoydas/chair-store" }
-      ]
-    },
-
-    {
-      "name": "Tic Tac Toe",
-      "description": "Fun browser-based Tic Tac Toe game offering classic two-player interactive strategy experience.",
-      "tech": ["HTML", "CSS", "JavaScript"],
-      "image": `${tictactoe}`,
-      "links": [
-        { "label": "Website", "href": "https://tictactoe36.vercel.app" },
-        { "label": "Source Code", "href": "https://github.com/devsujoydas/tic-tac-toe" }
-      ]
-    },
-    {
-      "name": "Recipes Calories",
-      "description": "Recipe-sharing platform helping cooking lovers discover, save, and share delicious homemade meals.",
-      "tech": ["React", "Tailwind CSS"],
-      "image": `${recipes}`,
-      "links": [
-        { "label": "Website", "href": "https://recipecaloris.vercel.app" },
-        { "label": "Source Code", "href": "https://github.com/devsujoydas/recipe-calories" }
-      ]
+      ],
+      "projectDetails": {
+        "purpose": "Static storefront for furniture products",
+        "features": [
+          "Product grid layout with images",
+          "Responsive HTML/CSS/JS design"
+        ],
+        "suggested_improvements": [
+          "Add interactive search or filter",
+          "Convert into React SPA",
+          "Implement cart & checkout"
+        ]
+      }
     }
   ]
+
+
 
 
 
@@ -140,7 +255,7 @@ export default function Projects() {
       <h1 className='text-4xl md:text-7xl font-bold mt-5 text-primary text-center'>My Project
       </h1>
       <div className="max-w-7xl mx-auto mt-10">
-        <div className="grid md:grid-cols-3 gap-5">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-3 lg:gap-5">
           {
             projects.map((project, idx) => <Project key={idx} project={project} />)
           }
