@@ -3,7 +3,7 @@ import Nav from "../Header/Nav"
 const Footer = () => {
   return (
     <div className="relative py-10   px-5 bg-[#050709] font-montserrat">
-      <div className="max-w-7xl mx-auto flex flex-col justify-between items-center">
+      <div className="max-w-screen-2xl mx-auto flex flex-col justify-between items-center">
         <a href="/">
           <h1 className="md:text-5xl text-2xl font-semibold font-montserrat  text-white">SUJOY DAS</h1>
         </a>

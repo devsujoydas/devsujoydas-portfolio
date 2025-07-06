@@ -36,7 +36,7 @@ const Services = () => {
 
 
   return (
-    <div id="service" className='text-primary max-w-7xl md:px-0 px-5 mx-auto font-montserrat md:py-45 py-20' >
+    <div id="service" className='text-primary max-w-screen-2xl md:px-0 px-5 mx-auto font-montserrat md:py-45 py-20' >
 
       <h1 className='text-secondary font-semibold'>FEATURES</h1>
       <h1 className='text-4xl md:text-7xl text-primary font-bold mt-5'>Services</h1>

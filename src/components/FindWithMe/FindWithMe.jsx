@@ -5,52 +5,71 @@ import { FiGithub } from "react-icons/fi";
 import { BsWhatsapp } from "react-icons/bs";
 import { FaLinkedinIn } from "react-icons/fa";
 
+import { motion } from "framer-motion";
+
+const socialLinks = [
+    { icon: <FiFacebook className="text-2xl" />, url: "https://facebook.com/devsujoydas" },
+    { icon: <FiGithub className="text-2xl" />, url: "https://github.com/devsujoydas" },
+    { icon: <FaLinkedinIn className="text-2xl" />, url: "https://www.linkedin.com/in/devsujoydas" },
+    { icon: <BsWhatsapp className="text-2xl" />, url: "http://wa.me/+8801303436299" },
+    { icon: <IoLogoInstagram className="text-2xl" />, url: "https://www.instagram.com/devsujoydas" },
+    { icon: <FiYoutube className="text-2xl" />, url: "https://www.youtube.com/@devsujoydas" },
+];
+
+const container = {
+    hidden: { opacity: 0 },
+    show: {
+        opacity: 1,
+        transition: {
+            staggerChildren: 0.15,
+        },
+    },
+};
+
+const item = {
+    hidden: { opacity: 0, scale: 0.8 },
+    show: { opacity: 1, scale: 1, transition: { duration: 0.5 } },
+};
+
 const FindWithMe = () => {
     return (
-        <div>
-            <div className='space-y-5'>
+        <motion.div
+            initial="hidden"
+            animate="show"
+            variants={container}
+        >
+            <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6 }}
+                className='space-y-5'
+            >
                 <h1 className='text-primary'>FIND WITH ME</h1>
-                <div className='flex flex-wrap items-center gap-3 '>
-                    <a target="_blank" href='https://facebook.com/devsujoydas' className='Btn'>
-                        <span className="svgContainer active:scale-95 transition-all">
-                            <FiFacebook className="text-2xl " />
-                        </span>
-                        <span className="BG"></span>
-                    </a>
-                    <a target="_blank" href='https://github.com/devsujoydas' className='Btn'>
-                        <span className="svgContainer active:scale-95 transition-all">
-                            <FiGithub className="text-2xl " />
-                        </span>
-                        <span className="BG"></span>
-                    </a>
-                    <a target="_blank" href='https://www.linkedin.com/in/devsujoydas' className='Btn'>
-                        <span className="svgContainer active:scale-95 transition-all">
-                            <FaLinkedinIn className="text-2xl " />
-                        </span>
-                        <span className="BG"></span>
-                    </a>
-                    <a target="_blank" href='http://wa.me/+8801303436299' className='Btn'>
-                        <span className="svgContainer active:scale-95 transition-all">
-                            <BsWhatsapp className="text-2xl " />
-                        </span>
-                        <span className="BG"></span>
-                    </a>
-                    <a target="_blank" href='https://www.instagram.com/devsujoydas' className='Btn'>
-                        <span className="svgContainer active:scale-95 transition-all">
-                            <IoLogoInstagram className="text-2xl " />
-                        </span>
-                        <span className="BG"></span>
-                    </a>
-                    <a target="_blank" href='https://www.youtube.com/@devsujoydas' className='Btn'>
-                        <span className="svgContainer active:scale-95 transition-all">
-                            <FiYoutube className="text-2xl " />
-                        </span>
-                        <span className="BG"></span>
-                    </a>
-                </div>
-            </div>
-        </div>
-    )
-}
+            </motion.div>
 
-export default FindWithMe
+            <motion.div
+                className='flex flex-wrap items-center gap-3 mt-3'
+                variants={container}
+            >
+                {socialLinks.map((social, index) => (
+                    <motion.a
+                        key={index}
+                        href={social.url}
+                        target="_blank"
+                        className='Btn'
+                        variants={item}
+                        whileHover={{ scale: 1.1 }}
+                        whileTap={{ scale: 3 }}
+                    >
+                        <span className="svgContainer active:scale-95 transition-all">
+                            {social.icon}
+                        </span>
+                        <span className="BG"></span>
+                    </motion.a>
+                ))}
+            </motion.div>
+        </motion.div>
+    );
+};
+
+export default FindWithMe;

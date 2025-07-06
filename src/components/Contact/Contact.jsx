@@ -28,13 +28,13 @@ export default function Contact() {
     }
 
     return (
-        <div className="min-h-screen font-montserrat text-white p-4 md:py-40 py-20">
+        <div id='contact' className="min-h-screen font-montserrat text-white p-4 md:py-40 py-20">
 
             <h1 className='text-secondary font-semibold text-center'>CONTACT</h1>
             <h1 className='md:text-7xl text-4xl font-bold mt-5 text-primary text-center'>Contact With Me
             </h1>
 
-            <div className="max-w-7xl mx-auto grid md:grid-cols-5 md:gap-8 gap-5 mt-10">
+            <div className="max-w-screen-2xl mx-auto grid md:grid-cols-5 md:gap-8 gap-5 mt-10">
 
                 {/* Left Side */}
                 <div className="md:col-span-2  rounded-2xl shadow-2xl border border-gray-700 md:p-8 p-4 space-y-5">

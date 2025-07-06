@@ -11,13 +11,13 @@ const Header = () => {
   return (
     <header className="fixed w-full z-10 top-0 shadow shadow-[#2e2c2c] font-montserrat bg-[#212428] xl:px-0 px-3">
 
-      <div className="text-[#B4BECC] max-w-7xl mx-auto flex flex-col md:flex-row gap-10 justify-between md:items-center  md:py-7 py-3">
+      <div className="text-[#B4BECC] max-w-screen-2xl mx-auto flex flex-col md:flex-row gap-10 justify-between md:items-center  md:py-5 py-3">
 
         {/* Nav Logo & Humbarger Menu Close  */}
         <div className="flex justify-between items-center  md:px-0 px-3">
           <div className="relative overflow-hidden">
             <a href="/" className='flex items-center justify-center gap-2'>
-              <img className='rounded-full w-15' src="https://avatars.githubusercontent.com/u/157239662?v=4" alt="" />
+              <img className='rounded-full w-12' src="https://avatars.githubusercontent.com/u/157239662?v=4" alt="" />
               <h1 className='text-xl '>Sujoy Das</h1>
             </a>
           </div>

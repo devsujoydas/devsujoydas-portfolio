@@ -11,7 +11,7 @@
 }
 
 .active {
-  @apply border bg-white text-black px-6 py-1.5 rounded-full transition-all
+  /* @apply border bg-white text-black px-6 py-1.5 rounded-full transition-all */
 }
 
 .text-primary {

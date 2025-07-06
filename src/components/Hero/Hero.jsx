@@ -1,4 +1,3 @@
-
 import React from "react";
 import Typed from 'typed.js';
 
@@ -8,6 +7,8 @@ import { GoArrowUpRight } from "react-icons/go";
 import heroImg from '/images/hero-img.png'
 import './Hero.css'
 import FindWithMe from "../FindWithMe/FindWithMe";
+
+import { motion } from "framer-motion";
 
 const Hero = () => {
     const el = React.useRef(null);
@@ -29,53 +30,114 @@ const Hero = () => {
     }, []);
 
     return (
-        <div id='home' className='text-white max-w-7xl font-montserrat  md:mx-auto lg:px-0 px-5 md:pt-40 pt-28 pb-10 gap-5 flex lg:flex-row flex-col-reverse'>
-            
+        <div id='home' className='text-white max-w-screen-2xl font-montserrat mx-auto lg:px-0 px-5 md:pt-40 pt-28 pb-10 gap-5 flex lg:flex-row flex-col-reverse'>
+
             {/* Hero Text  */}
-            <div className='md:space-y-12 lg:w-full space-y-4 flex justify-center flex-col'>
+            <motion.div
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ duration: 1 }}
+                className='md:space-y-12 lg:w-full space-y-4 flex justify-center flex-col'
+            >
 
                 {/* about info  */}
                 <div className='md:space-y-5 space-y-2'>
-                    <p className='text-primary'>Welcome to my digital space.</p>
-                    <h1 className='text-3xl md:text-7xl font-bold'>Hi, I’m <span className='text-secondary'>Sujoy Das</span></h1>
-                    <h1 className='text-2xl md:text-5xl font-bold'>a <span ref={el}></span></h1>
-                    <p className='text-gray-300 font-poppins md:leading-6 leading-5 md:text-md text-xs'>Passionate Frontend Developer with hands-on experience in building responsive and interactive web applications using React.js, Tailwind CSS, and Firebase. Currently expanding skills in backend development with Node.js, Express.js, MongoDB, and EJS to become a proficient Full-Stack Developer. Committed to delivering seamless and scalable user experiences.</p>
+                    
+                    <motion.p
+                        initial={{ opacity: 0, y: -20 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.6 }}
+                        className='text-primary'
+                    >
+                        Welcome to my digital space.
+                    </motion.p>
+
+                    <motion.h1
+                        initial={{ opacity: 0, x: -50 }}
+                        animate={{ opacity: 1, x: 0 }}
+                        transition={{ duration: 0.8, delay: 0.3 }}
+                        className='text-3xl md:text-7xl font-bold'
+                    >
+                        Hi, I’m <span className='text-secondary'>Sujoy Das</span>
+                    </motion.h1>
+
+                    <motion.h1
+                        initial={{ opacity: 0, x: -50 }}
+                        animate={{ opacity: 1, x: 0 }}
+                        transition={{ duration: 0.8, delay: 0.5 }}
+                        className='text-2xl md:text-5xl font-bold'
+                    >
+                        a <span ref={el}></span>
+                    </motion.h1>
+
+                    <motion.p
+                        initial={{ opacity: 0 }}
+                        animate={{ opacity: 1 }}
+                        transition={{ duration: 1, delay: 0.6 }}
+                        className='text-gray-300 font-poppins md:leading-6 leading-5 md:text-md text-xs'
+                    >
+                        Passionate Frontend Developer with hands-on experience in building responsive and interactive web applications using React.js, Tailwind CSS, and Firebase. Currently expanding skills in backend development with Node.js, Express.js, MongoDB, and EJS to become a proficient Full-Stack Developer. Committed to delivering seamless and scalable user experiences.
+                    </motion.p>
                 </div>
 
-
                 {/* hire and resume btn  */}
-                <div className="md:text-xl flex items-center gap-5">
-                    <a href="#contact" className="button active:scale-95 duration-500 transition-all ">
+                <motion.div
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.6, delay: 0.8 }}
+                    className="md:text-xl flex items-center gap-5"
+                >
+                    <motion.a
+                        whileHover={{ scale: 1.05 }}
+                        whileTap={{ scale: 0.95 }}
+                        href="#contact"
+                        className="button active:scale-95 duration-500 transition-all"
+                    >
                         <span className="button__icon-wrapper">
                             <GoArrowUpRight className="button__icon-svg" />
                             <GoArrowUpRight className="button__icon-svg button__icon-svg--copy" />
                         </span>
                         Hire Me
-                    </a>
-                    <a href="https://drive.google.com/file/d/1tRiK-GdxwROqLvnL6kyDaafJIyZfPJI5/view?usp=sharing"
+                    </motion.a>
+
+                    <motion.a
+                        whileHover={{ scale: 1.05 }}
+                        whileTap={{ scale: 0.95 }}
+                        href="https://drive.google.com/file/d/1tRiK-GdxwROqLvnL6kyDaafJIyZfPJI5/view?usp=sharing"
                         target="_blank"
-                        className="button active:scale-95 duration-500 transition-all ">
+                        className="button active:scale-95 duration-500 transition-all"
+                    >
                         <span className="button__icon-wrapper">
                             <IoMdDownload className="button__icon-svg" />
                             <IoMdDownload className="button__icon-svg button__icon-svg--copy" />
                         </span>
                         Resume
-                    </a>
-                </div>
+                    </motion.a>
+                </motion.div>
 
-
-                {/* Social Icons  */}
-                <FindWithMe />
-            </div>
+                {/* Social Icons */}
+                <motion.div
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    transition={{ duration: 1, delay: 1 }}
+                >
+                    <FindWithMe />
+                </motion.div>
+            </motion.div>
 
             {/* Hero Image Section */}
-            <div className='relative  flex justify-center items-center '>
+            <motion.div
+                initial={{ opacity: 0, scale: 0.8, y: 50 }}
+                animate={{ opacity: 1, scale: 1, y: 0 }}
+                transition={{ duration: 1, delay: 0.5 }}
+                className='relative flex justify-center items-center'
+            >
                 <div className="box-shadow rounded-3xl absolute bottom-0 h-9/12 w-5/6 -z-10"></div>
                 <img className='md:w-5/6 w-4/6' src={heroImg} alt="" />
-            </div>
+            </motion.div>
 
         </div>
     )
 }
 
-export default Hero
+export default Hero;

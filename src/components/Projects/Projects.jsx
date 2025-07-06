@@ -4,9 +4,13 @@ import tourtotuscany from "/images/tourtotuscany-thubnail.png"
 import elexyelectronic from "/images/elexyelectronic-thubnail.png"
 import gadgetmartbd from "/images/gadgetmartbd-thubnail.png"
 import careerrhub from "/images/careerhub-thubnail.png"
+import nestimg from "/images/nestmartbd-thubnail.jpg"
 import chairstore from "/images/chairstore-thubnail.png"
 
+import { motion } from "framer-motion";
 import Project from "./Project";
+
+
 export default function Projects() {
   const projects = [
     {
@@ -14,7 +18,7 @@ export default function Projects() {
       "name": "Sujoy Das Portfolio",
       "description": "A modern portfolio showcasing Sujoy Das's projects, skills, achievements, and web development expertise.",
       "tech": ["React", "Tailwind CSS", "Typed.js", "SwiperJS"],
-      "image": `${porfolio}`,
+      "image": `https://i.ibb.co/qLRQKf0T/localhost-5173-1.jpg`,
       "links": [
         { "label": "Website", "href": "https://devsujoydas.vercel.app" },
         { "label": "Source Code", "href": "https://github.com/devsujoydas/devsujoydas-portfolio" }
@@ -44,7 +48,7 @@ export default function Projects() {
       "name": "Xenon Media - Mini Social App",
       "description": "A mini social media platform to post, like, and interact—built with modern React tools.",
       "tech": ["React", "Tailwind CSS", "Firebase", "SwiperJS", "NodeJS", "ExpressJS", "MongoDB"],
-      "image": "https://i.ibb.co/pj4TWNgF/xenonmedia-netlify-app.png",
+      "image": "https://i.ibb.co/M5Bm0qyn/xenonmedia-netlify-app-png.jpg",
       "links": [
         { "label": "Website", "href": "https://xenonmedia.netlify.app/" },
         { "label": "Source Code", "href": "https://github.com/devsujoydas/mini-social-app" }
@@ -74,7 +78,8 @@ export default function Projects() {
       "name": "Nest Mart BD",
       "description": "User-friendly online store offering various products to enhance daily life and convenience.",
       "tech": ["React", "Tailwind CSS", "Firebase", "SwiperJS", "NodeJS", "ExpressJS", "MongoDB"],
-      "image": "https://i.ibb.co/sJjZrNzk/nestmartbd-vercel-app.png",
+      // "image": "https://i.ibb.co/sJjZrNzk/nestmartbd-vercel-app.png",
+      "image": `${nestimg}`,
       "links": [
         { "label": "Website", "href": "https://nestmartbd.vercel.app" },
         { "label": "Source Code", "href": "https://github.com/devsujoydas/nest-mart-bd" }
@@ -122,36 +127,13 @@ export default function Projects() {
         ]
       }
     },
-    {
-      "id": "reactcareerhub",
-      "name": "Job Portal BD",
-      "description": "Job and career guidance platform helping users explore opportunities and career resources effectively.",
-      "tech": ["React", "Tailwind CSS", "Firebase"],
-      "image": `${careerrhub}`,
-      "links": [
-        { "label": "Website", "href": "https://reactcareerhub.vercel.app" },
-        { "label": "Source Code", "href": "https://github.com/devsujoydas/react-career-hub" }
-      ],
-      "projectDetails": {
-        "purpose": "Career discovery and job listings",
-        "features": [
-          "Searchable job listings",
-          "Firebase auth for user sign-in",
-          "Career resources or blog section"
-        ],
-        "suggested_improvements": [
-          "Allow CV upload and apply function",
-          "Admin dashboard for job posting",
-          "Email alerts for new matching jobs"
-        ]
-      }
-    },
+
     {
       "id": "tourtotuscany",
       "name": "Tour To Tuscany",
       "description": "Travel site for Tuscany, offering guides, experiences, and easy tour package bookings online.",
       "tech": ["React", "Tailwind CSS", "Firebase", "SwiperJS"],
-      "image": `${tourtotuscany}`,
+      "image": `https://i.ibb.co/9DLB3Jd/tourtotuscany-vercel-app.png`,
       "links": [
         { "label": "Website", "href": "https://tourtotuscany.vercel.app" },
         { "label": "Source Code", "href": "https://github.com/devsujoydas/tour-to-tuscany" }
@@ -196,11 +178,36 @@ export default function Projects() {
       }
     },
     {
+      "id": "reactcareerhub",
+      "name": "Job Portal BD",
+      "description": "Job and career guidance platform helping users explore opportunities and career resources effectively.",
+      "tech": ["React", "Tailwind CSS", "Firebase"],
+      "image": `${careerrhub}`,
+      "links": [
+        { "label": "Website", "href": "https://reactcareerhub.vercel.app" },
+        { "label": "Source Code", "href": "https://github.com/devsujoydas/react-career-hub" }
+      ],
+      "projectDetails": {
+        "purpose": "Career discovery and job listings",
+        "features": [
+          "Searchable job listings",
+          "Firebase auth for user sign-in",
+          "Career resources or blog section"
+        ],
+        "suggested_improvements": [
+          "Allow CV upload and apply function",
+          "Admin dashboard for job posting",
+          "Email alerts for new matching jobs"
+        ]
+      }
+    },
+    {
       "id": "elexyelectronics",
       "name": "Elexy Electronics",
       "description": "Electronics e-commerce site offering a wide range of gadgets with smooth shopping experience.",
       "tech": ["React", "Tailwind CSS", "Firebase", "SwiperJS"],
-      "image": `${elexyelectronic}`,
+      "image": `https://i.ibb.co/qSDFs7c/elexyelectronics-vercel-app.png
+`,
       "links": [
         { "label": "Website", "href": "https://elexyelectronics.vercel.app" },
         { "label": "Source Code", "href": "https://github.com/devsujoydas/elexy-electronics." }
@@ -246,21 +253,48 @@ export default function Projects() {
 
 
 
+  const containerVariants = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.15,
+      },
+    },
+  };
+
+  const itemVariants = {
+    hidden: { opacity: 0, scale: 0.9 },
+    visible: { opacity: 1, scale: 1, transition: { duration: 0.5 } },
+  };
+
 
 
 
   return (
-    <section id="projects" className=" text-white md:py-40 py-20 px-4 font-montserrat">
-      <h1 className='text-secondary font-semibold text-center md:text-md text-sm'>Visit my project and keep your feedback</h1>
-      <h1 className='text-4xl md:text-7xl font-bold mt-5 text-primary text-center'>My Project
+    <section id="projects" className="text-white md:py-40 py-20 px-4 font-montserrat">
+      <h1 className='text-secondary font-semibold text-center md:text-md text-sm'>
+        Visit my project and keep your feedback
       </h1>
-      <div className="max-w-7xl mx-auto mt-10">
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-3 lg:gap-5">
-          {
-            projects.map((project, idx) => <Project key={idx} project={project} />)
-          }
-        </div>
-      </div>
+      <h1 className='text-4xl md:text-7xl font-bold mt-5 text-primary text-center'>
+        My Project
+      </h1>
+
+      <motion.div
+        className="max-w-screen-2xl mx-auto mt-10"
+        variants={containerVariants}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.2 }}
+      >
+        <motion.div className="grid md:grid-cols-2 lg:grid-cols-3 gap-3 lg:gap-5">
+          {projects.map((project, idx) => (
+            <motion.div key={project.id} variants={itemVariants}>
+              <Project project={project} />
+            </motion.div>
+          ))}
+        </motion.div>
+      </motion.div>
     </section>
   );
 }
