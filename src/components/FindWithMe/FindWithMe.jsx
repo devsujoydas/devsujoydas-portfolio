@@ -59,7 +59,7 @@ const FindWithMe = () => {
                         className='Btn'
                         variants={item}
                         whileHover={{ scale: 1.1 }}
-                        whileTap={{ scale: 3 }}
+                        whileTap={{ scale: 1 }}
                     >
                         <span className="svgContainer active:scale-95 transition-all">
                             {social.icon}

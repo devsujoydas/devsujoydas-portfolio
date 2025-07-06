@@ -71,12 +71,13 @@ const Hero = () => {
                     </motion.h1>
 
                     <motion.p
-                        initial={{ opacity: 0 }}
-                        animate={{ opacity: 1 }}
+                       initial={{ opacity: 0, y: 50 }}
+                        animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 1, delay: 0.6 }}
-                        className='text-gray-300 font-poppins md:leading-6 leading-5 md:text-md text-xs'
+                        className='text-gray-300 font-poppins md:leading-6 leading-5 md:text-sm text-xs'
                     >
-                        Passionate Frontend Developer with hands-on experience in building responsive and interactive web applications using React.js, Tailwind CSS, and Firebase. Currently expanding skills in backend development with Node.js, Express.js, MongoDB, and EJS to become a proficient Full-Stack Developer. Committed to delivering seamless and scalable user experiences.
+                       Passionate Frontend Developer skilled in React.js, Tailwind CSS, and Firebase. Self-taught through YouTube and free resources, building real projects without formal courses. Now confident in Node.js, Express, MongoDB, and EJS for backend development. Aiming to deliver smooth and scalable full-stack solutions.
+
                     </motion.p>
                 </div>
 

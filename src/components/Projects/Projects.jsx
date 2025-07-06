@@ -1,14 +1,16 @@
-import porfolio from "/images/devsujoydas-thubnail.png"
+import porfolio from "/images/devsujoydas-thubnail.jpg"
 import residential from "/images/residential-thubnail.png"
+import xenonmedia from "/images/xenonmedia-thumbnail.png"
 import tourtotuscany from "/images/tourtotuscany-thubnail.png"
 import elexyelectronic from "/images/elexyelectronic-thubnail.png"
+import nestmartbd from "/images/nestmartbd-thubnail.jpg"
 import gadgetmartbd from "/images/gadgetmartbd-thubnail.png"
 import careerrhub from "/images/careerhub-thubnail.png"
-import nestimg from "/images/nestmartbd-thubnail.jpg"
 import chairstore from "/images/chairstore-thubnail.png"
 
 import { motion } from "framer-motion";
 import Project from "./Project";
+
 
 
 export default function Projects() {
@@ -16,9 +18,9 @@ export default function Projects() {
     {
       "id": "devsujoydas",
       "name": "Sujoy Das Portfolio",
-      "description": "A modern portfolio showcasing Sujoy Das's projects, skills, achievements, and web development expertise.",
-      "tech": ["React", "Tailwind CSS", "Typed.js", "SwiperJS"],
-      "image": `https://i.ibb.co/qLRQKf0T/localhost-5173-1.jpg`,
+      "description": "A modern portfolio showcasing projects, skills, achievements, and web development expertise.",
+      "tech": ["React", "Tailwind CSS", "Firebase", "SwiperJS", "NodeJS", "ExpressJS", "MongoDB"],
+      "image": `${porfolio}`,
       "links": [
         { "label": "Website", "href": "https://devsujoydas.vercel.app" },
         { "label": "Source Code", "href": "https://github.com/devsujoydas/devsujoydas-portfolio" }
@@ -48,7 +50,7 @@ export default function Projects() {
       "name": "Xenon Media - Mini Social App",
       "description": "A mini social media platform to post, like, and interact—built with modern React tools.",
       "tech": ["React", "Tailwind CSS", "Firebase", "SwiperJS", "NodeJS", "ExpressJS", "MongoDB"],
-      "image": "https://i.ibb.co/M5Bm0qyn/xenonmedia-netlify-app-png.jpg",
+      "image": `${xenonmedia}`,
       "links": [
         { "label": "Website", "href": "https://xenonmedia.netlify.app/" },
         { "label": "Source Code", "href": "https://github.com/devsujoydas/mini-social-app" }
@@ -79,7 +81,7 @@ export default function Projects() {
       "description": "User-friendly online store offering various products to enhance daily life and convenience.",
       "tech": ["React", "Tailwind CSS", "Firebase", "SwiperJS", "NodeJS", "ExpressJS", "MongoDB"],
       // "image": "https://i.ibb.co/sJjZrNzk/nestmartbd-vercel-app.png",
-      "image": `${nestimg}`,
+      "image": `${nestmartbd}`,
       "links": [
         { "label": "Website", "href": "https://nestmartbd.vercel.app" },
         { "label": "Source Code", "href": "https://github.com/devsujoydas/nest-mart-bd" }
@@ -133,7 +135,7 @@ export default function Projects() {
       "name": "Tour To Tuscany",
       "description": "Travel site for Tuscany, offering guides, experiences, and easy tour package bookings online.",
       "tech": ["React", "Tailwind CSS", "Firebase", "SwiperJS"],
-      "image": `https://i.ibb.co/9DLB3Jd/tourtotuscany-vercel-app.png`,
+      "image": `${tourtotuscany}`,
       "links": [
         { "label": "Website", "href": "https://tourtotuscany.vercel.app" },
         { "label": "Source Code", "href": "https://github.com/devsujoydas/tour-to-tuscany" }
@@ -201,13 +203,14 @@ export default function Projects() {
         ]
       }
     },
+
+
     {
       "id": "elexyelectronics",
       "name": "Elexy Electronics",
       "description": "Electronics e-commerce site offering a wide range of gadgets with smooth shopping experience.",
       "tech": ["React", "Tailwind CSS", "Firebase", "SwiperJS"],
-      "image": `https://i.ibb.co/qSDFs7c/elexyelectronics-vercel-app.png
-`,
+      "image": `${elexyelectronic}`,
       "links": [
         { "label": "Website", "href": "https://elexyelectronics.vercel.app" },
         { "label": "Source Code", "href": "https://github.com/devsujoydas/elexy-electronics." }
@@ -253,20 +256,6 @@ export default function Projects() {
 
 
 
-  const containerVariants = {
-    hidden: { opacity: 0 },
-    visible: {
-      opacity: 1,
-      transition: {
-        staggerChildren: 0.15,
-      },
-    },
-  };
-
-  const itemVariants = {
-    hidden: { opacity: 0, scale: 0.9 },
-    visible: { opacity: 1, scale: 1, transition: { duration: 0.5 } },
-  };
 
 
 
@@ -280,21 +269,16 @@ export default function Projects() {
         My Project
       </h1>
 
-      <motion.div
-        className="max-w-screen-2xl mx-auto mt-10"
-        variants={containerVariants}
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true, amount: 0.2 }}
-      >
-        <motion.div className="grid md:grid-cols-2 lg:grid-cols-3 gap-3 lg:gap-5">
+      <div
+        className="max-w-screen-2xl mx-auto mt-10" >
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-3 lg:gap-5">
           {projects.map((project, idx) => (
-            <motion.div key={project.id} variants={itemVariants}>
+            <div key={project.id} >
               <Project project={project} />
-            </motion.div>
+            </div>
           ))}
-        </motion.div>
-      </motion.div>
+        </div>
+      </div>
     </section>
   );
 }
