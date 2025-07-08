@@ -28,7 +28,7 @@ const Footer = () => {
           transition={{ duration: 0.6, delay: 0.3 }}
           className="flex md:flex-row justify-center flex-wrap md:gap-10 gap-5 md:text-lg text-white my-5"
         >
-          <a className="hover:text-[#FF014F] duration-500 transition-all" href="/#hero">Home</a>
+          <a className="hover:text-[#FF014F] duration-500 transition-all" href="/#home">Home</a>
           <a className="hover:text-[#FF014F] duration-500 transition-all" href="/#service">Services</a>
           <a className="hover:text-[#FF014F] duration-500 transition-all" href="/#projects">Projects</a>
           <a className="hover:text-[#FF014F] duration-500 transition-all" href="/#skills">Skills</a>

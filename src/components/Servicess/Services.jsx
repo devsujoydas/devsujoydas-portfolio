@@ -57,7 +57,7 @@ const Services = () => {
         Services
       </motion.h1>
 
-      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5 lg:gap-10 mt-10 overflow-hidden">
+      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5 lg:gap-10 mt-10 ">
         {servicelist.map((service, idx) => (
           <motion.div
             key={idx}
@@ -69,7 +69,7 @@ const Services = () => {
               ease: "easeOut"
             }}
             viewport={{ once: false, amount: 0.2 }}
-            className="md:p-12 p-9 rounded-3xl space-y-4 shadow-2xl shadow-[#00000098] hover:shadow-[#201d1d] active:shadow-[#201d1d] hover:-translate-y-3 active:-translate-y-3 duration-500 transition-all"
+            className="md:p-12 p-9 rounded-3xl space-y-4 shadow-lg shadow-[#00000046] active:shadow-none  hover:-translate-y-3 active:-translate-y-3 duration-500 transition-all"
           >
             <FaCode className="text-4xl md:text-5xl" />
             <h1 className="text-xl md:text-2xl font-semibold">{service.name}</h1>
