@@ -9,10 +9,10 @@ import { AuthContext } from "../../AuthProvider/AuthProvider";
 
 export default function Projects() {
 
-  const { projectsData, setProjectsData } = useContext(AuthContext)
+  const { projectsData } = useContext(AuthContext)
 
 
-  console.log(projectsData)
+  // console.log(projectsData)
 
   return (
     <section id="projects" className="text-white md:py-40 py-20 px-4 font-montserrat">
@@ -28,19 +28,19 @@ export default function Projects() {
         {
           projectsData.length > 0 ?
 
-<div className="grid md:grid-cols-2 lg:grid-cols-3 gap-3 lg:gap-5">
-          {projectsData.map((project, idx) => (
-            <div key={project.id} >
-              <Project project={project} />
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-3 lg:gap-5">
+              {projectsData.map((project, idx) => (
+                <div key={project.id} >
+                  <Project project={project} />
+                </div>
+              ))}
             </div>
-          ))}
-        </div>
 
-        :
+            :
 
-        <div>
-          <h1 className="text-zinc-500 text-center"     >no project found</h1>
-        </div>
+            <div>
+              <h1 className="text-zinc-500 text-center"     >no project found</h1>
+            </div>
         }
       </div>
     </section>

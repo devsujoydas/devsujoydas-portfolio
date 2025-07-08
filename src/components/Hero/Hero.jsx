@@ -126,15 +126,18 @@ const Hero = () => {
                 </motion.div>
             </motion.div>
 
+
+
+
             {/* Hero Image Section */}
             <motion.div
                 initial={{ opacity: 0, scale: 0.8, y: 50 }}
                 animate={{ opacity: 1, scale: 1, y: 0 }}
                 transition={{ duration: 1, delay: 0.5 }}
-                className='relative flex justify-center items-center'
+                className='relative flex lg:justify-end justify-center items-center '
             >
-                <div className="box-shadow rounded-3xl absolute bottom-0 h-9/12 w-5/6 -z-10"></div>
-                <img className='md:w-5/6 w-4/6' src={heroImg} alt="" />
+                <div className="box-shadow rounded-3xl absolute bottom-0 h-9/12 lg:w-5/6  w-4/6 -z-10"></div>
+                <img className='lg:w-5/6 w-4/6' src={heroImg} alt="" />
             </motion.div>
 
         </div>

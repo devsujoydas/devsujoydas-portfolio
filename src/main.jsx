@@ -6,6 +6,7 @@ import Home from './Pages/Home/Home.jsx'
 import RootPage from './Pages/RootPage/RootPage.jsx'
 import ProjectDetails from './components/Projects/ProjectDetails.jsx'
 import AuthProvider from './AuthProvider/AuthProvider.jsx'
+import ProjectPage from './Pages/ProjectPage/ProjectPage.jsx'
 
 const router = createBrowserRouter([
   {
@@ -17,8 +18,12 @@ const router = createBrowserRouter([
         element: <Home />
       },
       {
+        path: "/projects",
+        element: <ProjectPage />
+      },
+      {
         path: "/project/:id",
-        element: <ProjectDetails />
+        element: <ProjectDetails />, 
       },
     ]
 

@@ -22,7 +22,7 @@ const Header = () => {
             </a>
           </div>
 
-          <div onClick={() => setHumbarger(!humbarger)} className="md:hidden block text-5xl text-secondary shadow-2xl">
+          <div onClick={() => setHumbarger(!humbarger)} className="md:hidden w-fit block text-5xl text-secondary shadow-2xl">
             <LuMenu />
           </div>
         </div>

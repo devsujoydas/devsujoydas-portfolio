@@ -11,7 +11,10 @@ const Home = () => {
       <hr className="max-w-screen-2xl mx-auto text-gray-600" />
       <Services />
       <hr className="max-w-screen-2xl mx-auto text-gray-600" />
-      <Projects />
+      <div className="overflow-hidden">
+        <Projects />
+      </div>
+
       <hr className="max-w-screen-2xl mx-auto text-gray-600" />
       <Skills />
       <hr className="max-w-screen-2xl mx-auto text-gray-600" />
