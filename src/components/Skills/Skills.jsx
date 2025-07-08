@@ -60,11 +60,11 @@ import { motion } from "framer-motion";
 
 const Skills = () => {
   return (
-    <div id='skills' className="text-white md:py-40 py-20 px-6">
+    <div id='skills' className="text-white md:py-40 py-20 ">
       <motion.div
         initial={{ opacity: 0, y: -30 }}
         whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.2 }}
+        transition={{ duration: 0.1  }}
         viewport={{ once: false }}
         className='md:pb-20 pb-10'
       >
@@ -74,7 +74,7 @@ const Skills = () => {
         </h1>
       </motion.div>
 
-      <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-5 gap-4 md:gap-6 max-w-screen-2xl mx-auto">
+      <div className="overflow-hidden grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-5 gap-3 md:gap-6 max-w-screen-2xl mx-auto">
         {skills.map((skill, idx) => (
           <motion.div
             key={idx}
@@ -82,10 +82,10 @@ const Skills = () => {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{
               duration: 0.5,
-              delay: idx * 0.1,
+              delay: idx * 0.05,
               ease: "easeOut"
             }}
-            viewport={{ once: false, amount: 0.2 }}
+            viewport={{ once: false, amount: 0.1 }}
           >
             <a
               href={skill.webUrl}

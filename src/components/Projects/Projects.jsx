@@ -8,7 +8,7 @@ export default function Projects() {
   const { projectsData } = useContext(AuthContext);
 
   return (
-    <section id="projects" className="text-white md:py-40 py-20 px-4 font-montserrat">
+    <section id="projects" className="text-white md:py-40 py-20  font-montserrat">
       <h1 className='text-secondary font-semibold text-center md:text-md text-sm'>
         Visit my project and keep your feedback
       </h1>
@@ -19,7 +19,7 @@ export default function Projects() {
       <div className="max-w-screen-2xl mx-auto mt-10">
         {
           projectsData.length > 0 ?
-            <div className="grid gap-3 lg:gap-5">
+            <div className="grid gap-3 lg:gap-5 overflow-hidden">
               {projectsData.map((project, idx) => (
                 <motion.div
                   key={project.id}

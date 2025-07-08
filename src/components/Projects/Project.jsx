@@ -12,10 +12,10 @@ const Project = ({ project }) => {
             <div className='shadow-lg hover:shadow-xl overflow-hidden hover:-translate-y-1 rounded-2xl  uration-500 transition-all group '>
 
 
-                <div className={`bg-[#18181B] rounded-2xl overflow-hidden md:p-5 p-3 shadow-lg flex h-full md:flex-row ${project.serial % 2 === 0 ? "flex-col" : "flex-col-reverse"} gap-5`} >
+                <div className={`bg-[#18181B] rounded-2xl overflow-hidden md:p-5 p-3 shadow-lg flex h-full md:flex-row flex-col ${project.serial % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"} gap-5`} >
 
                     {/* Project Img */}
-                    <div className='relative h-[50vh] md:w-2/3 overflow-hidden rounded-lg'>
+                    <div className='relative h-[200px] md:h-[460px] md:w-2/3 overflow-hidden rounded-lg'>
                         <Link to={`/project/${project.id}`}>
                             <img
                                 src={project.image}
@@ -26,11 +26,11 @@ const Project = ({ project }) => {
                     </div>
 
                     {/* Details */}
-                    <div className='flex md:w-1/3 h-full flex-col gap-3'>
-                        <h3 className="text-2xl font-bold mb-2">{project.name}</h3>
+                    <div className='flex md:w-1/3 h-full flex-col md:gap-3'>
+                        <h3 className="md:text-2xl text-xl font-bold mb-2">{project.name}</h3>
                         <p className="text-zinc-300 mb-4">{project.description}</p>
                         <div className="mb-4 flex flex-wrap items-center gap-2">
-                            <h1 className="font-semibold text-xl">Technologes: </h1>
+                            <h1 className="font-semibold md;text-xl">Technologes: </h1>
                             {project.tech.map((tech, i) => (
                                 <span
                                     key={i}
@@ -42,7 +42,7 @@ const Project = ({ project }) => {
 
                         {/* Features */}
                         {project?.projectDetails.features && (
-                            <div>
+                            <div className="md:block hidden">
                                 <h3 className="font-semibold md:text-xl mb-2">Features</h3>
                                 <ul className="list-disc list-inside text-gray-300 space-y-1">
                                     {project?.projectDetails?.features?.map((feat, i) => (

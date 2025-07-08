@@ -36,7 +36,7 @@ const Services = () => {
   ];
 
   return (
-    <div id="service" className='text-primary max-w-screen-2xl md:px-0 px-5 mx-auto font-montserrat md:py-45 py-20'>
+    <div id="service" className='text-primary max-w-screen-2xl md:px-0  mx-auto font-montserrat md:py-45 py-20'>
       <motion.h1
         initial={{ opacity: 0, y: -20 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -57,7 +57,7 @@ const Services = () => {
         Services
       </motion.h1>
 
-      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5 lg:gap-10 mt-10">
+      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5 lg:gap-10 mt-10 overflow-hidden">
         {servicelist.map((service, idx) => (
           <motion.div
             key={idx}

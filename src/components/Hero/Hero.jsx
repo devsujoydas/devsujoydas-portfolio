@@ -30,7 +30,7 @@ const Hero = () => {
     }, []);
 
     return (
-        <div id='home' className='text-white max-w-screen-2xl font-montserrat mx-auto lg:px-0 px-5 md:pt-40 pt-28 pb-10 gap-5 flex lg:flex-row flex-col-reverse'>
+        <div id='home' className='text-white max-w-screen-2xl font-montserrat mx-auto lg:px-0  md:pt-40 pt-28 pb-10 gap-5 flex lg:flex-row flex-col-reverse overflow-hidden'>
 
             {/* Hero Text  */}
             <motion.div
