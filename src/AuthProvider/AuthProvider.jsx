@@ -2,62 +2,60 @@ import { createContext, useEffect, useState } from 'react'
 export const AuthContext = createContext()
 
 
-import devsujoydas from "/images/projectimages/devsujoydas-thumbnail.jpg"
+// import devsujoydas from "/images/projectimages/devsujoydas-thumbnail.jpg"
 import xenonmedia from "/images/projectimages/xenonmedia-thumbnail.png"
 import elexyelectronics from "/images/projectimages/elexyelectronics-thumbnail.jpg"
-import furnichairstore from "/images/projectimages/furnichairstore-thumbnail.jpg"
+// import furnichairstore from "/images/projectimages/furnichairstore-thumbnail.jpg"
 import tourtotuscany from "/images/projectimages/tourtotuscany-thumbnail.jpg"
-// import gadgetmartbd from "/images/projectimages/gadgetmartbd-thumbnail.jpg"
+import reactcareerhub from "/images/projectimages/reactcareerhub-thumbnail.jpg"
 import nestmartbd from "/images/projectimages/nestmartbd-thumbnail.jpg"
-// import reactcareerhub from "/images/projectimages/reactcareerhub-thumbnail.jpg"
 import residential from "/images/projectimages/residential-thumbnail.jpg"
 
 // import devsujoydas1 from "/images/projectimages/devsujoydas1-thumbnail.jpg"
-// import xenonmedia1 from "/images/projectimages/xenonmedia1-thumbnail.jpg"
-// import elexyelectronics1 from "/images/projectimages/elexyelectronics1-thumbnail.jpg"
-// import furnichairstore1 from "/images/projectimages/furnichairstore1-thumbnail.jpg"
-// import tourtotuscany1 from "/images/projectimages/tourtotuscany1-thumbnail.jpg"
-// import gadgetmartbd1 from "/images/projectimages/gadgetmartbd1-thumbnail.jpg"
-// import nestmartbd1 from "/images/projectimages/nestmartbd1-thumbnail.jpg"
-// import reactcareerhub1 from "/images/projectimages/reactcareerhub1-thumbnail.jpg"
-// import residential1 from "/images/projectimages/residential1-thumbnail.jpg"
+import xenonmedia1 from "/images/projectimages/xenonmedia1-thumbnail.jpg"
+import elexyelectronics1 from "/images/projectimages/elexyelectronics1-thumbnail.jpg"
+import reactcareerhub1 from "/images/projectimages/reactcareerhub1-thumbnail.jpg"
+import tourtotuscany1 from "/images/projectimages/tourtotuscany1-thumbnail.jpg"
+import nestmartbd1 from "/images/projectimages/nestmartbd1-thumbnail.jpg"
+import residential1 from "/images/projectimages/residential1-thumbnail.jpg"
 
 
 const AuthProvider = ({ children }) => {
- 
+
     const projectsData =
         [
-            {
-                "id": "devsujoydas",
-                "name": "Sujoy Das Portfolio",
-                "description": "A modern portfolio showcasing projects, skills, achievements, and web development expertise.",
-                "tech": ["React", "Tailwind CSS", "Firebase", "SwiperJS", "NodeJS", "ExpressJS", "MongoDB"],
-                // "image": "https://i.ibb.co/qLRQKf0T/localhost-5173-1.jpg",
-                "image": `${devsujoydas}`,
-                "links": [
-                    { "label": "Website", "href": "https://devsujoydas.vercel.app" },
-                    { "label": "Source Code", "href": "https://github.com/devsujoydas/devsujoydas-portfolio" }
-                ],
-                "projectDetails": {
-                    "purpose": "Personal branding & showcase portfolio",
-                    "features": [
-                        "Animated typing text (Typed.js)",
-                        "Responsive page sections for About, Skills, Projects, Contact",
-                        "Carousel of projects via SwiperJS",
-                        "Dark/light mode toggle (if implemented)"
-                    ],
-                    "UX_highlights": [
-                        "Smooth scroll navigation",
-                        "Mobile-friendly responsive design",
-                        "Fast load via Tailwind utility-first CSS"
-                    ],
-                    "suggested_improvements": [
-                        "Add contact form with email integration",
-                        "Optimize SEO metadata, Open Graph tags",
-                        "Include performance scores (Lighthouse audit)"
-                    ]
-                }
-            },
+            // {
+            //     "id": "devsujoydas",
+            //     "name": "Sujoy Das Portfolio",
+            //     "description": "A modern portfolio showcasing projects, skills, achievements, and web development expertise.",
+            //     "tech": ["React", "Tailwind CSS", "Firebase", "SwiperJS", "NodeJS", "ExpressJS", "MongoDB"],
+            // // "image": "https://i.ibb.co/qLRQKf0T/localhost-5173-1.jpg",
+            //     "image": `${devsujoydas}`,
+            // "image2":"`${}`    
+            //     "links": [
+            //         { "label": "Website", "href": "https://devsujoydas.vercel.app" },
+            //         { "label": "Source Code", "href": "https://github.com/devsujoydas/devsujoydas-portfolio" }
+            //     ],
+            //     "projectDetails": {
+            //         "purpose": "Personal branding & showcase portfolio",
+            //         "features": [
+            //             "Animated typing text (Typed.js)",
+            //             "Responsive page sections for About, Skills, Projects, Contact",
+            //             "Carousel of projects via SwiperJS",
+            //             "Dark/light mode toggle (if implemented)"
+            //         ],
+            //         "UX_highlights": [
+            //             "Smooth scroll navigation",
+            //             "Mobile-friendly responsive design",
+            //             "Fast load via Tailwind utility-first CSS"
+            //         ],
+            //         "suggested_improvements": [
+            //             "Add contact form with email integration",
+            //             "Optimize SEO metadata, Open Graph tags",
+            //             "Include performance scores (Lighthouse audit)"
+            //         ]
+            //     }
+            // },
             {
                 "id": "xenonmedia",
                 "name": "Xenon Media - Mini Social App",
@@ -65,6 +63,7 @@ const AuthProvider = ({ children }) => {
                 "tech": ["React", "Tailwind CSS", "Firebase", "SwiperJS", "NodeJS", "ExpressJS", "MongoDB"],
                 // "image": "https://i.ibb.co/wtgPsW8/xenonmedia-thumbnail.png",
                 "image": `${xenonmedia}`,
+                "image2": `${xenonmedia1}`,
                 "links": [
                     { "label": "Website", "href": "https://xenonmedia.netlify.app/" },
                     { "label": "Source Code", "href": "https://github.com/devsujoydas/mini-social-app" }
@@ -96,6 +95,7 @@ const AuthProvider = ({ children }) => {
                 "tech": ["React", "Tailwind CSS", "Firebase", "SwiperJS", "NodeJS", "ExpressJS", "MongoDB"],
                 // "image": "https://i.ibb.co/RnTdzKg/nestmartbd-thubnail.jpg",
                 "image": `${nestmartbd}`,
+                "image2": `${nestmartbd1}`,
                 "links": [
                     { "label": "Website", "href": "https://nestmartbd.vercel.app" },
                     { "label": "Source Code", "href": "https://github.com/devsujoydas/nest-mart-bd" }
@@ -126,6 +126,7 @@ const AuthProvider = ({ children }) => {
                 "tech": ["React", "Tailwind CSS", "Firebase", "SwiperJS"],
                 // "image": "https://i.ibb.co/gFtJC5zD/residential-tumbnail.jpg",
                 "image": `${residential}`,
+                "image2": `${residential1}`,
                 "links": [
                     { "label": "Website", "href": "https://residentialrealestate.vercel.app" },
                     { "label": "Source Code", "href": "https://github.com/devsujoydas/residential-real-estate" }
@@ -152,6 +153,7 @@ const AuthProvider = ({ children }) => {
                 "tech": ["React", "Tailwind CSS", "Firebase", "SwiperJS"],
                 // "image": "https://i.ibb.co/pvxhMLHq/tourtotuscany-thubnail.jpg",
                 "image": `${tourtotuscany}`,
+                "image2": `${tourtotuscany1}`,
                 "links": [
                     { "label": "Website", "href": "https://tourtotuscany.vercel.app" },
                     { "label": "Source Code", "href": "https://github.com/devsujoydas/tour-to-tuscany" }
@@ -171,36 +173,39 @@ const AuthProvider = ({ children }) => {
                     ]
                 }
             },
-            {
-                "id": "gadgetmartbd",
-                "name": "GADGET MART BD",
-                "description": "Electronics e-commerce site offering a wide range of gadgets with smooth shopping experience.",
-                "tech": ["React", "Tailwind CSS", "Firebase", "SwiperJS"],
-                "image": "https://i.ibb.co/wFmpNFgF/gadgetmartbd-thubnail.jpg",
-                "links": [
-                    { "label": "Website", "href": "https://gadgetmartbd.vercel.app" },
-                    { "label": "Source Code", "href": "https://github.com/devsujoydas/gadget-mart-bd" }
-                ],
-                "projectDetails": {
-                    "purpose": "Online gadget store demo",
-                    "features": [
-                        "Product gallery and detail pages",
-                        "SwiperJS image sliders",
-                        "Firebase auth for wishlists"
-                    ],
-                    "suggested_improvements": [
-                        "Shopping cart & checkout flow",
-                        "Payment and delivery options",
-                        "Inventory & admin dashboard"
-                    ]
-                }
-            },
+            // {
+            //     "id": "gadgetmartbd",
+            //     "name": "GADGET MART BD",
+            //     "description": "Electronics e-commerce site offering a wide range of gadgets with smooth shopping experience.",
+            //     "tech": ["React", "Tailwind CSS", "Firebase", "SwiperJS"],
+            //    "image": "https://i.ibb.co/wFmpNFgF/gadgetmartbd-thubnail.jpg",
+            //     "links": [
+            // "image2":"`${}` 
+            //         { "label": "Website", "href": "https://gadgetmartbd.vercel.app" },
+            //         { "label": "Source Code", "href": "https://github.com/devsujoydas/gadget-mart-bd" }
+            //     ],
+            //     "projectDetails": {
+            //         "purpose": "Online gadget store demo",
+            //         "features": [
+            //             "Product gallery and detail pages",
+            //             "SwiperJS image sliders",
+            //             "Firebase auth for wishlists"
+            //         ],
+            //         "suggested_improvements": [
+            //             "Shopping cart & checkout flow",
+            //             "Payment and delivery options",
+            //             "Inventory & admin dashboard"
+            //         ]
+            //     }
+            // },
             {
                 "id": "reactcareerhub",
                 "name": "Job Portal BD",
                 "description": "Job and career guidance platform helping users explore opportunities and career resources effectively.",
                 "tech": ["React", "Tailwind CSS", "Firebase"],
-                "image": "https://i.ibb.co/1GkjdqqT/reactcareerhub-thubnail.jpg", 
+                // "image": "https://i.ibb.co/1GkjdqqT/reactcareerhub-thubnail.jpg",
+                "image": `${reactcareerhub}`,
+                "image2": `${reactcareerhub1}`,
                 "links": [
                     { "label": "Website", "href": "https://reactcareerhub.vercel.app" },
                     { "label": "Source Code", "href": "https://github.com/devsujoydas/react-career-hub" }
@@ -228,6 +233,7 @@ const AuthProvider = ({ children }) => {
                 "tech": ["React", "Tailwind CSS", "Firebase", "SwiperJS"],
                 // "image": "https://i.ibb.co/ntmMgtN/elexyelectronics-thubnail.jpg",
                 "image": `${elexyelectronics}`,
+                "image2": `${elexyelectronics1}`,
                 "links": [
                     { "label": "Website", "href": "https://elexyelectronics.vercel.app" },
                     { "label": "Source Code", "href": "https://github.com/devsujoydas/elexy-electronics." }
@@ -246,30 +252,31 @@ const AuthProvider = ({ children }) => {
                     ]
                 }
             },
-            {
-                "id": "furnichairstore",
-                "name": "Furni Chair Store",
-                "description": "Modern furniture store offering stylish, affordable options for home and office decoration.",
-                "tech": ["Html", "Tailwind CSS", "JavaScript"],
-                // "image": "https://i.ibb.co/Gf89YsPd/furnichairstore-thubnail.jpg",
-                "image": `${furnichairstore}`,
-                "links": [
-                    { "label": "Website", "href": "https://furnichairstore.vercel.app" },
-                    { "label": "Source Code", "href": "https://github.com/devsujoydas/chair-store" }
-                ],
-                "projectDetails": {
-                    "purpose": "Static storefront for furniture products",
-                    "features": [
-                        "Product grid layout with images",
-                        "Responsive HTML/CSS/JS design"
-                    ],
-                    "suggested_improvements": [
-                        "Add interactive search or filter",
-                        "Convert into React SPA",
-                        "Implement cart & checkout"
-                    ]
-                }
-            }
+            // {
+            //     "id": "furnichairstore",
+            //     "name": "Furni Chair Store",
+            //     "description": "Modern furniture store offering stylish, affordable options for home and office decoration.",
+            //     "tech": ["Html", "Tailwind CSS", "JavaScript"],
+            // // "image": "https://i.ibb.co/Gf89YsPd/furnichairstore-thubnail.jpg",
+            //     "image": `${furnichairstore}`,
+            // "image2":"`${}`    
+            //     "links": [
+            //         { "label": "Website", "href": "https://furnichairstore.vercel.app" },
+            //         { "label": "Source Code", "href": "https://github.com/devsujoydas/chair-store" }
+            //     ],
+            //     "projectDetails": {
+            //         "purpose": "Static storefront for furniture products",
+            //         "features": [
+            //             "Product grid layout with images",
+            //             "Responsive HTML/CSS/JS design"
+            //         ],
+            //         "suggested_improvements": [
+            //             "Add interactive search or filter",
+            //             "Convert into React SPA",
+            //             "Implement cart & checkout"
+            //         ]
+            //     }
+            // }
         ]
 
 
@@ -277,11 +284,11 @@ const AuthProvider = ({ children }) => {
 
 
 
- 
+
 
 
     const data = {
-        projectsData,   
+        projectsData,
     }
 
 
