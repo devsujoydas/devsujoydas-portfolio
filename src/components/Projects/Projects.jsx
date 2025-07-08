@@ -1,264 +1,18 @@
-import porfolio from "/images/devsujoydas-thubnail.jpg"
-import residential from "/images/residential-thubnail.png"
-import xenonmedia from "/images/xenonmedia-thumbnail.png"
-import tourtotuscany from "/images/tourtotuscany-thubnail.png"
-import elexyelectronic from "/images/elexyelectronic-thubnail.png"
-import nestmartbd from "/images/nestmartbd-thubnail.jpg"
-import gadgetmartbd from "/images/gadgetmartbd-thubnail.png"
-import careerrhub from "/images/careerhub-thubnail.png"
-import chairstore from "/images/chairstore-thubnail.png"
+
 
 import { motion } from "framer-motion";
 import Project from "./Project";
+import { useContext } from "react";
+import { AuthContext } from "../../AuthProvider/AuthProvider";
 
 
 
 export default function Projects() {
-  const projects = [
-    {
-      "id": "devsujoydas",
-      "name": "Sujoy Das Portfolio",
-      "description": "A modern portfolio showcasing projects, skills, achievements, and web development expertise.",
-      "tech": ["React", "Tailwind CSS", "Firebase", "SwiperJS", "NodeJS", "ExpressJS", "MongoDB"],
-      "image": `${porfolio}`,
-      "links": [
-        { "label": "Website", "href": "https://devsujoydas.vercel.app" },
-        { "label": "Source Code", "href": "https://github.com/devsujoydas/devsujoydas-portfolio" }
-      ],
-      "projectDetails": {
-        "purpose": "Personal branding & showcase portfolio",
-        "features": [
-          "Animated typing text (Typed.js)",
-          "Responsive page sections for About, Skills, Projects, Contact",
-          "Carousel of projects via SwiperJS",
-          "Dark/light mode toggle (if implemented)"
-        ],
-        "UX_highlights": [
-          "Smooth scroll navigation",
-          "Mobile-friendly responsive design",
-          "Fast load via Tailwind utility-first CSS"
-        ],
-        "suggested_improvements": [
-          "Add contact form with email integration",
-          "Optimize SEO metadata, Open Graph tags",
-          "Include performance scores (Lighthouse audit)"
-        ]
-      }
-    },
-    {
-      "id": "xenonmedia",
-      "name": "Xenon Media - Mini Social App",
-      "description": "A mini social media platform to post, like, and interact—built with modern React tools.",
-      "tech": ["React", "Tailwind CSS", "Firebase", "SwiperJS", "NodeJS", "ExpressJS", "MongoDB"],
-      "image": `${xenonmedia}`,
-      "links": [
-        { "label": "Website", "href": "https://xenonmedia.netlify.app/" },
-        { "label": "Source Code", "href": "https://github.com/devsujoydas/mini-social-app" }
-      ],
-      "projectDetails": {
-        "purpose": "Social engagement platform – post and interact",
-        "features": [
-          "User auth via Firebase",
-          "Create/read/update/delete posts",
-          "Like and comment functionality",
-          "Interactive SwiperJS feed sections"
-        ],
-        "backend": [
-          "NodeJS/Express REST API",
-          "MongoDB for post storage",
-          "Firebase for authentication"
-        ],
-        "suggested_improvements": [
-          "Add user profiles and avatars",
-          "Implement real-time notifications",
-          "Optimize image uploads with compression"
-        ]
-      }
-    },
-    {
-      "id": "nestmartbd",
-      "name": "Nest Mart BD",
-      "description": "User-friendly online store offering various products to enhance daily life and convenience.",
-      "tech": ["React", "Tailwind CSS", "Firebase", "SwiperJS", "NodeJS", "ExpressJS", "MongoDB"],
-      // "image": "https://i.ibb.co/sJjZrNzk/nestmartbd-vercel-app.png",
-      "image": `${nestmartbd}`,
-      "links": [
-        { "label": "Website", "href": "https://nestmartbd.vercel.app" },
-        { "label": "Source Code", "href": "https://github.com/devsujoydas/nest-mart-bd" }
-      ],
-      "projectDetails": {
-        "purpose": "E‑commerce storefront for Bangladesh market",
-        "features": [
-          "Product listing with categories and images",
-          "Shopping cart managed with React state",
-          "Checkout with Firebase user handling",
-          "Responsive carousel using SwiperJS"
-        ],
-        "backend": [
-          "Express server for handling orders",
-          "MongoDB for product & order data"
-        ],
-        "suggested_improvements": [
-          "Integrate payment gateway (e.g., PayPal, Stripe)",
-          "Add search and filter UI for products",
-          "Implement order history and admin panel"
-        ]
-      }
-    },
-    {
-      "id": "residentialrealestate",
-      "name": "Residential Real Estate",
-      "description": "Real estate platform to discover, list, and explore apartments, townhouses, and vacation rentals.",
-      "tech": ["React", "Tailwind CSS", "Firebase", "SwiperJS"],
-      "image": `${residential}`,
-      "links": [
-        { "label": "Website", "href": "https://residentialrealestate.vercel.app" },
-        { "label": "Source Code", "href": "https://github.com/devsujoydas/residential-real-estate" }
-      ],
-      "projectDetails": {
-        "purpose": "Property listing & search for rentals/sales",
-        "features": [
-          "Property cards with images & details",
-          "SwiperJS gallery on property pages",
-          "Firebase auth for saved properties"
-        ],
-        "suggested_improvements": [
-          "Add map integration (Google Maps API)",
-          "Allow owner submissions or inquiries",
-          "Advanced filters: price, location, size"
-        ]
-      }
-    },
 
-    {
-      "id": "tourtotuscany",
-      "name": "Tour To Tuscany",
-      "description": "Travel site for Tuscany, offering guides, experiences, and easy tour package bookings online.",
-      "tech": ["React", "Tailwind CSS", "Firebase", "SwiperJS"],
-      "image": `${tourtotuscany}`,
-      "links": [
-        { "label": "Website", "href": "https://tourtotuscany.vercel.app" },
-        { "label": "Source Code", "href": "https://github.com/devsujoydas/tour-to-tuscany" }
-      ],
-      "projectDetails": {
-        "purpose": "Showcase Tuscany tours & attractions",
-        "features": [
-          "Tour listing cards with images",
-          "Detailed tour pages",
-          "SwiperJS hero banners",
-          "Firebase email inquiries"
-        ],
-        "suggested_improvements": [
-          "Booking/payment integration",
-          "User reviews & ratings",
-          "Multi-language support (e.g. Italian/English)"
-        ]
-      }
-    },
-    {
-      "id": "gadgetmartbd",
-      "name": "GADGET MART BD",
-      "description": "Electronics e-commerce site offering a wide range of gadgets with smooth shopping experience.",
-      "tech": ["React", "Tailwind CSS", "Firebase", "SwiperJS"],
-      "image": `${gadgetmartbd}`,
-      "links": [
-        { "label": "Website", "href": "https://gadgetmartbd.vercel.app" },
-        { "label": "Source Code", "href": "https://github.com/devsujoydas/gadget-mart-bd" }
-      ],
-      "projectDetails": {
-        "purpose": "Online gadget store demo",
-        "features": [
-          "Product gallery and detail pages",
-          "SwiperJS image sliders",
-          "Firebase auth for wishlists"
-        ],
-        "suggested_improvements": [
-          "Shopping cart & checkout flow",
-          "Payment and delivery options",
-          "Inventory & admin dashboard"
-        ]
-      }
-    },
-    {
-      "id": "reactcareerhub",
-      "name": "Job Portal BD",
-      "description": "Job and career guidance platform helping users explore opportunities and career resources effectively.",
-      "tech": ["React", "Tailwind CSS", "Firebase"],
-      "image": `${careerrhub}`,
-      "links": [
-        { "label": "Website", "href": "https://reactcareerhub.vercel.app" },
-        { "label": "Source Code", "href": "https://github.com/devsujoydas/react-career-hub" }
-      ],
-      "projectDetails": {
-        "purpose": "Career discovery and job listings",
-        "features": [
-          "Searchable job listings",
-          "Firebase auth for user sign-in",
-          "Career resources or blog section"
-        ],
-        "suggested_improvements": [
-          "Allow CV upload and apply function",
-          "Admin dashboard for job posting",
-          "Email alerts for new matching jobs"
-        ]
-      }
-    },
+  const { projectsData, setProjectsData } = useContext(AuthContext)
 
 
-    {
-      "id": "elexyelectronics",
-      "name": "Elexy Electronics",
-      "description": "Electronics e-commerce site offering a wide range of gadgets with smooth shopping experience.",
-      "tech": ["React", "Tailwind CSS", "Firebase", "SwiperJS"],
-      "image": `${elexyelectronic}`,
-      "links": [
-        { "label": "Website", "href": "https://elexyelectronics.vercel.app" },
-        { "label": "Source Code", "href": "https://github.com/devsujoydas/elexy-electronics." }
-      ],
-      "projectDetails": {
-        "purpose": "E‑commerce template for electronics",
-        "features": [
-          "Responsive product listings",
-          "SwiperJS product carousels",
-          "User login via Firebase"
-        ],
-        "suggested_improvements": [
-          "Checkout/payment flow",
-          "Product search filters",
-          "Admin product management panel"
-        ]
-      }
-    },
-    {
-      "id": "furnichairstore",
-      "name": "Furni Chair Store",
-      "description": "Modern furniture store offering stylish, affordable options for home and office decoration.",
-      "tech": ["Html", "Tailwind CSS", "JavaScript"],
-      "image": `${chairstore}`,
-      "links": [
-        { "label": "Website", "href": "https://furnichairstore.vercel.app" },
-        { "label": "Source Code", "href": "https://github.com/devsujoydas/chair-store" }
-      ],
-      "projectDetails": {
-        "purpose": "Static storefront for furniture products",
-        "features": [
-          "Product grid layout with images",
-          "Responsive HTML/CSS/JS design"
-        ],
-        "suggested_improvements": [
-          "Add interactive search or filter",
-          "Convert into React SPA",
-          "Implement cart & checkout"
-        ]
-      }
-    }
-  ]
-
-
-
-
-
-
+  console.log(projectsData)
 
   return (
     <section id="projects" className="text-white md:py-40 py-20 px-4 font-montserrat">
@@ -271,13 +25,23 @@ export default function Projects() {
 
       <div
         className="max-w-screen-2xl mx-auto mt-10" >
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-3 lg:gap-5">
-          {projects.map((project, idx) => (
+        {
+          projectsData.length > 0 ?
+
+<div className="grid md:grid-cols-2 lg:grid-cols-3 gap-3 lg:gap-5">
+          {projectsData.map((project, idx) => (
             <div key={project.id} >
               <Project project={project} />
             </div>
           ))}
         </div>
+
+        :
+
+        <div>
+          <h1 className="text-zinc-500 text-center"     >no project found</h1>
+        </div>
+        }
       </div>
     </section>
   );
