@@ -19,7 +19,7 @@ const Hero = () => {
                 'Software Developer.',
                 'Web Developer.',
                 'Frontend Developer.',
-                'Ai Content Creator.',
+                'AI Content Creator.',
             ],
             typeSpeed: 40,
             loop: true,
@@ -35,18 +35,19 @@ const Hero = () => {
             {/* Hero Text  */}
             <motion.div
                 initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
+                whileInView={{ opacity: 1 }}
                 transition={{ duration: 1 }}
+                viewport={{ once: false, amount: 0.2 }}
                 className='md:space-y-12 lg:w-full space-y-4 flex justify-center flex-col'
             >
-
-                {/* about info  */}
+                {/* About Info  */}
                 <div className='md:space-y-5 space-y-2'>
                     
                     <motion.p
                         initial={{ opacity: 0, y: -20 }}
-                        animate={{ opacity: 1, y: 0 }}
+                        whileInView={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.6 }}
+                        viewport={{ once: false }}
                         className='text-primary'
                     >
                         Welcome to my digital space.
@@ -54,8 +55,9 @@ const Hero = () => {
 
                     <motion.h1
                         initial={{ opacity: 0, x: -50 }}
-                        animate={{ opacity: 1, x: 0 }}
+                        whileInView={{ opacity: 1, x: 0 }}
                         transition={{ duration: 0.8, delay: 0.3 }}
+                        viewport={{ once: false }}
                         className='text-3xl md:text-7xl font-bold'
                     >
                         Hi, I’m <span className='text-secondary'>Sujoy Das</span>
@@ -63,29 +65,31 @@ const Hero = () => {
 
                     <motion.h1
                         initial={{ opacity: 0, x: -50 }}
-                        animate={{ opacity: 1, x: 0 }}
+                        whileInView={{ opacity: 1, x: 0 }}
                         transition={{ duration: 0.8, delay: 0.5 }}
+                        viewport={{ once: false }}
                         className='text-2xl md:text-5xl font-bold'
                     >
                         a <span ref={el}></span>
                     </motion.h1>
 
                     <motion.p
-                       initial={{ opacity: 0, y: 50 }}
-                        animate={{ opacity: 1, y: 0 }}
+                        initial={{ opacity: 0, y: 50 }}
+                        whileInView={{ opacity: 1, y: 0 }}
                         transition={{ duration: 1, delay: 0.6 }}
+                        viewport={{ once: false }}
                         className='text-gray-300 font-poppins md:leading-6 leading-5 md:text-sm text-xs'
                     >
-                       Passionate Frontend Developer skilled in React.js, Tailwind CSS, and Firebase. Self-taught through YouTube and free resources, building real projects without formal courses. Now confident in Node.js, Express, MongoDB, and EJS for backend development. Aiming to deliver smooth and scalable full-stack solutions.
-
+                        Passionate Frontend Developer skilled in React.js, Tailwind CSS, and Firebase. Self-taught through YouTube and free resources, building real projects without formal courses. Now confident in Node.js, Express, MongoDB, and EJS for backend development. Aiming to deliver smooth and scalable full-stack solutions.
                     </motion.p>
                 </div>
 
-                {/* hire and resume btn  */}
+                {/* Hire and Resume Buttons */}
                 <motion.div
                     initial={{ opacity: 0, y: 20 }}
-                    animate={{ opacity: 1, y: 0 }}
+                    whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.6, delay: 0.8 }}
+                    viewport={{ once: false }}
                     className="md:text-xl flex items-center gap-5"
                 >
                     <motion.a
@@ -119,25 +123,24 @@ const Hero = () => {
                 {/* Social Icons */}
                 <motion.div
                     initial={{ opacity: 0 }}
-                    animate={{ opacity: 1 }}
+                    whileInView={{ opacity: 1 }}
                     transition={{ duration: 1, delay: 1 }}
+                    viewport={{ once: false }}
                 >
                     <FindWithMe />
                 </motion.div>
             </motion.div>
 
-
-
-
             {/* Hero Image Section */}
             <motion.div
                 initial={{ opacity: 0, scale: 0.8, y: 50 }}
-                animate={{ opacity: 1, scale: 1, y: 0 }}
+                whileInView={{ opacity: 1, scale: 1, y: 0 }}
                 transition={{ duration: 1, delay: 0.5 }}
+                viewport={{ once: false }}
                 className='relative flex lg:justify-end justify-center items-center '
             >
                 <div className="box-shadow rounded-3xl absolute bottom-0 h-9/12 lg:w-5/6  w-4/6 -z-10"></div>
-                <img className='lg:w-5/6 w-4/6' src={heroImg} alt="" />
+                <img className='lg:w-5/6 w-4/6' src={heroImg} alt="Sujoy Das" />
             </motion.div>
 
         </div>

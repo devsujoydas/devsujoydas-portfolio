@@ -24,39 +24,8 @@ const AuthProvider = ({ children }) => {
 
     const projectsData =
         [
-            // {
-            //     "id": "devsujoydas",
-            //     "name": "Sujoy Das Portfolio",
-            //     "description": "A modern portfolio showcasing projects, skills, achievements, and web development expertise.",
-            //     "tech": ["React", "Tailwind CSS", "Firebase", "SwiperJS", "NodeJS", "ExpressJS", "MongoDB"],
-            // // "image": "https://i.ibb.co/qLRQKf0T/localhost-5173-1.jpg",
-            //     "image": `${devsujoydas}`,
-            // "image2":"`${}`    
-            //     "links": [
-            //         { "label": "Website", "href": "https://devsujoydas.vercel.app" },
-            //         { "label": "Source Code", "href": "https://github.com/devsujoydas/devsujoydas-portfolio" }
-            //     ],
-            //     "projectDetails": {
-            //         "purpose": "Personal branding & showcase portfolio",
-            //         "features": [
-            //             "Animated typing text (Typed.js)",
-            //             "Responsive page sections for About, Skills, Projects, Contact",
-            //             "Carousel of projects via SwiperJS",
-            //             "Dark/light mode toggle (if implemented)"
-            //         ],
-            //         "UX_highlights": [
-            //             "Smooth scroll navigation",
-            //             "Mobile-friendly responsive design",
-            //             "Fast load via Tailwind utility-first CSS"
-            //         ],
-            //         "suggested_improvements": [
-            //             "Add contact form with email integration",
-            //             "Optimize SEO metadata, Open Graph tags",
-            //             "Include performance scores (Lighthouse audit)"
-            //         ]
-            //     }
-            // },
             {
+                "serial":0,
                 "id": "xenonmedia",
                 "name": "Xenon Media - Mini Social App",
                 "description": "A mini social media platform to post, like, and interact—built with modern React tools.",
@@ -73,7 +42,7 @@ const AuthProvider = ({ children }) => {
                     "features": [
                         "User auth via Firebase",
                         "Create/read/update/delete posts",
-                        "Like and comment functionality",
+                        "Like functionality",
                         "Interactive SwiperJS feed sections"
                     ],
                     "backend": [
@@ -89,6 +58,7 @@ const AuthProvider = ({ children }) => {
                 }
             },
             {
+                "serial":1,
                 "id": "nestmartbd",
                 "name": "Nest Mart BD",
                 "description": "User-friendly online store offering various products to enhance daily life and convenience.",
@@ -120,6 +90,7 @@ const AuthProvider = ({ children }) => {
                 }
             },
             {
+                "serial":2,
                 "id": "residentialrealestate",
                 "name": "Residential Real Estate",
                 "description": "Real estate platform to discover, list, and explore apartments, townhouses, and vacation rentals.",
@@ -147,6 +118,7 @@ const AuthProvider = ({ children }) => {
             },
 
             {
+                "serial":3,
                 "id": "tourtotuscany",
                 "name": "Tour To Tuscany",
                 "description": "Travel site for Tuscany, offering guides, experiences, and easy tour package bookings online.",
@@ -173,32 +145,8 @@ const AuthProvider = ({ children }) => {
                     ]
                 }
             },
-            // {
-            //     "id": "gadgetmartbd",
-            //     "name": "GADGET MART BD",
-            //     "description": "Electronics e-commerce site offering a wide range of gadgets with smooth shopping experience.",
-            //     "tech": ["React", "Tailwind CSS", "Firebase", "SwiperJS"],
-            //    "image": "https://i.ibb.co/wFmpNFgF/gadgetmartbd-thubnail.jpg",
-            //     "links": [
-            // "image2":"`${}` 
-            //         { "label": "Website", "href": "https://gadgetmartbd.vercel.app" },
-            //         { "label": "Source Code", "href": "https://github.com/devsujoydas/gadget-mart-bd" }
-            //     ],
-            //     "projectDetails": {
-            //         "purpose": "Online gadget store demo",
-            //         "features": [
-            //             "Product gallery and detail pages",
-            //             "SwiperJS image sliders",
-            //             "Firebase auth for wishlists"
-            //         ],
-            //         "suggested_improvements": [
-            //             "Shopping cart & checkout flow",
-            //             "Payment and delivery options",
-            //             "Inventory & admin dashboard"
-            //         ]
-            //     }
-            // },
             {
+                "serial":4,
                 "id": "reactcareerhub",
                 "name": "Job Portal BD",
                 "description": "Job and career guidance platform helping users explore opportunities and career resources effectively.",
@@ -225,8 +173,8 @@ const AuthProvider = ({ children }) => {
                 }
             },
 
-
             {
+                "serial":5,
                 "id": "elexyelectronics",
                 "name": "Elexy Electronics",
                 "description": "Electronics e-commerce site offering a wide range of gadgets with smooth shopping experience.",
@@ -252,31 +200,7 @@ const AuthProvider = ({ children }) => {
                     ]
                 }
             },
-            // {
-            //     "id": "furnichairstore",
-            //     "name": "Furni Chair Store",
-            //     "description": "Modern furniture store offering stylish, affordable options for home and office decoration.",
-            //     "tech": ["Html", "Tailwind CSS", "JavaScript"],
-            // // "image": "https://i.ibb.co/Gf89YsPd/furnichairstore-thubnail.jpg",
-            //     "image": `${furnichairstore}`,
-            // "image2":"`${}`    
-            //     "links": [
-            //         { "label": "Website", "href": "https://furnichairstore.vercel.app" },
-            //         { "label": "Source Code", "href": "https://github.com/devsujoydas/chair-store" }
-            //     ],
-            //     "projectDetails": {
-            //         "purpose": "Static storefront for furniture products",
-            //         "features": [
-            //             "Product grid layout with images",
-            //             "Responsive HTML/CSS/JS design"
-            //         ],
-            //         "suggested_improvements": [
-            //             "Add interactive search or filter",
-            //             "Convert into React SPA",
-            //             "Implement cart & checkout"
-            //         ]
-            //     }
-            // }
+            
         ]
 
 

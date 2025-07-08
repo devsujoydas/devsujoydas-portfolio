@@ -56,28 +56,47 @@ const skills = [
 
 
 
+import { motion } from "framer-motion";
 
 const Skills = () => {
   return (
-    <div id='skills' className=" text-white md:py-40 py-20 px-6">
-      <div className='md:pb-20 pb-10'>
-        <h1 className='text-secondary font-semibold text-center'>Slills & Tools</h1>
-        <h1 className='text-4xl md:text-7xl font-bold mt-5 text-primary text-center'>My Skills & Tools
+    <div id='skills' className="text-white md:py-40 py-20 px-6">
+      <motion.div
+        initial={{ opacity: 0, y: -30 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.2 }}
+        viewport={{ once: false }}
+        className='md:pb-20 pb-10'
+      >
+        <h1 className='text-secondary font-semibold text-center'>Skills & Tools</h1>
+        <h1 className='text-4xl md:text-7xl font-bold mt-5 text-primary text-center'>
+          My Skills & Tools
         </h1>
-      </div>
+      </motion.div>
 
       <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-5 gap-4 md:gap-6 max-w-screen-2xl mx-auto">
         {skills.map((skill, idx) => (
-          <div
+          <motion.div
             key={idx}
-           
+            initial={{ opacity: 0, y: 40 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{
+              duration: 0.5,
+              delay: idx * 0.1,
+              ease: "easeOut"
+            }}
+            viewport={{ once: false, amount: 0.2 }}
           >
-            <a href={skill.webUrl} target='_blank'  className="bg-zinc-900 inline-block w-full h-full cursor-pointer rounded-xl p-5 active:shadow-none active:scale-100 shadow-lg hover:scale-105 transition-transform space-y-2">
-            <img className='w-10 h-10 ' src={skill.img} alt="" />
-            <h2 className="text-xl font-semibold">{skill.name}</h2>
-            <p className="text-zinc-400 text-sm">{skill.description}</p>
+            <a
+              href={skill.webUrl}
+              target='_blank'
+              className="bg-zinc-900 inline-block w-full h-full cursor-pointer rounded-xl p-5 active:shadow-none active:scale-100 shadow-lg hover:scale-105 transition-transform space-y-2"
+            >
+              <img className='w-10 h-10' src={skill.img} alt={skill.name} />
+              <h2 className="text-xl font-semibold">{skill.name}</h2>
+              <p className="text-zinc-400 text-sm">{skill.description}</p>
             </a>
-          </div>
+          </motion.div>
         ))}
       </div>
     </div>
@@ -85,3 +104,4 @@ const Skills = () => {
 };
 
 export default Skills;
+
