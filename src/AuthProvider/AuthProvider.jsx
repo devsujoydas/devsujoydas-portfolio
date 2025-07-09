@@ -26,7 +26,6 @@ const AuthProvider = ({ children }) => {
                 "name": "Xenon Media - Mini Social App",
                 "description": "A mini social media platform to post, like, and interact—built with modern React tools.",
                 "tech": ["React", "Tailwind CSS", "Firebase", "SwiperJS", "NodeJS", "ExpressJS", "MongoDB"],
-                // "image": "https://i.ibb.co/wtgPsW8/xenonmedia-thumbnail.png",
                 "image": `${xenonmedia}`,
                 "image2": `${xenonmedia1}`,
                 "links": [
@@ -60,7 +59,6 @@ const AuthProvider = ({ children }) => {
                 "name": "Nest Mart BD",
                 "description": "User-friendly online store offering various products to enhance daily life and convenience.",
                 "tech": ["React", "Tailwind CSS", "Firebase", "SwiperJS", "NodeJS", "ExpressJS", "MongoDB"],
-                // "image": "https://i.ibb.co/RnTdzKg/nestmartbd-thubnail.jpg",
                 "image": `${nestmartbd}`,
                 "image2": `${nestmartbd1}`,
                 "links": [
@@ -93,7 +91,6 @@ const AuthProvider = ({ children }) => {
                 "name": "Residential Real Estate",
                 "description": "Real estate platform to discover, list, and explore apartments, townhouses, and vacation rentals.",
                 "tech": ["React", "Tailwind CSS", "Firebase", "SwiperJS"],
-                // "image": "https://i.ibb.co/gFtJC5zD/residential-tumbnail.jpg",
                 "image": `${residential}`,
                 "image2": `${residential1}`,
                 "links": [
@@ -122,7 +119,6 @@ const AuthProvider = ({ children }) => {
                 "name": "Tour To Tuscany",
                 "description": "Travel site for Tuscany, offering guides, experiences, and easy tour package bookings online.",
                 "tech": ["React", "Tailwind CSS", "Firebase", "SwiperJS"],
-                // "image": "https://i.ibb.co/pvxhMLHq/tourtotuscany-thubnail.jpg",
                 "image": `${tourtotuscany}`,
                 "image2": `${tourtotuscany1}`,
                 "links": [
@@ -151,7 +147,6 @@ const AuthProvider = ({ children }) => {
                 "name": "Job Portal BD",
                 "description": "Job and career guidance platform helping users explore opportunities and career resources effectively.",
                 "tech": ["React", "Tailwind CSS", "Firebase"],
-                // "image": "https://i.ibb.co/1GkjdqqT/reactcareerhub-thubnail.jpg",
                 "image": `${reactcareerhub}`,
                 "image2": `${reactcareerhub1}`,
                 "links": [
@@ -180,7 +175,6 @@ const AuthProvider = ({ children }) => {
                 "name": "Elexy Electronics",
                 "description": "Electronics e-commerce site offering a wide range of gadgets with smooth shopping experience.",
                 "tech": ["React", "Tailwind CSS", "Firebase", "SwiperJS"],
-                // "image": "https://i.ibb.co/ntmMgtN/elexyelectronics-thubnail.jpg",
                 "image": `${elexyelectronics}`,
                 "image2": `${elexyelectronics1}`,
                 "links": [
