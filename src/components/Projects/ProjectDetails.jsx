@@ -35,7 +35,7 @@ const ProjectDetails = () => {
       initial={{ y: -50, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.8, ease: "easeOut" }}
-      className="md:mt-24 mt-14 font-poppins max-w-screen-2xl h-screen mx-auto rounded-lg overflow-hidden px-4 md:px-10"
+      className="md:mt-24 mt-14 font-poppins max-w-screen-2xl  mx-auto rounded-lg overflow-hidden px-4 md:px-10"
     >
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 my-10">
 
@@ -45,11 +45,10 @@ const ProjectDetails = () => {
           <h1 className="md:text-4xl md:hidden text-2xl text-white  font-bold mb-4">{name}</h1>
 
           <div className="relative md:h-full min-h-56 rounded-lg border border-zinc-700 ">
-            <img
-              loading="lazy"
+            <img 
               src={image}
               alt={name}
-              className="absolute top-0 w-full h-full object-cover object-top active:object-bottom md:active:object-top hover:object-bottom transition-all duration-1000 rounded-lg"
+              className="absolute cursor-pointer top-0 w-full h-full object-cover object-top active:object-bottom md:active:object-top hover:object-bottom transition-all duration-1000 rounded-lg"
             />
           </div>
         </div>
@@ -127,7 +126,7 @@ const ProjectDetails = () => {
           </div>
 
           {/* Links Buttons */}
-          <div className="mt-8 grid grid-cols-2 gap-4">
+          <div className={`mt-8 grid ${!serverCodeLink.href == "" ? "grid-cols-3" : "grid-cols-2"}  gap-3`}>
             {/* Website Link */}
             {links[0] && (
               <a
@@ -153,7 +152,7 @@ const ProjectDetails = () => {
             )}
 
             {/* Server Code (conditionally render) */}
-            {serverCodeLink && (
+            {!serverCodeLink.href == "" && (
               <a
                 href={serverCodeLink.href}
                 target="_blank"

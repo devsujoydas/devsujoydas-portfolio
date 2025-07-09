@@ -8,7 +8,7 @@ const Header = () => {
   const [humbarger, setHumbarger] = useState(true);
 
   return (
-    <header className="fixed w-full z-50 top-0 shadow font-montserrat bg-[#212428] xl:px-0 px-3">
+    <header className="fixed w-full z-50 top-0 shadow font-montserrat bg-[#212428] 2xl:px-0 md:px-10 px-3">
       <div className="text-[#B4BECC] max-w-screen-2xl mx-auto flex flex-col md:flex-row gap-10 justify-between md:items-center md:py-5 py-3">
 
         {/* Logo & Menu Icon */}
@@ -19,7 +19,7 @@ const Header = () => {
           </a>
 
           {/* Menu Button for small devices */}
-          <div onClick={() => setHumbarger(!humbarger)} className="md:hidden block text-5xl text-secondary">
+          <div onClick={() => setHumbarger(!humbarger)} className="md:hidden block text-4xl text-secondary">
             <LuMenu />
           </div>
         </div>

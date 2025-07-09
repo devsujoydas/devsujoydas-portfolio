@@ -8,7 +8,7 @@ const Footer = () => {
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.8 }}
       viewport={{ once: false }}
-      className="relative py-10 px-5 bg-[#050709] font-montserrat"
+      className="relative py-5 md:py-10 md:px-5 px-3 bg-[#050709] font-montserrat"
     >
       <div className="max-w-screen-2xl mx-auto flex flex-col justify-between items-center">
         <a href="/">
@@ -26,7 +26,7 @@ const Footer = () => {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.3 }}
-          className="flex md:flex-row justify-center flex-wrap md:gap-10 gap-5 md:text-lg text-white my-5"
+          className="flex md:flex-row justify-center flex-wrap md:gap-10 gap-x-5 gap-y-2 md:text-lg text-white my-5"
         >
           <a className="hover:text-[#FF014F] duration-500 transition-all" href="/#home">Home</a>
           <a className="hover:text-[#FF014F] duration-500 transition-all" href="/#service">Services</a>

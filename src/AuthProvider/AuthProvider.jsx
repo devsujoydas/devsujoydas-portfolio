@@ -1,23 +1,19 @@
 import { createContext, useEffect, useState } from 'react'
 export const AuthContext = createContext()
 
+import xenonmedia from "/images/projectimages/xenonmedia-thumbnail.webp"
+import elexyelectronics from "/images/projectimages/elexyelectronics-thumbnail.webp"
+import tourtotuscany from "/images/projectimages/tourtotuscany-thumbnail.webp"
+import reactcareerhub from "/images/projectimages/reactcareerhub-thumbnail.webp"
+import nestmartbd from "/images/projectimages/nestmartbd-thumbnail.webp"
+import residential from "/images/projectimages/residential-thumbnail.webp"
 
-// import devsujoydas from "/images/projectimages/devsujoydas-thumbnail.jpg"
-import xenonmedia from "/images/projectimages/xenonmedia-thumbnail.png"
-import elexyelectronics from "/images/projectimages/elexyelectronics-thumbnail.jpg"
-// import furnichairstore from "/images/projectimages/furnichairstore-thumbnail.jpg"
-import tourtotuscany from "/images/projectimages/tourtotuscany-thumbnail.jpg"
-import reactcareerhub from "/images/projectimages/reactcareerhub-thumbnail.jpg"
-import nestmartbd from "/images/projectimages/nestmartbd-thumbnail.jpg"
-import residential from "/images/projectimages/residential-thumbnail.jpg"
-
-// import devsujoydas1 from "/images/projectimages/devsujoydas1-thumbnail.jpg"
-import xenonmedia1 from "/images/projectimages/xenonmedia1-thumbnail.jpg"
-import elexyelectronics1 from "/images/projectimages/elexyelectronics1-thumbnail.jpg"
-import reactcareerhub1 from "/images/projectimages/reactcareerhub1-thumbnail.jpg"
-import tourtotuscany1 from "/images/projectimages/tourtotuscany1-thumbnail.jpg"
-import nestmartbd1 from "/images/projectimages/nestmartbd1-thumbnail.jpg"
-import residential1 from "/images/projectimages/residential1-thumbnail.jpg"
+import xenonmedia1 from "/images/projectimages/xenonmedia1-thumbnail.webp"
+import elexyelectronics1 from "/images/projectimages/elexyelectronics1-thumbnail.webp"
+import reactcareerhub1 from "/images/projectimages/reactcareerhub1-thumbnail.webp"
+import tourtotuscany1 from "/images/projectimages/tourtotuscany1-thumbnail.webp"
+import nestmartbd1 from "/images/projectimages/nestmartbd1-thumbnail.webp"
+import residential1 from "/images/projectimages/residential1-thumbnail.webp"
 
 
 const AuthProvider = ({ children }) => {
@@ -25,7 +21,7 @@ const AuthProvider = ({ children }) => {
     const projectsData =
         [
             {
-                "serial":0,
+                "serial": 0,
                 "id": "xenonmedia",
                 "name": "Xenon Media - Mini Social App",
                 "description": "A mini social media platform to post, like, and interact—built with modern React tools.",
@@ -34,8 +30,9 @@ const AuthProvider = ({ children }) => {
                 "image": `${xenonmedia}`,
                 "image2": `${xenonmedia1}`,
                 "links": [
-                    { "label": "Website", "href": "https://xenonmedia.netlify.app/" },
-                    { "label": "Source Code", "href": "https://github.com/devsujoydas/mini-social-app" }
+                    { "label": "Website", "href": "https://xenonmedia.netlify.ap" },
+                    { "label": "client Code", "href": "https://github.com/devsujoydas/mini-social-app" },
+                    { "label": "server Code", "href": "https://github.com/devsujoydas/mini-social-app-server" },
                 ],
                 "projectDetails": {
                     "purpose": "Social engagement platform – post and interact",
@@ -58,7 +55,7 @@ const AuthProvider = ({ children }) => {
                 }
             },
             {
-                "serial":1,
+                "serial": 1,
                 "id": "nestmartbd",
                 "name": "Nest Mart BD",
                 "description": "User-friendly online store offering various products to enhance daily life and convenience.",
@@ -68,7 +65,8 @@ const AuthProvider = ({ children }) => {
                 "image2": `${nestmartbd1}`,
                 "links": [
                     { "label": "Website", "href": "https://nestmartbd.vercel.app" },
-                    { "label": "Source Code", "href": "https://github.com/devsujoydas/nest-mart-bd" }
+                    { "label": "client Code", "href": "https://github.com/devsujoydas/nest-mart-grocery-client" },
+                    { "label": "server Code", "href": "https://github.com/devsujoydas/nest-mart-grocery-server" },
                 ],
                 "projectDetails": {
                     "purpose": "E‑commerce storefront for Bangladesh market",
@@ -90,7 +88,7 @@ const AuthProvider = ({ children }) => {
                 }
             },
             {
-                "serial":2,
+                "serial": 2,
                 "id": "residentialrealestate",
                 "name": "Residential Real Estate",
                 "description": "Real estate platform to discover, list, and explore apartments, townhouses, and vacation rentals.",
@@ -100,7 +98,8 @@ const AuthProvider = ({ children }) => {
                 "image2": `${residential1}`,
                 "links": [
                     { "label": "Website", "href": "https://residentialrealestate.vercel.app" },
-                    { "label": "Source Code", "href": "https://github.com/devsujoydas/residential-real-estate" }
+                    { "label": "client Code", "href": "https://github.com/devsujoydas/residential-real-estate" },
+                    { "label": "server Code", "href": "https://github.com/devsujoydas/residential-real-estate-server" },
                 ],
                 "projectDetails": {
                     "purpose": "Property listing & search for rentals/sales",
@@ -118,7 +117,7 @@ const AuthProvider = ({ children }) => {
             },
 
             {
-                "serial":3,
+                "serial": 3,
                 "id": "tourtotuscany",
                 "name": "Tour To Tuscany",
                 "description": "Travel site for Tuscany, offering guides, experiences, and easy tour package bookings online.",
@@ -128,7 +127,8 @@ const AuthProvider = ({ children }) => {
                 "image2": `${tourtotuscany1}`,
                 "links": [
                     { "label": "Website", "href": "https://tourtotuscany.vercel.app" },
-                    { "label": "Source Code", "href": "https://github.com/devsujoydas/tour-to-tuscany" }
+                    { "label": "client Code", "href": "https://github.com/devsujoydas/tour-to-tuscany" },
+                    { "label": "server Code", "href": "" },
                 ],
                 "projectDetails": {
                     "purpose": "Showcase Tuscany tours & attractions",
@@ -146,7 +146,7 @@ const AuthProvider = ({ children }) => {
                 }
             },
             {
-                "serial":4,
+                "serial": 4,
                 "id": "reactcareerhub",
                 "name": "Job Portal BD",
                 "description": "Job and career guidance platform helping users explore opportunities and career resources effectively.",
@@ -156,7 +156,8 @@ const AuthProvider = ({ children }) => {
                 "image2": `${reactcareerhub1}`,
                 "links": [
                     { "label": "Website", "href": "https://reactcareerhub.vercel.app" },
-                    { "label": "Source Code", "href": "https://github.com/devsujoydas/react-career-hub" }
+                    { "label": "client Code", "href": "https://github.com/devsujoydas/react-career-hub" },
+                    { "label": "server Code", "href": "" },
                 ],
                 "projectDetails": {
                     "purpose": "Career discovery and job listings",
@@ -174,7 +175,7 @@ const AuthProvider = ({ children }) => {
             },
 
             {
-                "serial":5,
+                "serial": 5,
                 "id": "elexyelectronics",
                 "name": "Elexy Electronics",
                 "description": "Electronics e-commerce site offering a wide range of gadgets with smooth shopping experience.",
@@ -184,7 +185,8 @@ const AuthProvider = ({ children }) => {
                 "image2": `${elexyelectronics1}`,
                 "links": [
                     { "label": "Website", "href": "https://elexyelectronics.vercel.app" },
-                    { "label": "Source Code", "href": "https://github.com/devsujoydas/elexy-electronics." }
+                    { "label": "client Code", "href": "https://github.com/devsujoydas/elexy-electronics." },
+                    { "label": "server Code", "href": "." },
                 ],
                 "projectDetails": {
                     "purpose": "E‑commerce template for electronics",
@@ -200,7 +202,7 @@ const AuthProvider = ({ children }) => {
                     ]
                 }
             },
-            
+
         ]
 
 

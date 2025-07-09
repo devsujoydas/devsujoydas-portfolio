@@ -4,9 +4,7 @@ import { Link } from 'react-router-dom';
 import { memo } from "react";
 
 const Project = ({ project }) => {
-
-    console.log(project.serial)
-
+    
     return (
         <div>
             <div className='shadow-lg hover:shadow-xl overflow-hidden hover:-translate-y-1 rounded-2xl  uration-500 transition-all group '>
