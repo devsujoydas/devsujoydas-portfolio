@@ -7,7 +7,7 @@ const Footer = () => {
       initial={{ opacity: 0, y: 50 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.8 }}
-      viewport={{ once: false }}
+      viewport={{ once: true }}
       className="relative py-5 md:py-10 md:px-5 px-3 bg-[#050709] font-montserrat"
     >
       <div className="max-w-screen-2xl mx-auto flex flex-col justify-between items-center">

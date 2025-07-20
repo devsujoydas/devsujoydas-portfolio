@@ -26,7 +26,7 @@ export default function Contact() {
     };
 
     return (
-        <div id='contact' className="min-h-screen font-montserrat text-white  md:py-40 py-20 overflow-hidden">
+        <div id='contact' className="font-montserrat text-white  md:py-40 py-20 overflow-hidden">
             <motion.h1
                 initial={{ opacity: 0, y: -30 }}
                 whileInView={{ opacity: 1, y: 0 }}

@@ -23,6 +23,8 @@ import daisyUIImg from '/images/daisyUI.png'
 import AntDesignImg from '/images/AntDesign.svg'
 import MerakiUIImg from '/images/MerakiUI.png'
 import CreativeTimImg from '/images/Creative-Tim.webp'
+import Lenis from '/images/lenis.jpeg'
+import Cursor from '/images/cursorai.jpeg'
 
 const skills = [
   { name: 'HTML', description: 'Markup language for web pages', img: `${htmlImg}`, webUrl: 'https://developer.mozilla.org/en-US/docs/Web/HTML' },
@@ -35,9 +37,11 @@ const skills = [
   { name: 'MongoDB', description: 'NoSQL database for modern apps', img: `${MongoDBImg}`, webUrl: 'https://www.mongodb.com/' },
   { name: 'Firebase', description: 'Backend platform for building web and mobile applications', img: `${firebaseImg}`, webUrl: 'https://firebase.google.com/' },
   { name: 'Framer Motion', description: 'Animation library for React applications', img: 'https://framerusercontent.com/images/p82ZbUPQdsB3LwOnllbkrrIIH5Y.png', webUrl: 'https://www.framer.com/motion/' },
+  { name: 'Lenis', description: 'Smooth scroll library for modern web experiences', img: `${Lenis}`, webUrl: 'https://github.com/darkroomengineering/lenis' },
   { name: 'JWT', description: 'Compact, URL-safe means of representing claims between two parties', img: 'https://img.icons8.com/color/96/java-web-token.png', webUrl: 'https://jwt.io/' },
   { name: 'Postman', description: 'API platform for building and using APIs', img: 'https://img.icons8.com/external-tal-revivo-color-tal-revivo/96/external-postman-is-the-only-complete-api-development-environment-logo-color-tal-revivo.png', webUrl: 'https://www.postman.com/' },
   { name: 'VS Code', description: 'Popular source-code editor with support for debugging', img: `${vscodeImg}`, webUrl: 'https://code.visualstudio.com/' },
+  { name: 'Cursor Ai', description: 'AI-powered code editor', img: `${Cursor}`, webUrl: 'https://cursor.com' },
   { name: 'Figma', description: 'Collaborative design tool', img: `${FigmaImg}`, webUrl: 'https://figma.com/' },
   { name: 'npm', description: 'Package manager for JavaScript projects', img: `${npmImg}`, webUrl: 'https://www.npmjs.com/' },
   { name: 'Git', description: 'Distributed version control system', img: `${GitImg}`, webUrl: 'https://git-scm.com/' },
@@ -64,7 +68,7 @@ const Skills = () => {
       <motion.div
         initial={{ opacity: 0, y: -30 }}
         whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.1  }}
+        transition={{ duration: 0.1 }}
         viewport={{ once: false }}
         className='md:pb-20 pb-10'
       >
@@ -81,8 +85,8 @@ const Skills = () => {
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{
-              duration: 0.5,
-              delay: idx * 0.05,
+              duration: 0.4,
+              delay: idx * 0.03,
               ease: "easeOut"
             }}
             viewport={{ once: false, amount: 0.1 }}

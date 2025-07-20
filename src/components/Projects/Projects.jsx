@@ -23,7 +23,7 @@ export default function Projects() {
               {projectsData.map((project, idx) => (
                 <motion.div
                   key={project.id}
-                  initial={{ x: idx % 2 === 0 ? 100 : -100, opacity: 0 }}
+                  initial={{ x: idx % 2 === 0 ? 10  : -10, opacity: 0 }}
                   whileInView={{ x: 0, opacity: 1 }}
                   transition={{
                     type: "spring",
@@ -32,7 +32,7 @@ export default function Projects() {
                     duration: 0.6,
                     delay: idx * 0.05 // Optional: stagger effect
                   }}
-                  viewport={{ once: false, amount: 0.2 }}
+                  viewport={{ once: true, amount: 0.2 }}
                 >
                   <Project project={project}   />
                 </motion.div>
