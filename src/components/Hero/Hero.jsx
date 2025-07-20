@@ -37,7 +37,7 @@ const Hero = () => {
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}
                 transition={{ duration: 1 }}
-                viewport={{ once: false, amount: 0.2 }}
+                viewport={{ once: true, amount: 0.2 }}
                 className='md:space-y-12 lg:w-full space-y-4 flex justify-center flex-col'
             >
                 {/* About Info  */}
@@ -47,7 +47,7 @@ const Hero = () => {
                         initial={{ opacity: 0, y: -20 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.6 }}
-                        viewport={{ once: false }}
+                        viewport={{ once: true }}
                         className='text-primary'
                     >
                         Welcome to my digital space.
@@ -57,7 +57,7 @@ const Hero = () => {
                         initial={{ opacity: 0, x: -50 }}
                         whileInView={{ opacity: 1, x: 0 }}
                         transition={{ duration: 0.8, delay: 0.3 }}
-                        viewport={{ once: false }}
+                        viewport={{ once: true }}
                         className='text-3xl md:text-7xl font-bold'
                     >
                         Hi, I’m <span className='text-secondary'>Sujoy Das</span>
@@ -67,7 +67,7 @@ const Hero = () => {
                         initial={{ opacity: 0, x: -50 }}
                         whileInView={{ opacity: 1, x: 0 }}
                         transition={{ duration: 0.8, delay: 0.5 }}
-                        viewport={{ once: false }}
+                        viewport={{ once: true }}
                         className='text-2xl md:text-5xl font-bold'
                     >
                         a <span ref={el}></span>
@@ -77,7 +77,7 @@ const Hero = () => {
                         initial={{ opacity: 0, y: 50 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         transition={{ duration: 1, delay: 0.6 }}
-                        viewport={{ once: false }}
+                        viewport={{ once: true }}
                         className='text-gray-300 font-poppins md:leading-6 leading-5 md:text-sm text-xs'
                     >
                         Passionate Frontend Developer skilled in React.js, Tailwind CSS, and Firebase. Self-taught through YouTube and free resources, building real projects without formal courses. Now confident in Node.js, Express, MongoDB, and EJS for backend development. Aiming to deliver smooth and scalable full-stack solutions.
@@ -89,7 +89,7 @@ const Hero = () => {
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.6, delay: 0.8 }}
-                    viewport={{ once: false }}
+                    viewport={{ once: true }}
                     className="md:text-xl flex items-center gap-5"
                 >
                     <motion.a

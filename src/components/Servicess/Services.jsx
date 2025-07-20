@@ -41,7 +41,7 @@ const Services = () => {
         initial={{ opacity: 0, y: -20 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
-        viewport={{ once: false }}
+        viewport={{ once: true }}
         className='text-secondary font-semibold'
       >
         FEATURES
@@ -51,7 +51,7 @@ const Services = () => {
         initial={{ opacity: 0, y: -20 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, delay: 0.2 }}
-        viewport={{ once: false }}
+        viewport={{ once: true }}
         className='text-4xl md:text-7xl text-primary font-bold mt-5'
       >
         Services
@@ -68,7 +68,7 @@ const Services = () => {
               delay: idx * 0.1,
               ease: "easeOut"
             }}
-            viewport={{ once: false, amount: 0.2 }}
+            viewport={{ once: true, amount: 0.2 }}
             className="md:p-12 p-9 rounded-3xl space-y-4 shadow-lg shadow-[#00000046] active:shadow-none  hover:-translate-y-3 active:-translate-y-3 duration-500 transition-all"
           >
             <FaCode className="text-4xl md:text-5xl" />

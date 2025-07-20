@@ -1,15 +1,16 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import { Link } from 'react-router-dom';
 
 const navItems = [
-  { label: "Home", href: "#home" },
-  { label: "Services", href: "#service" },
-  { label: "Projects", href: "#projects" },
-  { label: "Skills", href: "#skills" },
-  { label: "Contact", href: "#contact" },
+  { label: "Home", to: "/" },
+  { label: "Services", to: "/" },
+  { label: "Projects", to: "/" },
+  { label: "Skills", to: "/" },
+  { label: "Contact", to: "/" },
 ];
 
-const Nav = () => {
+const PublicNav = () => {
   return (
     <motion.div
       className="flex md:flex-row flex-col justify-center md:items-center flex-wrap md:gap-10 gap-4 md:text-lg"
@@ -18,18 +19,16 @@ const Nav = () => {
       transition={{ duration: 0.6 }}
     >
       {navItems.map((item, idx) => (
-        <motion.a
+        <Link
           key={idx}
-          href={item.href}
-          whileHover={{ scale: 1, color: "#FF014F" }}
-          transition={{ type: "spring", stiffness: 300 }}
+          to={item.to}
           className="text-white transition-all"
         >
           {item.label}
-        </motion.a>
+        </Link>
       ))}
     </motion.div>
   );
 };
 
-export default Nav;
+export default PublicNav;
