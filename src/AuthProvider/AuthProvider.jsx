@@ -29,7 +29,7 @@ const AuthProvider = ({ children }) => {
                 "image": `${xenonmedia}`,
                 "image2": `${xenonmedia1}`,
                 "links": [
-                    { "label": "Website", "href": "https://xenonmedia.netlify.ap" },
+                    { "label": "Website", "href": "https://xenonmedia.netlify.app" },
                     { "label": "client Code", "href": "https://github.com/devsujoydas/mini-social-app" },
                     { "label": "server Code", "href": "https://github.com/devsujoydas/mini-social-app-server" },
                 ],

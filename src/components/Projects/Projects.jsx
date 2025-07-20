@@ -27,8 +27,8 @@ export default function Projects() {
                   whileInView={{ opacity: 1, y: 0 }}
                   transition={{
                     duration: 0.4,
-                    delay: idx * 0.03,
-                    ease: "easeOut",
+                    delay: idx * 0.02,
+                    ease: "easeInOut",
                   }}
                   viewport={{ once: false, amount: 0.2 }}
                 >

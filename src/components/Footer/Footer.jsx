@@ -16,6 +16,7 @@ const Footer = () => {
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             transition={{ delay: 0.2 }}
+            viewport={{ once: true }}
             className="md:text-5xl text-2xl font-semibold text-white"
           >
             SUJOY DAS
@@ -26,6 +27,7 @@ const Footer = () => {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.3 }}
+          viewport={{ once: true }}
           className="flex md:flex-row justify-center flex-wrap md:gap-10 gap-x-5 gap-y-2 md:text-lg text-white my-5"
         >
           <a className="hover:text-[#FF014F] duration-500 transition-all" href="/#home">Home</a>
@@ -40,6 +42,7 @@ const Footer = () => {
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ delay: 0.5 }}
+          viewport={{ once: true }}
           className="text-sm text-primary"
         >
           © 2025 All Rights Reserved by Sujoy Das

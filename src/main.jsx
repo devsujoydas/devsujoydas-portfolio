@@ -7,6 +7,19 @@ import RootPage from './Pages/RootPage/RootPage.jsx'
 import ProjectDetails from './components/Projects/ProjectDetails.jsx'
 import AuthProvider from './AuthProvider/AuthProvider.jsx'
 import ProjectPage from './Pages/ProjectPage/ProjectPage.jsx'
+import Lenis from 'lenis'
+
+// Initialize Lenis
+const lenis = new Lenis();
+
+// Use requestAnimationFrame to continuously update the scroll
+function raf(time) {
+  lenis.raf(time);
+  requestAnimationFrame(raf);
+}
+
+requestAnimationFrame(raf);
+
 
 const router = createBrowserRouter([
   {
