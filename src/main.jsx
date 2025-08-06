@@ -8,6 +8,7 @@ import ProjectDetails from './components/Projects/ProjectDetails.jsx'
 import AuthProvider from './AuthProvider/AuthProvider.jsx'
 import ProjectPage from './Pages/ProjectPage/ProjectPage.jsx'
 import Lenis from 'lenis'
+import ProjectDetails1 from './components/Projects/ProjectDetails1.jsx'
 
 // // Initialize Lenis
 // const lenis = new Lenis({
@@ -39,7 +40,7 @@ const router = createBrowserRouter([
       },
       {
         path: "/project/:id",
-        element: <ProjectDetails />,
+        element: <ProjectDetails1  />,
       },
     ]
 
