@@ -46,6 +46,7 @@ const ProjectDetails = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 my-10">
 
           {/* Left - Image */}
+          
           <div className="lg:col-span-3 ">
 
             <h1 className="md:text-4xl md:hidden text-2xl text-white  font-bold mb-4">{name}</h1>
@@ -57,7 +58,11 @@ const ProjectDetails = () => {
                 className="absolute cursor-pointer top-0 w-full h-full object-cover object-top active:object-bottom md:active:object-top hover:object-bottom transition-all duration-1000 rounded-lg"
               />
             </div>
+          
           </div>
+
+    
+          
 
           {/* Right - Details */}
           <div className="lg:col-span-2 text-white flex flex-col justify-between">

@@ -9,16 +9,19 @@ import AuthProvider from './AuthProvider/AuthProvider.jsx'
 import ProjectPage from './Pages/ProjectPage/ProjectPage.jsx'
 import Lenis from 'lenis'
 
-// Initialize Lenis
-const lenis = new Lenis();
+// // Initialize Lenis
+// const lenis = new Lenis({
+//   duration: 2, // Duration in seconds (default is ~1.2)
+  
+// });
 
-// Use requestAnimationFrame to continuously update the scroll
-function raf(time) {
-  lenis.raf(time);
-  requestAnimationFrame(raf);
-}
+// // Use requestAnimationFrame to continuously update the scroll
+// function raf(time) {
+//   lenis.raf(time);
+//   requestAnimationFrame(raf);
+// }
 
-requestAnimationFrame(raf);
+// requestAnimationFrame(raf);
 
 
 const router = createBrowserRouter([
@@ -36,7 +39,7 @@ const router = createBrowserRouter([
       },
       {
         path: "/project/:id",
-        element: <ProjectDetails />, 
+        element: <ProjectDetails />,
       },
     ]
 

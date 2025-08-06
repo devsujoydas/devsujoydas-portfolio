@@ -23,25 +23,21 @@ export default function Projects() {
               {projectsData.map((project, idx) => (
                 <motion.div
                   key={project.id}
-                  initial={{ opacity: 0, y: 10 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  transition={{
-                    duration: 0.4,
-                    delay: idx * 0.02,
-                    ease: "easeInOut",
-                  }}
-                  viewport={{ once: false, amount: 0.2 }}
+                  initial={{ opacity: 0, x: -20 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  transition={{ duration: 0.4, delay: idx * 0.02, ease: "easeIn", }}
+                  viewport={{ once: true, amount: 0.2 }}
                 >
-              <Project project={project} />
-            </motion.div>
+                  <Project project={project} />
+                </motion.div>
               ))}
-      </div>
-      :
-      <div>
-        <h1 className="text-zinc-500 text-center">no project found</h1>
-      </div>
+            </div>
+            :
+            <div>
+              <h1 className="text-zinc-500 text-center">no project found</h1>
+            </div>
         }
-    </div>
+      </div>
     </section >
   );
 }

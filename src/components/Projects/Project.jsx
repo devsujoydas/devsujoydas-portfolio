@@ -4,25 +4,23 @@ import { Link } from 'react-router-dom';
 import { memo } from "react";
 
 const Project = ({ project }) => {
-    
+
     return (
         <div>
             <div className='shadow-lg hover:shadow-xl overflow-hidden hover:-translate-y-1 rounded-2xl  uration-500 transition-all group '>
-
-
                 <div className={`bg-[#18181B] rounded-2xl overflow-hidden md:p-5 p-3 shadow-lg flex h-full md:flex-row flex-col ${project.serial % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"} gap-5`} >
-
                     {/* Project Img */}
                     <div className='relative h-[200px] md:h-[460px] md:w-2/3 overflow-hidden rounded-lg'>
                         <Link to={`/project/${project.id}`}>
                             <img
                                 src={project.image}
                                 alt={project.name}
+                                // className="absolute cursor-pointer top-0 w-full h-full object-cover object-top active:object-bottom md:active:object-top hover:object-bottom transition-all duration-1000    rounded-lg"
+              
                                 className="absolute top-0  object-cover object-top   transition-all duration-1000"
                             />
                         </Link>
                     </div>
-
                     {/* Details */}
                     <div className='flex md:w-1/3 h-full flex-col md:gap-3'>
                         <h3 className="md:text-2xl text-xl font-bold mb-2">{project.name}</h3>
@@ -37,7 +35,6 @@ const Project = ({ project }) => {
                                 </span>
                             ))}
                         </div>
-
                         {/* Features */}
                         {project?.projectDetails.features && (
                             <div className="md:block hidden">

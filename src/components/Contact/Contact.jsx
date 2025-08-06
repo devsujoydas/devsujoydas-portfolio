@@ -31,7 +31,7 @@ export default function Contact() {
                 initial={{ opacity: 0, y: -30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6 }}
-                viewport={{ once: false }}
+                viewport={{ once: true }}
                 className='text-secondary font-semibold text-center'
             >
                 CONTACT
@@ -41,7 +41,7 @@ export default function Contact() {
                 initial={{ opacity: 0, y: -20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8 }}
-                viewport={{ once: false }}
+                viewport={{ once: true }}
                 className='md:text-7xl text-4xl font-bold mt-5 text-primary text-center'
             >
                 Contact With Me
@@ -54,7 +54,7 @@ export default function Contact() {
                     initial={{ opacity: 0, x: -50 }}
                     whileInView={{ opacity: 1, x: 0 }}
                     transition={{ duration: 0.8 }}
-                    viewport={{ once: false, amount: 0.2 }}
+                    viewport={{ once: true, amount: 0.2 }}
                     className="md:col-span-2 rounded-2xl shadow-2xl border border-gray-700 md:p-8 p-4 space-y-5"
                 >
                     <img src={ContactBanner} alt="Handshake" className="w-full h-64 object-cover rounded-xl" />
@@ -78,7 +78,7 @@ export default function Contact() {
                     initial={{ opacity: 0, x: 50 }}
                     whileInView={{ opacity: 1, x: 0 }}
                     transition={{ duration: 0.8, delay: 0.2 }}
-                    viewport={{ once: false, amount: 0.2 }}
+                    viewport={{ once: true, amount: 0.2 }}
                     className="md:col-span-3 flex flex-col justify-between border border-gray-700 space-y-4 bg-[#212428] p-6 rounded-2xl shadow-xl"
                 >
                     <div className="grid md:grid-cols-2 gap-4">

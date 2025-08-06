@@ -71,7 +71,7 @@ const Skills = () => {
         initial={{ opacity: 0, y: -30 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.1 }}
-        viewport={{ once: false }}
+        viewport={{ once: true }}
         className='md:pb-20 pb-10'
       >
         <h1 className='text-secondary font-semibold text-center'>Skills & Tools</h1>
@@ -91,7 +91,7 @@ const Skills = () => {
               delay: idx * 0.03,
               ease: "easeOut"
             }}
-            viewport={{ once: false, amount: 0.1 }}
+            viewport={{ once: true, amount: 0.1 }}
           >
             <a
               href={skill.webUrl}
