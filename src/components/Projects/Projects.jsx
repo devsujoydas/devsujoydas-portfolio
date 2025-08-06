@@ -19,7 +19,7 @@ export default function Projects() {
       <div className="max-w-screen-2xl mx-auto mt-10">
         {
           projectsData.length > 0 ?
-            <div className="grid gap-3 lg:gap-5 overflow-hidden">
+            <div className="grid xl:grid-cols-3 md:grid-cols-2 gap-3 lg:gap-5 overflow-hidden">
               {projectsData.map((project, idx) => (
                 <motion.div
                   key={project.id}
