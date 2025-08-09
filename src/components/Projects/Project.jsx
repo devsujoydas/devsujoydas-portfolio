@@ -1,30 +1,23 @@
 
 import { TbWorld } from "react-icons/tb";
-import { Link } from 'react-router-dom';
-import { memo } from "react";
+import { Link } from 'react-router-dom'; 
 
 const Project = ({ project }) => {
 
     return (
         <div>
-            <div className='shadow-lg hover:shadow-xl overflow-hidden hover:-translate-y-1 rounded-2xl  uration-500 transition-all group '>
-                {/* <div className={`bg-[#18181B] rounded-2xl overflow-hidden md:p-5 p-3 shadow-lg flex h-full md:flex-row flex-col ${project.serial % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"} gap-5`} > */}
+            <div className='shadow-lg hover:shadow-xl overflow-hidden hover:-translate-y-1 rounded-2xl  uration-500 transition-all group '> 
                 <div className={`bg-[#18181B] rounded-2xl overflow-hidden md:p-5 p-3 shadow-lg  h-full gap-5`} >
-                    {/* Project Img */}
-                    {/* <div className='relative h-[200px] md:h-[460px] md:w-2/3 overflow-hidden rounded-lg'> */}
+                   
                     <div className='relative h-[200px] md:h-[260px]  overflow-hidden rounded-lg'>
                         <Link to={`/project/${project.id}`}>
                             <img
                                 src={project.image}
-                                alt={project.name}
-                                // className="absolute cursor-pointer top-0 w-full h-full object-cover object-top active:object-bottom md:active:object-top hover:object-bottom transition-all duration-1000    rounded-lg"
-              
+                                alt={project.name}               
                                 className="absolute top-0  object-cover object-top   transition-all duration-1000"
                             />
                         </Link>
-                    </div>
-                    {/* Details */}
-                    {/* <div className='flex md:w-1/3 h-full flex-col md:gap-3'> */}
+                    </div> 
                     <div className='flex mt-5 h-full flex-col md:gap-2'>
                         <h3 className="md:text-2xl text-xl font-bold mb-2">{project.name}</h3>
                         <p className="text-zinc-300 mb-3">{project.description}</p>
@@ -37,19 +30,7 @@ const Project = ({ project }) => {
                                     {tech}
                                 </span>
                             ))}
-                        </div>
-                        {/* Features */}
-                        {/* {project?.projectDetails.features && (
-                            <div className="md:block hidden">
-                                <h3 className="font-semibold md:text-xl mb-2">Features</h3>
-                                <ul className="list-disc list-inside text-gray-300 space-y-1">
-                                    {project?.projectDetails?.features?.map((feat, i) => (
-                                        <li className="text-sm md:text-[16px]" key={i}>{feat}</li>
-                                    ))}
-                                </ul>
-                            </div>
-                        )} */}
-
+                        </div> 
 
                         <hr className="text-gray-700 pt-2" />
  
@@ -69,4 +50,4 @@ const Project = ({ project }) => {
     )
 }
 
-export default memo(Project);
+export default Project;

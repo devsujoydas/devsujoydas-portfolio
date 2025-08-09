@@ -10,15 +10,15 @@ const Home = () => {
   return (
     <div>
       <Header />
-      <div className="2xl:mx-0 md:mx-10 mx-3">
+      <div className="w-8xl 2xl:mx-auto md:mx-10 mx-3">
         <Hero />
-        <hr className="max-w-screen-2xl mx-auto text-gray-600" />
+        <hr className=" text-gray-600" />
         <Services />
-        <hr className="max-w-screen-2xl mx-auto text-gray-600" />
+        <hr className=" text-gray-600" />
         <Projects />
-        <hr className="max-w-screen-2xl mx-auto text-gray-600" />
+        <hr className=" text-gray-600" />
         <Skills />
-        <hr className="max-w-screen-2xl mx-auto text-gray-600" />
+        <hr className=" text-gray-600" />
         <Contact />
       </div>
       <Footer />

@@ -22,11 +22,15 @@ export default function Projects() {
             <div className="grid xl:grid-cols-3 md:grid-cols-2 gap-3 lg:gap-5 overflow-hidden">
               {projectsData.map((project, idx) => (
                 <motion.div
-                  key={project.id}
-                  initial={{ opacity: 0, x: -20 }}
-                  whileInView={{ opacity: 1, x: 0 }}
-                  transition={{ duration: 0.4, delay: idx * 0.02, ease: "easeIn", }}
-                  viewport={{ once: true, amount: 0.2 }}
+                  key={idx}
+                  initial={{ opacity: 0, y: 10 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{
+                    duration: 0.4,
+                    delay: idx * 0.1,
+                    ease: "easeOut"
+                  }}
+                  viewport={{ once: false, amount: 0.1 }}
                 >
                   <Project project={project} />
                 </motion.div>

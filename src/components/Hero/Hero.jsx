@@ -9,6 +9,7 @@ import './Hero.css'
 import FindWithMe from "../FindWithMe/FindWithMe";
 
 import { motion } from "framer-motion";
+import CodeBlock from "./CodeBlock";
 
 const Hero = () => {
     const el = React.useRef(null);
@@ -30,6 +31,7 @@ const Hero = () => {
     }, []);
 
     return (
+
         <div id='home' className='text-white max-w-screen-2xl font-montserrat mx-auto lg:px-0  md:pt-40 pt-28 pb-10 gap-5 flex lg:flex-row flex-col-reverse overflow-hidden'>
 
             {/* Hero Text  */}
@@ -42,7 +44,7 @@ const Hero = () => {
             >
                 {/* About Info  */}
                 <div className='md:space-y-5 space-y-2'>
-                    
+
                     <motion.p
                         initial={{ opacity: 0, y: -20 }}
                         whileInView={{ opacity: 1, y: 0 }}
@@ -80,7 +82,10 @@ const Hero = () => {
                         viewport={{ once: true }}
                         className='text-gray-300 font-poppins md:leading-6 leading-5 md:text-sm text-xs'
                     >
-                        Passionate Frontend Developer skilled in React.js, Tailwind CSS, and Firebase. Self-taught through YouTube and free resources, building real projects without formal courses. Now confident in Node.js, Express, MongoDB, and EJS for backend development. Aiming to deliver smooth and scalable full-stack solutions.
+                        Passionate Frontend Developer skilled in React.js, Tailwind CSS, and Firebase. 
+                        Self-taught through YouTube and free resources, building real projects without formal courses. 
+                        Now confident in Node.js, Express, MongoDB, and EJS for backend development. 
+                        Aiming to deliver smooth and scalable full-stack solutions.
                     </motion.p>
                 </div>
 
@@ -131,6 +136,10 @@ const Hero = () => {
                 </motion.div>
             </motion.div>
 
+
+            {/* <div className="">
+                <CodeBlock />
+            </div> */}
             {/* Hero Image Section */}
             <motion.div
                 initial={{ opacity: 0, scale: 0.8, y: 50 }}

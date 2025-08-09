@@ -96,7 +96,7 @@ const Skills = () => {
             <a
               href={skill.webUrl}
               target='_blank'
-              className="bg-zinc-900 inline-block w-full h-full cursor-pointer rounded-xl p-5 active:shadow-none active:scale-100 shadow-lg hover:scale-105 transition-transform space-y-2"
+              className="bg-black inline-block w-full h-full cursor-pointer rounded-xl p-5 active:shadow-none active:scale-100 shadow-lg hover:scale-105 transition-transform space-y-2 border  border-[#362929]"
             >
               <img className='md:w-10 md:h-10 w-8 h-8' src={skill.img} alt={skill.name} />
               <h2 className="md:text-xl text-base font-semibold">{skill.name}</h2>

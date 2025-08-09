@@ -130,11 +130,14 @@ const ProjectDetails1 = () => {
             </div>
 
             {/* Links Buttons */}
-            <div className={`mt-8 grid ${!serverCodeLink.href == "" ? "grid-cols-3" : "grid-cols-2"}  gap-3`}>
+            <div
+              className={`mt-8 grid ${serverCodeLink && serverCodeLink.href ? "grid-cols-3" : "grid-cols-2"
+                } gap-3`}
+            >
               {/* Website Link */}
               {links[0] && (
                 <a
-                  href={links[0].href}
+                  href={links[0]?.href}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="bg-gray-600 hover:bg-gray-700 transition-all flex items-center justify-center gap-2 md:px-6 py-3 rounded-md md:text-sm text-xs font-semibold"
@@ -156,7 +159,7 @@ const ProjectDetails1 = () => {
               )}
 
               {/* Server Code (conditionally render) */}
-              {!serverCodeLink.href == "" && (
+              {!serverCodeLink?.href == "" && (
                 <a
                   href={serverCodeLink.href}
                   target="_blank"
