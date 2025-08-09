@@ -9,6 +9,7 @@ import GridBackground from "../../components/StarBackground/GridBackground"
 import { useContext, useEffect } from "react"
 import { AuthContext } from "../../AuthProvider/AuthProvider"
 import { div } from "framer-motion/client"
+import LenisWrapper from "../../AuthProvider/LenisWrapper"
 
 
 const RootPage = () => {
@@ -21,7 +22,7 @@ const RootPage = () => {
 
         return () => clearTimeout(timer);
     }, []);
- 
+
 
 
     return (
@@ -35,7 +36,12 @@ const RootPage = () => {
                     <div className="w-14 h-14 border-y-4 border-white rounded-full animate-spin"></div>
                 </div>
                 :
-                <Outlet />}
+                <LenisWrapper>
+                    <Outlet />
+                </LenisWrapper>
+
+
+            }
 
         </div >
     )

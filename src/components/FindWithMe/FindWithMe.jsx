@@ -6,12 +6,12 @@ import { FaLinkedinIn } from "react-icons/fa";
 import { motion } from "framer-motion";
 
 const socialLinks = [
-    { icon: <FiFacebook className="text-2xl" />, url: "https://facebook.com/devsujoydas" },
-    { icon: <FiGithub className="text-2xl" />, url: "https://github.com/devsujoydas" },
-    { icon: <FaLinkedinIn className="text-2xl" />, url: "https://www.linkedin.com/in/devsujoydas" },
-    { icon: <BsWhatsapp className="text-2xl" />, url: "http://wa.me/+8801303436299" },
-    { icon: <IoLogoInstagram className="text-2xl" />, url: "https://www.instagram.com/devsujoydas" },
-    { icon: <FiYoutube className="text-2xl" />, url: "https://www.youtube.com/@devsujoydas" },
+    { icon: <FiFacebook className=" text-xl md:text-2xl" />, url: "https://facebook.com/devsujoydas" },
+    { icon: <FiGithub className=" text-xl md:text-2xl" />, url: "https://github.com/devsujoydas" },
+    { icon: <FaLinkedinIn className=" text-xl md:text-2xl" />, url: "https://www.linkedin.com/in/devsujoydas" },
+    { icon: <BsWhatsapp className=" text-xl md:text-2xl" />, url: "http://wa.me/+8801303436299" },
+    { icon: <IoLogoInstagram className=" text-xl md:text-2xl" />, url: "https://www.instagram.com/devsujoydas" },
+    { icon: <FiYoutube className=" text-xl md:text-2xl" />, url: "https://www.youtube.com/@devsujoydas" },
 ];
 
 const container = {
@@ -60,7 +60,7 @@ const FindWithMe = () => {
             </motion.h2>
 
             <motion.div
-                className="flex flex-wrap items-center gap-3 md:gap-4"
+                className="flex flex-wrap items-center gap-2 md:gap-4"
                 variants={container}
             >
                 {socialLinks.map((social, index) => (

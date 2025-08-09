@@ -69,16 +69,16 @@ export default function Contact() {
                     whileInView={{ opacity: 1, x: 0 }}
                     transition={{ duration: 0.8 }}
                     viewport={{ once: true, amount: 0.2 }}
-                    className="md:col-span-2 rounded-2xl shadow-2xl border border-gray-700 md:p-8 p-4 space-y-5"
+                    className="md:col-span-2 rounded-2xl shadow-2xl border border-gray-700 md:p-8 p-4 space-y-2 md:space-y-5"
                 >
                     <img src={ContactBanner} alt="Handshake" className="w-full h-64 object-cover rounded-xl" />
-                    <div>
+                    <div className="md:text-[16px] text-sm">
                         <h2 className="text-2xl font-bold">Sujoy Das</h2>
                         <p className="text-zinc-400">Frontend Web Developer.</p>
                         <p className="mt-4 text-zinc-300">
                             I'm always open to networking and discussing potential collaborations. Connect with me through this form or find me on:
                         </p>
-                        <div className="mt-4 space-y-2 text-zinc-300 ">
+                        <div className="md:mt-4 mt-2 space-y-1 md:space-y-2 text-zinc-300 ">
                             <a className='block' href="tel:+8801303436299" target='_blank'>Phone: <span className='hover:text-[#FF014F] transition-all duration-500'>+880 1303-436299</span></a>
                             <a className='block' href='mailto:devsujoydas@gmail.com' target='_blank'>Email: <span className='hover:text-[#FF014F] transition-all duration-500'>devsujoydas@gmail.com</span></a>
                         </div>
@@ -93,38 +93,38 @@ export default function Contact() {
                     whileInView={{ opacity: 1, x: 0 }}
                     transition={{ duration: 0.8, delay: 0.2 }}
                     viewport={{ once: true, amount: 0.2 }}
-                    className="md:col-span-3 flex flex-col justify-between border border-gray-700 space-y-4 p-6 rounded-2xl shadow-xl"
+                    className="md:col-span-3 flex flex-col justify-between border border-gray-700 space-y-2 md:text-[16px] text-sm md:space-y-4 p-6 rounded-2xl shadow-xl"
                 >
-                    <div className="grid md:grid-cols-2 gap-4">
+                    <div className="grid  md:grid-cols-2 gap-2 md:gap-4 ">
                         <div>
                             <label htmlFor="name">Your Name</label>
-                            <input required name="name" type="text" placeholder="Your Name" className="border border-zinc-500 bg-transparent outline-none md:mt-4 mt-2 text-white p-3 md:p-4 rounded-md w-full" />
+                            <input required name="name" type="text" placeholder="Your Name" className="border border-zinc-500 bg-transparent outline-none md:mt-4 mt-1 text-white p-2 md:p-4 rounded-md w-full" />
                         </div>
                         <div>
                             <label htmlFor="phone">Your Number</label>
-                            <input required name="phone" type="text" placeholder="Phone Number" className="border border-zinc-500 bg-transparent outline-none md:mt-4 mt-2 text-white p-3 md:p-4 rounded-md w-full" />
+                            <input required name="phone" type="text" placeholder="Phone Number" className="border border-zinc-500 bg-transparent outline-none md:mt-4 mt-1 text-white p-2 md:p-4 rounded-md w-full" />
                         </div>
                     </div>
 
                     <div>
                         <label htmlFor="email">Your Email</label>
-                        <input required name="email" type="email" placeholder="Email" className="border border-zinc-500 bg-transparent outline-none md:mt-4 mt-2 text-white p-3 md:p-4 rounded-md w-full" />
+                        <input required name="email" type="email" placeholder="Email" className="border border-zinc-500 bg-transparent outline-none md:mt-4 mt-1 text-white p-2 md:p-4 rounded-md w-full" />
                     </div>
 
                     <div>
                         <label htmlFor="subject">Subject</label>
-                        <input required name="subject" type="text" placeholder="Subject" className="border border-zinc-500 bg-transparent outline-none md:mt-4 mt-2 text-white p-3 md:p-4 rounded-md w-full" />
+                        <input required name="subject" type="text" placeholder="Subject" className="border border-zinc-500 bg-transparent outline-none md:mt-4 mt-1 text-white p-2 md:p-4 rounded-md w-full" />
                     </div>
 
                     <div>
                         <label htmlFor="message">Your Message</label>
-                        <textarea name="message" placeholder="Your Message" className="border border-zinc-500 bg-transparent outline-none md:mt-4 mt-2 text-white p-3 md:p-4 rounded-md w-full md:h-32"></textarea>
+                        <textarea name="message" placeholder="Your Message" className="border border-zinc-500 bg-transparent outline-none md:mt-4 mt-1 text-white p-2 md:p-4 rounded-md w-full md:h-32"></textarea>
                     </div>
 
                     <button
                         type="submit"
                         disabled={loading}
-                        className={`w-full text-white active:scale-95 font-semibold py-4 cursor-pointer border border-transparent rounded-lg transition-all duration-500 ${
+                        className={`w-full text-white active:scale-95 font-semibold py-3 md:py-4 cursor-pointer border border-transparent md:text-[16px] text-xs rounded-lg transition-all duration-500 ${
                             loading
                                 ? "bg-gray-500 cursor-not-allowed"
                                 : "bg-[#3c3c41] hover:border-zinc-600 hover:bg-transparent"

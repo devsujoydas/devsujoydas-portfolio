@@ -92,6 +92,7 @@ const Skills = () => {
               ease: "easeOut"
             }}
             viewport={{ once: true, amount: 0.1 }}
+            className='bg-[#18181ba6]'
           >
             <a
               href={skill.webUrl}

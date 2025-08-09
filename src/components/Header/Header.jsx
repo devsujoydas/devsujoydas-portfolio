@@ -11,18 +11,15 @@ const Header = () => {
     <header className="fixed bg-[#0000007e] backdrop-blur-sm z-50 top-0 left-0 right-0 shadow font-montserrat  border-b border-b-zinc-800">
 
       <div className="text-[#B4BECC] w-primary flex flex-col md:flex-row gap-10 justify-between md:items-center md:py-4 py-3">
-
-        {/* Logo & Menu Icon */}
+ 
         <div className="flex w-full lg:w-fit  justify-between items-center  md:py-0 py-1 ">
 
           <a href="/" className="flex items-center gap-3">
             <div className="relative  border border-zinc-700 p-[3px] w-11 h-11 rounded-full overflow-hidden">
-              {/* এখানে p-[3px] দিয়ে padding দিয়ে গ্রেডিয়েন্ট বর্ডার এর মত স্পেস তৈরি করলাম */}
               <img
                 src="https://avatars.githubusercontent.com/u/157239662?v=4"
                 alt="Logo"
                 className="w-full h-full scale-125 rounded-full border-4 border-black bg-black"
-              // তুমি চাইলে border-black বাদ দিতে পারো বা অন্য কালার দিতে পারো
               />
             </div>
             <h1 className="font-poppins md:text-[16px] text-xs">devsujoydas@gmail.com</h1>

@@ -69,11 +69,11 @@ const Services = () => {
               ease: "easeOut"
             }}
             viewport={{ once: true, amount: 0.2 }}
-            className="md:p-12 p-6 rounded-3xl space-y-2 md:space-y-4 shadow-sm shadow-[#ffffff] active:shadow-none  hover:-translate-y-3 active:-translate-y-3 duration-500 transition-all"
+            className="md:p-12 bg-[#18181ba6] p-6 rounded-3xl space-y-2 md:space-y-4 shadow-sm shadow-[#ffffff] active:shadow-none  hover:-translate-y-3 active:-translate-y-3 duration-500 transition-all"
           >
             <FaCode className="text-4xl md:text-5xl" />
-            <h1 className="text-xl md:text-2xl font-semibold">{service.name}</h1>
-            <p>{service.description}</p>
+            <h1 className="text-lg md:text-2xl font-semibold">{service.name}</h1>
+            <p className="md:text-[16px] text-sm">{service.description}</p>
           </motion.div>
         ))}
       </div>

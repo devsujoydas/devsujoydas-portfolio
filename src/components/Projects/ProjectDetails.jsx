@@ -34,7 +34,7 @@ const ProjectDetails = () => {
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.8, ease: "easeOut" }}
         viewport={{ once: true }}
-        className="md:mt-24 mt-14 font-poppins max-w-screen-2xl  mx-auto rounded-lg overflow-hidden px-4 md:px-10"
+        className="md:mt-24 mt-14 font-poppins w-primary border rounded-lg overflow-hidden px-4 md:px-10"
       >
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 my-10">
 

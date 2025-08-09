@@ -60,8 +60,8 @@ export default function Projects() {
               {displayProjects.map((project, idx) => (
                 <motion.div
                   key={idx} viewport={{ once: true, amount: 0.1 }}
-                  initial={{ opacity: 0, scale: 0.8 }}
-                  whileInView={{ opacity: 1, scale: 1 }}
+                  initial={{ opacity: 0,  }}
+                  whileInView={{ opacity: 1, }}
                   transition={{ duration: 0.4, delay: idx * 0.1, ease: "easeOut" }}
                 >
                   <Project project={project} />
