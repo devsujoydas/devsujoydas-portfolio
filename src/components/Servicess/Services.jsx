@@ -36,7 +36,7 @@ const Services = () => {
   ];
 
   return (
-    <div id="service" className='text-primary max-w-screen-2xl md:px-0  mx-auto font-montserrat md:py-45 py-20'>
+    <div id="service" className='text-primary  md:px-0  font-montserrat md:py-30 py-20'>
       <motion.h1
         initial={{ opacity: 0, y: -20 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -61,7 +61,7 @@ const Services = () => {
         {servicelist.map((service, idx) => (
           <motion.div
             key={idx}
-            initial={{ opacity: 0, y: 50 }}
+            initial={{ opacity: 0, y: 10 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{
               duration: 0.6,
@@ -69,7 +69,7 @@ const Services = () => {
               ease: "easeOut"
             }}
             viewport={{ once: true, amount: 0.2 }}
-            className="md:p-12 p-9 rounded-3xl space-y-4 shadow-lg shadow-[#00000046] active:shadow-none  hover:-translate-y-3 active:-translate-y-3 duration-500 transition-all"
+            className="md:p-12 p-6 rounded-3xl space-y-2 md:space-y-4 shadow-sm shadow-[#ffffff] active:shadow-none  hover:-translate-y-3 active:-translate-y-3 duration-500 transition-all"
           >
             <FaCode className="text-4xl md:text-5xl" />
             <h1 className="text-xl md:text-2xl font-semibold">{service.name}</h1>

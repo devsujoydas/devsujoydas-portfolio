@@ -21,7 +21,7 @@ const Nav = () => {
         <motion.a
           key={idx}
           href={item.href}
-          whileHover={{ scale: 1, color: "#FF014F" }}
+          whileHover={{ scale: 1, color: "lightgray " }}
           transition={{ type: "spring", stiffness: 300 }}
           className="text-white transition-all"
         >

@@ -26,13 +26,13 @@ const AuthProvider = ({ children }) => {
             "id": "xenonui",
             "name": "XenonUI -  Component Library",
             "description": "A modern, responsive UI component library built with React and Tailwind CSS.",
+            "type": "frontend",
             "tech": [
                 "React",
                 "Tailwind CSS",
                 "SwiperJS",
                 "Framer Motion",
                 "React Hook Form",
-                "@tanstack/react-query"
             ],
             "image": `${xenonui}`,
             "image2": `${xenonui1}`,
@@ -64,6 +64,7 @@ const AuthProvider = ({ children }) => {
             "id": "xenonmedia",
             "name": "Xenon Media - Mini Social App",
             "description": "A mini social media platform to post, like, and interact—built with modern React tools.",
+            "type": "mern",
             "tech": ["React", "Tailwind CSS", "Firebase", "SwiperJS", "NodeJS", "ExpressJS", "MongoDB"],
             "image": `${xenonmedia}`,
             "image2": `${xenonmedia1}`,
@@ -97,7 +98,8 @@ const AuthProvider = ({ children }) => {
             "id": "nestmartbd",
             "name": "Nest Mart BD",
             "description": "User-friendly online store offering various products to enhance daily life and convenience.",
-            "tech": ["React", "Tailwind CSS", "Firebase", "SwiperJS", "NodeJS", "ExpressJS", "MongoDB"],
+            "type": "mern",
+            "tech": ["React", "Tailwind CSS", "Firebase", "SwiperJS", "NodeJS", "ExpressJS", "MongoDB", "Motion"],
             "image": `${nestmartbd}`,
             "image2": `${nestmartbd1}`,
             "links": [
@@ -129,6 +131,7 @@ const AuthProvider = ({ children }) => {
             "id": "residentialrealestate",
             "name": "Residential Real Estate",
             "description": "Real estate platform to discover, list, and explore apartments, townhouses, and vacation rentals.",
+            "type": "frontend",
             "tech": ["React", "Tailwind CSS", "Firebase", "SwiperJS"],
             "image": `${residential}`,
             "image2": `${residential1}`,
@@ -157,6 +160,7 @@ const AuthProvider = ({ children }) => {
             "id": "tourtotuscany",
             "name": "Tour To Tuscany",
             "description": "Travel site for Tuscany, offering guides, experiences, and easy tour package bookings online.",
+            "type": "frontend",
             "tech": ["React", "Tailwind CSS", "Firebase", "SwiperJS"],
             "image": `${tourtotuscany}`,
             "image2": `${tourtotuscany1}`,
@@ -182,9 +186,38 @@ const AuthProvider = ({ children }) => {
         },
         {
             "serial": 6,
+            "id": "elexyelectronics",
+            "name": "Elexy Electronics",
+            "description": "Electronics e-commerce site offering a wide range of gadgets with smooth shopping experience.",
+            "type": "frontend",
+            "tech": ["React", "Tailwind CSS", "Firebase", "SwiperJS"],
+            "image": `${elexyelectronics}`,
+            "image2": `${elexyelectronics1}`,
+            "links": [
+                { "label": "Website", "href": "https://elexyelectronics.vercel.app" },
+                { "label": "client Code", "href": "https://github.com/devsujoydas/elexy-electronics." },
+                { "label": "server Code", "href": "." },
+            ],
+            "projectDetails": {
+                "purpose": "E‑commerce template for electronics",
+                "features": [
+                    "Responsive product listings",
+                    "SwiperJS product carousels",
+                    "User login via Firebase"
+                ],
+                "suggested_improvements": [
+                    "Checkout/payment flow",
+                    "Product search filters",
+                    "Admin product management panel"
+                ]
+            }
+        },
+        {
+            "serial": 7,
             "id": "reactcareerhub",
             "name": "Job Portal BD",
             "description": "Job and career guidance platform helping users explore opportunities and career resources effectively.",
+            "type": "frontend",
             "tech": ["React", "Tailwind CSS", "Firebase"],
             "image": `${reactcareerhub}`,
             "image2": `${reactcareerhub1}`,
@@ -208,37 +241,11 @@ const AuthProvider = ({ children }) => {
             }
         },
 
-        {
-            "serial": 7,
-            "id": "elexyelectronics",
-            "name": "Elexy Electronics",
-            "description": "Electronics e-commerce site offering a wide range of gadgets with smooth shopping experience.",
-            "tech": ["React", "Tailwind CSS", "Firebase", "SwiperJS"],
-            "image": `${elexyelectronics}`,
-            "image2": `${elexyelectronics1}`,
-            "links": [
-                { "label": "Website", "href": "https://elexyelectronics.vercel.app" },
-                { "label": "client Code", "href": "https://github.com/devsujoydas/elexy-electronics." },
-                { "label": "server Code", "href": "." },
-            ],
-            "projectDetails": {
-                "purpose": "E‑commerce template for electronics",
-                "features": [
-                    "Responsive product listings",
-                    "SwiperJS product carousels",
-                    "User login via Firebase"
-                ],
-                "suggested_improvements": [
-                    "Checkout/payment flow",
-                    "Product search filters",
-                    "Admin product management panel"
-                ]
-            }
-        },
+
 
         ]
 
-
+    const [loading, setLoading] = useState(true)
 
 
 
@@ -248,6 +255,8 @@ const AuthProvider = ({ children }) => {
 
     const data = {
         projectsData,
+        loading, setLoading
+
     }
 
 

@@ -48,10 +48,10 @@ const FindWithMe = () => {
             whileInView="show"
             viewport={{ once: true, amount: 0.3 }}
             variants={container}
-            className="mt-6"
+            className="md:mt-6"
         >
             <motion.h2
-                className="text-primary font-semibold text-lg mb-3"
+                className="text-primary font-semibold text-sm md:text-lg mb-3"
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ duration: 0.6 }}
@@ -69,12 +69,12 @@ const FindWithMe = () => {
                         href={social.url}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="w-12 h-12 rounded-full bg-[#3c3c41] flex items-center justify-center shadow-md hover:scale-110 transition-all duration-300 text-white"
+                        className="md:w-12 w-10  md:h-12 h-10 rounded-full bg-[#3c3c41] hover:bg-transparent border border-transparent hover:border-zinc-600 text-white flex items-center justify-center shadow-md hover:scale-110 transition-all duration-300 "
                         variants={item}
-                        whileHover={{ scale: 1.01 }}
+                        whileHover={{ scale: 1 }}
                         whileTap={{ scale: 0.95 }}
                     >
-                        {social.icon}
+                    {social.icon}
                     </motion.a>
                 ))}
             </motion.div>

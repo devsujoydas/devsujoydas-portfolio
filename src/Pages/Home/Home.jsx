@@ -10,16 +10,27 @@ const Home = () => {
   return (
     <div>
       <Header />
-      <div className="w-8xl 2xl:mx-auto md:mx-10 mx-3">
-        <Hero />
+      <div className="">
+
+        <div className="w-primary"><Hero /></div>
+
         <hr className=" text-gray-600" />
-        <Services />
+
+        <div className="w-primary"><Services /></div>
+
         <hr className=" text-gray-600" />
-        <Projects />
+
+        <div className="w-primary"><Projects /></div>
+
         <hr className=" text-gray-600" />
-        <Skills />
+
+        <div className="w-primary"><Skills /></div>
+
         <hr className=" text-gray-600" />
-        <Contact />
+
+        <div className="w-primary"><Contact /></div>
+
+        <hr className=" text-gray-600" />
       </div>
       <Footer />
     </div>

@@ -10,13 +10,8 @@ import ProjectPage from './Pages/ProjectPage/ProjectPage.jsx'
 import Lenis from 'lenis'
 import ProjectDetails1 from './components/Projects/ProjectDetails1.jsx'
 
-// // Initialize Lenis
-// const lenis = new Lenis({
-//   duration: 2, // Duration in seconds (default is ~1.2)
-  
-// });
 
-// // Use requestAnimationFrame to continuously update the scroll
+// const lenis = new Lenis();
 // function raf(time) {
 //   lenis.raf(time);
 //   requestAnimationFrame(raf);
@@ -40,7 +35,7 @@ const router = createBrowserRouter([
       },
       {
         path: "/project/:id",
-        element: <ProjectDetails1  />,
+        element: <ProjectDetails1 />,
       },
     ]
 

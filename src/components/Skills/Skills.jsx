@@ -66,7 +66,7 @@ import { motion } from "framer-motion";
 
 const Skills = () => {
   return (
-    <div id='skills' className="text-white md:py-40 py-20 ">
+    <div id='skills' className="text-white md:py-36 py-20 ">
       <motion.div
         initial={{ opacity: 0, y: -30 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -80,7 +80,7 @@ const Skills = () => {
         </h1>
       </motion.div>
 
-      <div className=" grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-5 gap-3 md:gap-6 max-w-screen-2xl mx-auto">
+      <div className=" grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-5 gap-3 md:gap-6 ">
         {skills.map((skill, idx) => (
           <motion.div
             key={idx}
@@ -96,7 +96,7 @@ const Skills = () => {
             <a
               href={skill.webUrl}
               target='_blank'
-              className="bg-black inline-block w-full h-full cursor-pointer rounded-xl p-5 active:shadow-none active:scale-100 shadow-lg hover:scale-105 transition-transform space-y-2 border  border-[#362929]"
+              className=" inline-block bg-[#18181b52] w-full h-full cursor-pointer rounded-xl p-5 active:shadow-none active:scale-100 shadow-lg hover:scale-105 transition-transform space-y-2 border  border-[#362929]"
             >
               <img className='md:w-10 md:h-10 w-8 h-8' src={skill.img} alt={skill.name} />
               <h2 className="md:text-xl text-base font-semibold">{skill.name}</h2>
