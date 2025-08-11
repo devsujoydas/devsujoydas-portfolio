@@ -69,13 +69,13 @@ export default function Contact() {
                     whileInView={{ opacity: 1, x: 0 }}
                     transition={{ duration: 0.8 }}
                     viewport={{ once: true, amount: 0.2 }}
-                    className="md:col-span-2 rounded-2xl shadow-2xl border border-gray-700 md:p-8 p-4 space-y-2 md:space-y-5"
+                    className="md:col-span-2 bgMain rounded-2xl shadow-2xl border border-gray-700 md:p-8 p-4 space-y-2 md:space-y-5"
                 >
                     <img src={ContactBanner} alt="Handshake" className="w-full h-64 object-cover rounded-xl" />
-                    <div className="md:text-[16px] text-sm">
+                    <div className="md:text-[16px] text-sm font-medium">
                         <h2 className="text-2xl font-bold">Sujoy Das</h2>
                         <p className="text-zinc-400">Frontend Web Developer.</p>
-                        <p className="mt-4 text-zinc-300">
+                        <p className="mt-4  text-zinc-300">
                             I'm always open to networking and discussing potential collaborations. Connect with me through this form or find me on:
                         </p>
                         <div className="md:mt-4 mt-2 space-y-1 md:space-y-2 text-zinc-300 ">
@@ -93,7 +93,7 @@ export default function Contact() {
                     whileInView={{ opacity: 1, x: 0 }}
                     transition={{ duration: 0.8, delay: 0.2 }}
                     viewport={{ once: true, amount: 0.2 }}
-                    className="md:col-span-3 flex flex-col justify-between border border-gray-700 space-y-2 md:text-[16px] text-sm md:space-y-4 p-6 rounded-2xl shadow-xl"
+                    className="md:col-span-3 bgMain flex flex-col justify-between border border-gray-700 space-y-2 md:text-[16px] text-sm md:space-y-4 p-6 rounded-2xl shadow-xl"
                 >
                     <div className="grid  md:grid-cols-2 gap-2 md:gap-4 ">
                         <div>

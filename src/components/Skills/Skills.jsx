@@ -92,12 +92,12 @@ const Skills = () => {
               ease: "easeOut"
             }}
             viewport={{ once: true, amount: 0.1 }}
-            className='bg-[#18181ba6]'
+            className=''
           >
             <a
               href={skill.webUrl}
               target='_blank'
-              className=" inline-block bg-[#18181b52] w-full h-full cursor-pointer rounded-xl p-5 active:shadow-none active:scale-100 shadow-lg hover:scale-105 transition-transform space-y-2 border  border-[#362929]"
+              className=" inline-block bgMain w-full h-full cursor-pointer rounded-xl p-5 active:shadow-none active:scale-100 shadow-lg hover:scale-105 transition-transform space-y-2 border  border-[#362929]"
             >
               <img className='md:w-10 md:h-10 w-8 h-8' src={skill.img} alt={skill.name} />
               <h2 className="md:text-xl text-base font-semibold">{skill.name}</h2>

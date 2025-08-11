@@ -26,6 +26,10 @@
   color: #FF014F;
 }
 
+.bgMain {
+  background-color: black;
+}
+
 .bg-primary {
   background-color: #B4BECC;
 }

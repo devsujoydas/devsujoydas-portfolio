@@ -115,9 +115,9 @@ const Hero = () => {
                         whileHover={{ scale: 1.05 }}
                         whileTap={{ scale: 0.95 }}
                         href="#contact"
-                        className="bg-[#3C3C41] hover:bg-transparent border border-transparent hover:border-zinc-500 flex items-center gap-2 px-3 py-2 group rounded-full active:scale-95 duration-500 transition-all"
+                        className="bg-[#3C3C41] hover:bg-transparent active:bg-transparent   border border-transparent hover:border-zinc-500 active:border-zinc-500 flex items-center gap-2 px-3 py-2 group rounded-full active:scale-95 duration-500 transition-all"
                     >
-                            <GoArrowUpRight className="bg-white text-black group-hover:bg-transparent group-hover:text-white rounded-full border border-transparent group-hover:border-zinc-500  p-1 text-xl md:text-2xl duration-500 transition-all" />
+                            <GoArrowUpRight className="bg-white text-black group-active:bg-transparent group-hover:bg-transparent group-active:text-white group-hover:text-white rounded-full border border-transparent group-active:border-zinc-500 group-hover:border-zinc-500  p-1 text-xl md:text-2xl duration-500 transition-all" />
                         Hire Me
                     </motion.a>
 
@@ -126,9 +126,9 @@ const Hero = () => {
                         whileTap={{ scale: 0.95 }}
                         href="https://drive.google.com/file/d/1tRiK-GdxwROqLvnL6kyDaafJIyZfPJI5/view?usp=sharing"
                         target="_blank"
-                        className="bg-[#3C3C41] hover:bg-transparent border border-transparent hover:border-zinc-500 flex items-center gap-2 px-3 py-2 group rounded-full active:scale-95 duration-500 transition-all"
+                        className="bg-[#3C3C41] hover:bg-transparent active:bg-transparent border border-transparent hover:border-zinc-500 active:border-zinc-500 flex items-center gap-2 px-3 py-2 group rounded-full active:scale-95 duration-500 transition-all"
                     > 
-                            <IoMdDownload className="bg-white text-black group-hover:bg-transparent group-hover:text-white rounded-full border border-transparent group-hover:border-zinc-500  p-1 text-xl md:text-2xl duration-500 transition-all" />
+                            <IoMdDownload className="bg-white text-black group-active:bg-transparent group-hover:bg-transparent group-active:text-white group-hover:text-white rounded-full border border-transparent group-active:border-zinc-500 group-hover:border-zinc-500  p-1 text-xl md:text-2xl duration-500 transition-all" />
                         Resume
                     </motion.a>
                 </motion.div>

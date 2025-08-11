@@ -69,7 +69,7 @@ const FindWithMe = () => {
                         href={social.url}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="md:w-12 w-10  md:h-12 h-10 rounded-full bg-[#3c3c41] hover:bg-transparent border border-transparent hover:border-zinc-600 text-white flex items-center justify-center shadow-md hover:scale-110 transition-all duration-300 "
+                        className="md:w-12 w-10  md:h-12 h-10 rounded-full bg-[#3c3c41] active:bg-transparent hover:bg-transparent border border-transparent active:border-zinc-600 hover:border-zinc-600 text-white flex items-center justify-center shadow-md hover:scale-110 transition-all duration-300 "
                         variants={item}
                         whileHover={{ scale: 1 }}
                         whileTap={{ scale: 0.95 }}

@@ -7,7 +7,7 @@ const Project = ({ project }) => {
     return (
         <div>
             <div className='shadow-xs shadow-zinc-300 hover:shadow-sm  hover:-translate-y-1 rounded-2xl  duration-500 transition-all group '>
-                <div className={`bg-[#18181ba6] border border-zinc-600 h-fit rounded-2xl overflow-hidden md:p-5 p-3 shadow-lg    gap-5`} >
+                <div className={`bgMain border border-zinc-600 h-fit rounded-2xl overflow-hidden md:p-5 p-3 shadow-lg    gap-5`} >
 
                     <div className='relative h-[200px] md:h-[220px] border border-zinc-600 overflow-hidden rounded-lg'>
                         <Link to={`/project/${project.id}`}>
