@@ -59,7 +59,7 @@ export default function Projects() {
             <div className="grid xl:grid-cols-3 md:grid-cols-2 gap-3 lg:gap-5 ">
               {displayProjects.map((project, idx) => (
                 <motion.div
-                  key={idx} viewport={{ once: true, amount: 0.1 }}
+                  key={idx} viewport={{ once: false, amount: 0.1 }}
                   initial={{ opacity: 0,  }}
                   whileInView={{ opacity: 1, }}
                   transition={{ duration: 0.4, delay: idx * 0.1, ease: "easeOut" }}

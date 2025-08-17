@@ -1,31 +1,31 @@
 
-import htmlImg from '/images/html.webp'
-import cssImg from '/images/css.webp'
-import jsImg from '/images/javascript.webp'
-import reactImg from '/images/react.webp'
-import firebaseImg from '/images/firebase.webp'
-import tailwindImg from '/images/tailwind.png'
-import nodeImg from '/images/nodeimg.png'
-import photoshopImg from '/images/photoshop.webp'
-import expressImg from '/images/express.png'
-import FigmaImg from '/images/figma.webp'
-import illustratorImg from '/images/illustrator.webp'
-import GitImg from '/images/git.png'
-import MongoDBImg from '/images/mongodb.png'
-import vscodeImg from '/images/vscode.png'
-import GitHubImg from '/images/github.png'
-import ShadcnUIImg from '/images/ShadcnUi.png'
-import npmImg from '/images/npm.png'
-import SwiperJSImg from '/images/swiperjs.svg'
-import NextUIImg from '/images/NextUI.png'
-import UniverseioImg from '/images/Universeio.webp'
-import daisyUIImg from '/images/daisyUI.png'
-import AntDesignImg from '/images/AntDesign.svg'
-import MerakiUIImg from '/images/MerakiUI.png'
-import CreativeTimImg from '/images/Creative-Tim.webp'
-import Lenis from '/images/lenis.jpeg'
-import Cursor from '/images/cursorai.jpeg'
-import ReactRouter from '/images/reactrouter.png'
+import htmlImg from '/images/skillsImage/html.webp'
+import cssImg from '/images/skillsImage/css.webp'
+import jsImg from '/images/skillsImage/javascript.webp'
+import reactImg from '/images/skillsImage/react.webp'
+import firebaseImg from '/images/skillsImage/firebase.webp'
+import tailwindImg from '/images/skillsImage/tailwind.png'
+import nodeImg from '/images/skillsImage/nodeimg.png'
+import expressImg from '/images/skillsImage/express.png'
+import FigmaImg from '/images/skillsImage/figma.webp'
+import illustratorImg from '/images/skillsImage/illustrator.webp'
+import GitImg from '/images/skillsImage/git.png'
+import MongoDBImg from '/images/skillsImage/mongodb.png'
+import vscodeImg from '/images/skillsImage/vscode.png'
+import GitHubImg from '/images/skillsImage/github.png'
+import ShadcnUIImg from '/images/skillsImage/ShadcnUi.png'
+import npmImg from '/images/skillsImage/npm.png'
+import SwiperJSImg from '/images/skillsImage/swiperjs.svg'
+import NextUIImg from '/images/skillsImage/NextUI.png'
+import UniverseioImg from '/images/skillsImage/Universeio.webp'
+import daisyUIImg from '/images/skillsImage/daisyUI.png'
+import AntDesignImg from '/images/skillsImage/AntDesign.svg'
+import MerakiUIImg from '/images/skillsImage/MerakiUI.png'
+import CreativeTimImg from '/images/skillsImage/Creative-Tim.webp'
+import Lenis from '/images/skillsImage/lenis.jpeg'
+import Cursor from '/images/skillsImage/cursorai.jpeg'
+import ReactRouter from '/images/skillsImage/reactrouter.png'
+import MongooseImg from '/images/skillsImage/MongooseImg.png'
 
 const skills = [
   { name: 'HTML', description: 'Markup language for web pages', img: `${htmlImg}`, webUrl: 'https://developer.mozilla.org/en-US/docs/Web/HTML' },
@@ -36,6 +36,7 @@ const skills = [
   { name: 'Node.js', description: 'JavaScript runtime for backend development', img: `${nodeImg}`, webUrl: 'https://nodejs.org/' },
   { name: 'Express.js', description: 'Minimal Node.js web framework', img: `${expressImg}`, webUrl: 'https://expressjs.com/' },
   { name: 'MongoDB', description: 'NoSQL database for modern applications', img: `${MongoDBImg}`, webUrl: 'https://www.mongodb.com/' },
+  { name: 'Mongoose', description: 'Elegant MongoDB object modeling for Node.js', img: `${MongooseImg}`, webUrl: 'https://mongoosejs.com/' },
   { name: 'Firebase', description: 'Backend platform for web apps', img: `${firebaseImg}`, webUrl: 'https://firebase.google.com/' },
   { name: 'Framer Motion', description: 'Animation library for React apps', img: 'https://framerusercontent.com/images/p82ZbUPQdsB3LwOnllbkrrIIH5Y.png', webUrl: 'https://www.framer.com/motion/' },
   { name: 'Lenis', description: 'Smooth scroll library for web', img: `${Lenis}`, webUrl: 'https://github.com/darkroomengineering/lenis' },
@@ -56,7 +57,6 @@ const skills = [
   { name: 'Meraki UI', description: 'Tailwind CSS UI components library', img: `${MerakiUIImg}`, webUrl: 'https://merakiui.com/' },
   { name: 'Creative Tim', description: 'UI tools and dashboards for web', img: `${CreativeTimImg}`, webUrl: 'https://www.creative-tim.com/' },
   { name: 'Ant Design', description: 'Enterprise React UI design system', img: `${AntDesignImg}`, webUrl: 'https://ant.design/' },
-  { name: 'Photoshop', description: 'Image editing and graphic design', img: `${photoshopImg}`, webUrl: 'https://www.adobe.com/products/photoshop.html' },
   { name: 'Illustrator', description: 'Vector graphics editor for artwork', img: `${illustratorImg}`, webUrl: 'https://www.adobe.com/products/illustrator.html' },
 ];
 
